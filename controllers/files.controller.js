@@ -1,4 +1,4 @@
-import { getFiles, addFile, getFileByIdService, deleteFileByIdService } from '../services/files.services.js'
+import { getFiles, addFile, getFileByIdService, deleteFileByIdService, updateFileByIdService } from '../services/files.services.js'
 
 export const getAllFiles = (req, res) => {
     res.json({
@@ -81,5 +81,34 @@ export const getFilesbyContentType = (req, res) => {
     res.json({
         success: true,
         files,
+    })
+}
+
+export const updateFileById = (req, res) => {
+    const { id } = req.params
+    const { content, content_type } = req.body
+
+    const file = getFileByIdService(id)
+
+    if (!file) {
+        return res.status(404).json({
+            success: false,
+            message: 'File not found',
+        })
+    }
+
+    if (!content || !content_type) {
+        return res.status(400).json({
+            success: false,
+            message: 'All fields are required',
+        })
+    }
+
+    file.content = content
+    file.content_type = content_type
+
+    res.json({
+        success: true,
+        file,
     })
 }

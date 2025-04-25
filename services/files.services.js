@@ -1,4 +1,4 @@
-const files = []
+export const files = []
 
 export const getFiles = () => {
     return files
@@ -21,4 +21,13 @@ export const deleteFileByIdService = (id) => {
     if (index !== -1) {
         files.splice(index, 1)
     }
+}
+
+export const updateFileByIdService = (id, file) => {
+    const index = files.findIndex((f) => f.id == id)
+    if (index !== -1) {
+        files[index] = { ...files[index], ...file }
+        return files[index]
+    }
+    return null
 }

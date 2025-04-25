@@ -1,4 +1,4 @@
-const pictures = []
+export const pictures = []
 
 export const getPictures = (req, res) => {
     return pictures;
@@ -23,6 +23,14 @@ export const deleteById = (id) => {
     }
 }
 
-
+export const updateById = (id, picture) => {
+    const index = pictures.findIndex((picture) => picture.id == id)
+    if (index !== -1) {
+        pictures[index] = {
+            ...pictures[index],
+            ...picture
+        }
+    }
+}
 
 

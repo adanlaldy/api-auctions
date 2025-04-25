@@ -1,4 +1,4 @@
-import { getPictures, createPicture, getById, deleteById } from '../services/pictures.services.js'
+import { getPictures, createPicture, getById, deleteById, updateById } from '../services/pictures.services.js'
 
 export const getAllPictures = (req, res) => {
     const pictures = getPictures()
@@ -100,5 +100,34 @@ export const deletePicturesByAuctionId = (req, res) => {
     res.json({
         success: true,
         message: 'Pictures deleted successfully',
+    })
+}
+
+
+export const updatePictureById = (req, res) => {
+    const { id } = req.params
+    const { path, auction_id } = req.body
+
+    const picture = getById(id)
+
+    if (!picture) {
+        return res.status(404).json({
+            success: false,
+            message: 'Picture not found',
+        })
+    }
+
+    if (!path) {
+        return res.status(400).json({
+            success: false,
+            message: 'At least one field is required to update',
+        })
+    }
+
+    updateById(id, { path })
+
+    res.json({
+        success: true,
+        message: 'Picture updated successfully',
     })
 }
