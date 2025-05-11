@@ -1,88 +1,27 @@
 openapi: 3.0.0
 info:
-  title: OpenAPI Specification
+  title: API Projet Final
   version: 1.0.0
-  description: API documentation for the project.
-
+servers:
+  - url: "http://localhost:3000/v1"
+tags:
+  - name: Auctions
+    description: Operations related to auctions
+  - name: Pictures
+    description: Operations related to pictures
+  - name: Files
+    description: Operations related to files
+  - name: Tags
+    description: Operations related to tags
 paths:
   /auction:
     get:
-      summary: Get auction details
-      description: Retrieve details of all auctions.
+      tags:
+        - Auctions
+      summary: Get all Auctions
       responses:
-        "200":
-          description: Successful response
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: integer
-                      example: 1
-                    title:
-                      type: string
-                      example: "Auction Title"
-                    description:
-                      type: string
-                      example: "Description of the auction"
-                    start_time:
-                      type: string
-                      format: date-time
-                      example: "2023-10-01T00:00:00Z"
-                    end_time:
-                      type: string
-                      format: date-time
-                      example: "2023-10-02T00:00:00Z"
-        "500":
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  error:
-                    type: string
-                    example: "Internal server error"
-        "404":
-          description: Not found
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  error:
-                    type: string
-                    example: "Not found"
-    post:
-      summary: Create a new auction
-      description: Create a new auction with the provided details.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                title:
-                  type: string
-                  example: "New Auction Title"
-                description:
-                  type: string
-                  example: "Description of the new auction"
-                start_time:
-                  type: string
-                  format: date-time
-                  example: "2023-10-01T00:00:00Z"
-                end_time:
-                  type: string
-                  format: date-time
-                  example: "2023-10-02T00:00:00Z"
-      responses:
-        "201":
-          description: Auction created successfully
+        '200':
+          description: Return all auctions
           content:
             application/json:
               schema:
@@ -91,16 +30,503 @@ paths:
                   id:
                     type: integer
                     example: 1
-        "400":
-          description: Bad request
+                  titre:
+                    type: string
+                    example: "Musique"
+                  description:
+                    type: string
+                    example: "description exemple"
+                  initial_price:
+                    type: number
+                    format: float
+                    example: 123
+                  start_bid_date:
+                    type: string
+                    format: date-time
+                    example: "2025-12-23T23:00:00.000Z"
+                  end_bid_date:
+                    type: string
+                    format: date-time
+                    example: "2025-12-30T23:00:00.000Z"
+                  seller_id:
+                    type: integer
+                    example: 1
+                  file_id:
+                    type: integer
+                    example: 1
+                  actual_bid_price:
+                    type: number
+                    format: float
+                    nullable: true
+                    example: null
+                  created_at:
+                    type: string
+                    format: date-time
+                    example: "2025-04-27T10:27:27.248Z"
+                  updated_at:
+                    type: string
+                    format: date-time
+                    example: "2025-04-27T10:27:27.248Z"
+                  deleted_at:
+                    type: string
+                    format: date-time
+                    nullable: true
+                    example: null
+                  tag_id:
+                    type: integer
+                    nullable: true
+                    example: null
+                  buyer_id:
+                    type: integer
+                    nullable: true
+                    example: null
+                  state_id:
+                    type: integer
+                    nullable: true
+                    example: null
+    post:
+      tags:
+        - Auctions
+      summary: Create auction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                titre:
+                  type: string
+                description:
+                  type: string
+                file_id:
+                  type: integer
+                initial_price:
+                  type: number
+      responses:
+        '201':
+          description: Auction created
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "Auction created successfully"
+  /auction/{id}:
+    get:
+      tags:
+        - Auctions
+      summary: Get an Auction by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  error:
+                  id:
+                    type: integer
+                    example: 1
+                  titre:
                     type: string
-                    example: "Bad request"
-servers:
-  - url: "http://localhost:3000/v1"
-    description: Local server
+                    example: "Musique"
+                  description:
+                    type: string
+                    example: "description exemple"
+                  initial_price:
+                    type: number
+                    format: float
+                    example: 123
+                  start_bid_date:
+                    type: string
+                    format: date-time
+                    example: "2025-12-23T23:00:00.000Z"
+                  end_bid_date:
+                    type: string
+                    format: date-time
+                    example: "2025-12-30T23:00:00.000Z"
+                  seller_id:
+                    type: integer
+                    example: 1
+                  file_id:
+                    type: integer
+                    example: 1
+                  actual_bid_price:
+                    type: number
+                    format: float
+                    nullable: true
+                    example: null
+                  created_at:
+                    type: string
+                    format: date-time
+                    example: "2025-04-27T10:27:27.248Z"
+                  updated_at:
+                    type: string
+                    format: date-time
+                    example: "2025-04-27T10:27:27.248Z"
+                  deleted_at:
+                    type: string
+                    format: date-time
+                    nullable: true
+                    example: null
+                  tag_id:
+                    type: integer
+                    nullable: true
+                    example: null
+                  buyer_id:
+                    type: integer
+                    nullable: true
+                    example: null
+                  state_id:
+                    type: integer
+                    nullable: true
+                    example: null
+    delete:
+      tags:
+        - Auctions
+      summary: Delete an Auction by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Auction deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: Auction deleted successfully
+  /pictures:
+    get:
+      tags:
+        - Pictures
+      summary: Get all Pictures
+      responses:
+        '200':
+          description: List of pictures retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  pictures:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        path:
+                          type: string
+                          nullable: true
+                          example: null
+                        auction_id:
+                          type: string
+                          nullable: true
+                          example: "2"
+    post:
+      tags:
+        - Pictures
+      summary: Create a Picture
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                auction_id:
+                  type: integer
+      responses:
+        '201':
+          description: Picture created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: Picture created successfully
+  /pictures/{id}:
+    get:
+      tags:
+        - Pictures
+      summary: Get Picture by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Picture retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  picture:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      path:
+                        type: string
+                        nullable: true
+                        example: null
+    delete:
+      tags:
+        - Pictures
+      summary: Delete Picture by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Picture deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: Picture deleted successfully
+  /files:
+    get:
+      tags:
+        - Files
+      summary: Get all Files
+      responses:
+        '200':
+          description: List of files retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  files:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        content:
+                          type: string
+                          nullable: true
+                          example: null
+                        content_type:
+                          type: string
+                          nullable: true
+                          example: null
+    post:
+      tags:
+        - Files
+      summary: Create a File
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                content_type:
+                  type: string
+      responses:
+        '201':
+          description: File created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  file:
+                    type: string
+                    example: File created successfully
+  /files/{id}:
+    get:
+      tags:
+        - Files
+      summary: Get File by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: File retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  file:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      content:
+                        type: string
+                        nullable: true
+                        example: null
+                      content_type:
+                        type: string
+                        nullable: true
+                        example: null
+    delete:
+      tags:
+        - Files
+      summary: Delete File by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: File deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: string
+                    example: File deleted successfully
+  /tags:
+    get:
+      tags:
+        - Tags
+      summary: Get all Tags
+      responses:
+        '200':
+          description: Successful response
+    post:
+      tags:
+        - Tags
+      summary: Create a Tag
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+      responses:
+        '201':
+          description: Tag created
+
+  /tags/{id}:
+    get:
+      tags:
+        - Tags
+      summary: Get Tag by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+    delete:
+      tags:
+        - Tags
+      summary: Delete Tag by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Tag deleted
+
+  /tags/name/{tag}:
+    get:
+      tags:
+        - Tags
+      summary: Get Tag by Name
+      parameters:
+        - in: path
+          name: tag
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+    delete:
+      tags:
+        - Tags
+      summary: Delete Tag by Name
+      parameters:
+        - in: path
+          name: tag
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Tag deleted
+
