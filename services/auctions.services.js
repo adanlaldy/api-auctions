@@ -29,32 +29,31 @@ export const create = async (auction) => {
 
                 file: {
                     create: {
-                        content: "default file content", // ⚠️ Mettre une vraie valeur
-                        contentType: "text/plain", // ou image/png, application/pdf, etc.
+                        content: "default file content", // à remplacer
+                        contentType: "text/plain",
                     },
                 },
 
                 tag: {
                     create: {
-                        name: "default tag", // ⚠️ Mettre une vraie valeur
+                        name: "default tag", // à remplacer
                     },
                 },
 
                 state: {
-                    create: {
-                        stateType: "pending", // ⚠️ Mettre une vraie valeur
+                    connect: {
+                        stateType: "pending", // ou l'id si tu préfères: id: 1
                     },
                 },
-
                 actualBidPrice: 0,
                 createdAt: new Date(),
                 updatedAt: new Date(),
                 deletedAt: null,
                 buyerId: null,
                 pictures: {
-                    create: [], // tu peux ajouter une image par défaut si tu veux
+                    create: [],
                 },
-                sellerId: auction.sellerId, // ⚠️ doit être fourni
+                sellerId: auction.sellerId,
             },
         });
 

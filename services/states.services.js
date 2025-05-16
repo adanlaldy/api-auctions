@@ -1,3 +1,10 @@
+import dotenv from 'dotenv'
+import { PrismaClient } from '../generated/prisma/index.js';
+
+dotenv.config()
+const prisma = new PrismaClient()
+
+
 const statesExplanation = {
     "Open": "This state indicates that the auction is currently open for bidding. Bidders can place their bids on the items listed in the auction.",
     "Pending": "This state indicates that the auction is currently pending. This may mean that the auction is not yet open for bidding or that it is waiting for some condition to be met before it can proceed.",
@@ -14,7 +21,13 @@ const states = [
     "Sold"
 ]
 
-export const getStates = (req, res) => {
-    return statesExplanation;
+export const getStates = async () => {
+    try {
+        const states = await prisma.state.findMany()
+        return states
+    } catch (error) {
+        console.error('Error fetching states:', error)
+        throw new Error('Failed to fetch states')
+    }
 }
 

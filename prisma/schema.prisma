@@ -54,6 +54,6 @@ model Tag {
 
 model State {
   id        Int       @id @default(autoincrement())
-  stateType String
+  stateType String    @unique
   auctions  Auction[]
 }
