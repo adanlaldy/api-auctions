@@ -2,20 +2,16 @@ import { files } from './files.services.js'
 import { pictures } from './pictures.services.js'
 
 import dotenv from 'dotenv'
-// import pkg from '@prisma/client';
-// const { PrismaClient } = pkg;
 import { PrismaClient } from '../generated/prisma/index.js';
 
 dotenv.config()
 const prisma = new PrismaClient()
 
-// const auctions = []
 
 
-
-export const getAll = () => {
+export const getAll = async () => {
     try {
-        const auctions = prisma.auction.findMany()
+        const auctions = await prisma.auction.findMany()
         return auctions
     }
     catch (error) {
@@ -74,68 +70,49 @@ export const create = async (auction) => {
     }
 }
 
-// export const create = (auction) => {
-//     const newAuctionId = auctions.length + 1
-//     const startDate = new Date(auction.start_bid_date)
-//     const endDate = auction.end_bid_date
-//         ? new Date(auction.end_bid_date)
-//         : new Date(startDate.getTime() + 7 * 24 * 60 * 60 * 1000) // +7 jours
+export const getById = async (id) => {
+    try {
+        const auction = await prisma.auction.findUnique({
+            where: {
+                id: parseInt(id),
+            },
+        });
 
-//     auctions.push({
-//         id: newAuctionId,
-//         ...auction,
-//         start_bid_date: startDate,
-//         end_bid_date: endDate,
-//         file_id: createFile(newAuctionId),
-//         actual_bid_price: null,
-//         created_at: new Date(),
-//         updated_at: new Date(),
-//         deleted_at: null,
-//         tag_id: null,
-//         buyer_id: null,
-//         state_id: null,
-//     })
-
-//     createPicture(auction.id)
-//     return auction.id
-// }
-
-const createFile = (auctionId) => {
-    const file = {
-        id: files.length + 1,
-        content: null,
-        content_type: null,
-    }
-    files.push(file)
-    return file.id
-}
-
-const createPicture = (auctionId) => {
-    const picture = {
-        id: pictures.length + 1,
-        path: null,
-        auctionId: auctionId,
-    }
-    pictures.push(picture)
-}
-
-export const getById = (id) => {
-    return auctions.find((auction) => auction.id == id)
-}
-
-export const deleteById = (id) => {
-    const index = auctions.findIndex((auction) => auction.id == id)
-    if (index !== -1) {
-        auctions.splice(index, 1)
-    }
-}
-
-export const updateById = (id, auction) => {
-    const index = auctions.findIndex((auction) => auction.id == id)
-    if (index !== -1) {
-        auctions[index] = {
-            ...auctions[index],
-            ...auction,
+        if (!auction) {
+            return null;
         }
+
+        return auction;
+    } catch (error) {
+        console.error('Error fetching auction:', error);
+        throw new Error('Failed to fetch auction');
+    }
+}
+
+export const deleteById = async (id) => {
+    try {
+        await prisma.auction.delete({
+            where: {
+                id: parseInt(id),
+            },
+        });
+    } catch (error) {
+        console.error('Error deleting auction:', error);
+        throw new Error('Failed to delete auction');
+    }
+}
+
+export const updateById = async (id, auction) => {
+    try {
+        await prisma.auction.update({
+            where: {
+                id: parseInt(id),
+            },
+            data: auction,
+        });
+        console.log(auction);
+    } catch (error) {
+        console.error('Error updating auction:', error);
+        throw new Error('Failed to update auction');
     }
 }
