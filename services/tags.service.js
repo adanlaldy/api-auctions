@@ -1,51 +1,126 @@
-const tags = []
+import dotenv from 'dotenv'
+import { PrismaClient } from '../generated/prisma/index.js';
 
-export const getTags = () => {
-    return tags
-}
+dotenv.config()
+const prisma = new PrismaClient()
 
-export const getTag = (id) => {
-    const tag = tags.find(tag => tag.id === id)
-    if (!tag) {
-        throw new Error(`Tag with id ${id} not found`)
+
+export const getTags = async () => {
+    try {
+        const tags = await prisma.tag.findMany()
+        return tags
+    } catch (error) {
+        console.error('Error fetching tags:', error)
+        throw new Error('Failed to fetch tags')
     }
-    return tag
 }
 
+// export const getTag = async (id) => {
+//     try {
+//         const tag = await prisma.tag.findUnique({
+//             where: { id: Number(id) }
+//         })
+//         if (!tag) {
+//             throw new Error(`Tag with id ${id} not found`)
+//         }
+//         return tag
+//     } catch (error) {
+//         console.error('Error fetching tag by ID:', error)
+//         throw new Error('Failed to fetch tag by ID')
+//     }
+// }
 
-export const createTag = (tag) => {
-    const newTag = { id: tags.length + 1, ...tag }
-    tags.push(newTag)
-    return newTag
-}
-
-export const updateTag = (id, updatedTag) => {
-    const index = tags.findIndex(tag => tag.id === id)
-    if (index === -1) {
-        throw new Error(`Tag with id ${id} not found`)
+export const getTag = async (id) => {
+    try {
+        const tag = await prisma.tag.findUnique({
+            where: { id: Number(id) }
+        })
+        if (!tag) {
+            throw new Error(`Tag with id ${id} not found`)
+        }
+        return tag
+    } catch (error) {
+        console.error('Error fetching tag by ID:', error)
+        throw new Error('Failed to fetch tag by ID')
     }
-    tags[index] = { ...tags[index], ...updatedTag }
-    return tags[index]
 }
 
-export const deleteTag = (id) => {
-    const index = tags.findIndex(tag => tag.id === id)
-    if (index === -1) {
-        throw new Error(`Tag with id ${id} not found`)
+export const createTag = async (tag) => {
+    try {
+        const newTag = await prisma.tag.create({
+            data: tag
+        })
+        return newTag
+    } catch (error) {
+        console.error('Error creating tag:', error)
+        throw new Error('Failed to create tag')
     }
-    const deletedTag = tags.splice(index, 1)
-    return deletedTag[0]
 }
 
-export const getTagsByPostId = (postId) => {
-    return tags.filter(tag => tag.postId === postId)
-}
 
-export const deletedTagByPostId = (postId) => {
-    const index = tags.findIndex(tag => tag.postId === postId)
-    if (index === -1) {
-        throw new Error(`Tag with post id ${postId} not found`)
+export const updateTag = async (id, updatedTag) => {
+    try {
+        const tag = await prisma.tag.findUnique({
+            where: { id: Number(id) }
+        })
+        if (!tag) {
+            throw new Error(`Tag with id ${id} not found`)
+        }
+        const updated = await prisma.tag.update({
+            where: { id: Number(id) },
+            data: updatedTag
+        })
+        return updated
+    } catch (error) {
+        console.error('Error updating tag:', error)
+        throw new Error('Failed to update tag')
     }
-    const deletedTag = tags.splice(index, 1)
-    return deletedTag[0]
+}
+
+export const deleteTag = async (id) => {
+    try {
+        const tag = await prisma.tag.findUnique({
+            where: { id: Number(id) }
+        })
+        if (!tag) {
+            throw new Error(`Tag with id ${id} not found`)
+        }
+        await prisma.tag.delete({
+            where: { id: Number(id) }
+        })
+        return tag
+    } catch (error) {
+        console.error('Error deleting tag:', error)
+        throw new Error('Failed to delete tag')
+    }
+}
+
+export const getTagsByPostId = async (postId) => {
+    try {
+        const tags = await prisma.tag.findMany({
+            where: { postId: Number(postId) }
+        })
+        return tags
+    } catch (error) {
+        console.error('Error fetching tags by post ID:', error)
+        throw new Error('Failed to fetch tags by post ID')
+    }
+}
+
+export const deleteTagByPostIdService = async (postId) => {
+    try {
+        const tag = await prisma.tag.findUnique({
+            where: { postId: Number(postId) }
+        })
+        if (!tag) {
+            throw new Error(`Tag with post id ${postId} not found`)
+        }
+        await prisma.tag.delete({
+            where: { postId: Number(postId) }
+        })
+        return tag
+    } catch (error) {
+        console.error('Error deleting tag by post ID:', error)
+        throw new Error('Failed to delete tag by post ID')
+    }
 }
