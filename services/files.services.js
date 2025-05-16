@@ -27,19 +27,6 @@ export const addFile = async (file) => {
     }
 }
 
-
-// export const getFileByIdService = async (id) => {
-//     try {
-//         const file = await prisma.file.findUnique({
-//             where: { id: Number(id) }
-//         })
-//         return file
-//     } catch (error) {
-//         console.error('Error fetching file by ID:', error)
-//         throw new Error('Failed to fetch file by ID')
-//     }
-// }
-
 export const getFileByIdService = async (id) => {
     try {
         const file = await prisma.file.findUnique({
