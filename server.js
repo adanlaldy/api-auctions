@@ -1,5 +1,6 @@
 import app from './app.js'
 import cors from 'cors'
+import express from 'express'; // si tu utilises express par exemple
 
 const port = 3000
 const hostname = '0.0.0.0'

@@ -9,16 +9,16 @@ export const getAllAuctions = (req, res) => {
 }
 
 export const createAuctions = (req, res) => {
-    const { titre, description, initial_price, start_bid_date, end_bid_date, seller_id } = req.body
+    const { title, description, initialPrice, startBidDate, endBidDate, sellerId } = req.body
     // to define end_bid_date, created_at, updated_at, deleted_at, tag_id, buyer_id, state_id
-    if (!titre || !description || !initial_price || !start_bid_date || !seller_id) {
+    if (!title || !description || !initialPrice || !startBidDate || !sellerId) {
         return res.status(400).json({
             success: false,
             message: 'Please provide all required fields',
         })
     }
 
-    create({ titre, description, initial_price, start_bid_date, end_bid_date, seller_id })
+    create({ title, description, initialPrice, startBidDate, endBidDate, sellerId })
 
     res.status(201).json({
         success: true,
@@ -146,7 +146,7 @@ export const updateAuctionById = (req, res) => {
 
     // Ne garder que les champs définis
     const fieldsToUpdate = {}
-    const allowedFields = ['titre', 'description', 'actual_bid_price',]
+    const allowedFields = ['title', 'description', 'actual_bid_price',]
 
     for (const field of allowedFields) {
         if (req.body[field] !== undefined) {

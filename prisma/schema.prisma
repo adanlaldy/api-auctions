@@ -9,51 +9,51 @@ datasource db {
 }
 
 model File {
-  id          Int     @id @default(autoincrement())
+  id          Int       @id @default(autoincrement())
   content     String
   contentType String
   auctions    Auction[] // Relation inverse (facultative si un fichier peut être lié à plusieurs enchères)
 }
 
 model Auction {
-  id              Int       @id @default(autoincrement())
-  title           String
-  description     String
-  fileId          Int
-  initialPrice    Float
-  actualBidPrice  Float
-  startBidDate    DateTime
-  endBidDate      DateTime?
-  createdAt       DateTime  @default(now())
-  updatedAt       DateTime  @updatedAt
-  deletedAt       DateTime?
-  tagId           Int
-  sellerId        Int
-  buyerId         Int?
-  stateId         Int
+  id             Int       @id @default(autoincrement())
+  title          String
+  description    String
+  fileId         Int
+  initialPrice   Float
+  actualBidPrice Float
+  startBidDate   DateTime
+  endBidDate     DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+  tagId          Int
+  sellerId       Int
+  buyerId        Int?
+  stateId        Int
 
-  file            File      @relation(fields: [fileId], references: [id])
-  tag             Tag       @relation(fields: [tagId], references: [id])
-  state           State     @relation(fields: [stateId], references: [id])
-  pictures        Picture[]
+  file     File      @relation(fields: [fileId], references: [id])
+  tag      Tag       @relation(fields: [tagId], references: [id])
+  state    State     @relation(fields: [stateId], references: [id])
+  pictures Picture[]
 }
 
 model Picture {
-  id         Int     @id @default(autoincrement())
-  path       String
-  auctionId  Int
+  id        Int    @id @default(autoincrement())
+  path      String
+  auctionId Int
 
-  auction    Auction @relation(fields: [auctionId], references: [id])
+  auction Auction @relation(fields: [auctionId], references: [id])
 }
 
 model Tag {
-  id        Int       @id @default(autoincrement())
-  name      String
-  auctions  Auction[]
+  id       Int       @id @default(autoincrement())
+  name     String
+  auctions Auction[]
 }
 
 model State {
-  id         Int       @id @default(autoincrement())
-  stateType  String
-  auctions   Auction[]
+  id        Int       @id @default(autoincrement())
+  stateType String
+  auctions  Auction[]
 }
