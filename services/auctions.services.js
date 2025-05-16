@@ -1,13 +1,8 @@
-import { files } from './files.services.js'
-import { pictures } from './pictures.services.js'
-
 import dotenv from 'dotenv'
 import { PrismaClient } from '../generated/prisma/index.js';
 
 dotenv.config()
 const prisma = new PrismaClient()
-
-
 
 export const getAll = async () => {
     try {

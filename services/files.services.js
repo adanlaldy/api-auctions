@@ -1,33 +1,77 @@
-export const files = []
+import dotenv from 'dotenv'
+import { PrismaClient } from '../generated/prisma/index.js';
 
-export const getFiles = () => {
-    return files
-}
+dotenv.config()
+const prisma = new PrismaClient()
 
-export const addFile = (file) => {
-    files.push({
-        id: files.length + 1,
-        ...file
-    })
-    return file.id
-}
-
-export const getFileByIdService = (id) => {
-    return files.find((file) => file.id == id)
-}
-
-export const deleteFileByIdService = (id) => {
-    const index = files.findIndex((file) => file.id == id)
-    if (index !== -1) {
-        files.splice(index, 1)
+export const getFiles = async () => {
+    try {
+        const files = await prisma.file.findMany()
+        return files
+    }
+    catch (error) {
+        console.error('Error fetching files:', error)
+        throw new Error('Failed to fetch files')
     }
 }
 
-export const updateFileByIdService = (id, file) => {
-    const index = files.findIndex((f) => f.id == id)
-    if (index !== -1) {
-        files[index] = { ...files[index], ...file }
-        return files[index]
+export const addFile = async (file) => {
+    try {
+        const newFile = await prisma.file.create({
+            data: file
+        })
+        return newFile.id
+    } catch (error) {
+        console.error('Error adding file:', error)
+        throw new Error('Failed to add file')
     }
-    return null
+}
+
+
+// export const getFileByIdService = async (id) => {
+//     try {
+//         const file = await prisma.file.findUnique({
+//             where: { id: Number(id) }
+//         })
+//         return file
+//     } catch (error) {
+//         console.error('Error fetching file by ID:', error)
+//         throw new Error('Failed to fetch file by ID')
+//     }
+// }
+
+export const getFileByIdService = async (id) => {
+    try {
+        const file = await prisma.file.findUnique({
+            where: { id: Number(id) }
+        })
+        return file
+    } catch (error) {
+        console.error('Error fetching file by ID:', error)
+        throw new Error('Failed to fetch file by ID')
+    }
+}
+
+export const deleteFileByIdService = async (id) => {
+    try {
+        await prisma.file.delete({
+            where: { id: Number(id) }
+        })
+    } catch (error) {
+        console.error('Error deleting file by ID:', error)
+        throw new Error('Failed to delete file by ID')
+    }
+}
+
+export const updateFileByIdService = async (id, file) => {
+    try {
+        const updatedFile = await prisma.file.update({
+            where: { id: Number(id) },
+            data: file
+        })
+        return updatedFile
+    } catch (error) {
+        console.error('Error updating file by ID:', error)
+        throw new Error('Failed to update file by ID')
+    }
 }

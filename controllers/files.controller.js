@@ -1,14 +1,23 @@
 import { getFiles, addFile, getFileByIdService, deleteFileByIdService, updateFileByIdService } from '../services/files.services.js'
 
-export const getAllFiles = (req, res) => {
-    res.json({
-        success: true,
-        files: getFiles(),
-    })
+export const getAllFiles = async (req, res) => {
+    try {
+        const files = await getFiles()
+        res.json({
+            success: true,
+            files,
+        })
+    } catch (error) {
+        console.error('Error fetching files:', error)
+        res.status(500).json({
+            success: false,
+            message: 'Failed to fetch files',
+        })
+    }
 }
 
-export const createFile = (req, res) => {
-    const { id, content, content_type } = req.body
+export const createFile = async (req, res) => {
+    const { content, content_type } = req.body
 
     if (!content || !content_type) {
         return res.status(400).json({
@@ -17,19 +26,26 @@ export const createFile = (req, res) => {
         })
     }
 
-    addFile({ content, content_type, })
+    try {
+        const fileId = await addFile({ content, content_type })
 
-    res.status(201).json({
-        success: true,
-        file: "File created successfully",
-    })
+        res.status(201).json({
+            success: true,
+            fileId,
+        })
+    } catch (error) {
+        console.error('Error creating file:', error)
+        res.status(500).json({
+            success: false,
+            message: 'Failed to create file',
+        })
+    }
 }
 
-export const getFileById = (req, res) => {
-
+export const getFileById = async (req, res) => {
     const { id } = req.params
 
-    const file = getFileByIdService(id)
+    const file = await getFileByIdService(id)
 
     if (!file) {
         return res.status(404).json({
@@ -42,14 +58,12 @@ export const getFileById = (req, res) => {
         success: true,
         file,
     })
-
-
 }
 
-export const deleteFileById = (req, res) => {
+export const deleteFileById = async (req, res) => {
     const { id } = req.params
 
-    const file = getFileByIdService(id)
+    const file = await getFileByIdService(id)
 
     if (!file) {
         return res.status(404).json({
@@ -84,31 +98,29 @@ export const getFilesbyContentType = (req, res) => {
     })
 }
 
-export const updateFileById = (req, res) => {
+export const updateFileById = async (req, res) => {
     const { id } = req.params
-    const { content, content_type } = req.body
+    const { content, contentType } = req.body
 
-    const file = getFileByIdService(id)
+    try {
+        const updatedFile = await updateFileByIdService(id, { content, contentType })
 
-    if (!file) {
-        return res.status(404).json({
+        if (!updatedFile) {
+            return res.status(404).json({
+                success: false,
+                message: 'File not found',
+            })
+        }
+
+        res.json({
+            success: true,
+            file: updatedFile,
+        })
+    } catch (error) {
+        console.error('Error updating file:', error)
+        res.status(500).json({
             success: false,
-            message: 'File not found',
+            message: 'Failed to update file',
         })
     }
-
-    if (!content || !content_type) {
-        return res.status(400).json({
-            success: false,
-            message: 'All fields are required',
-        })
-    }
-
-    file.content = content
-    file.content_type = content_type
-
-    res.json({
-        success: true,
-        file,
-    })
 }
