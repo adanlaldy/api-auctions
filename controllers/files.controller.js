@@ -1,5 +1,9 @@
 import { getFiles, addFile, getFileByIdService, deleteFileByIdService, updateFileByIdService } from '../services/files.services.js'
 
+/**
+ * Récupère tous les fichiers.
+ * @route GET /files
+ */
 export const getAllFiles = async (req, res) => {
     try {
         const files = await getFiles()
@@ -16,6 +20,11 @@ export const getAllFiles = async (req, res) => {
     }
 }
 
+/**
+ * Crée un nouveau fichier.
+ * @route POST /files
+ * @body { content, content_type }
+ */
 export const createFile = async (req, res) => {
     const { content, content_type } = req.body
 
@@ -42,6 +51,11 @@ export const createFile = async (req, res) => {
     }
 }
 
+/**
+ * Récupère un fichier par son ID.
+ * @route GET /files/:id
+ * @param {number} id - ID du fichier
+ */
 export const getFileById = async (req, res) => {
     const { id } = req.params
 
@@ -60,6 +74,11 @@ export const getFileById = async (req, res) => {
     })
 }
 
+/**
+ * Supprime un fichier par son ID.
+ * @route DELETE /files/:id
+ * @param {number} id - ID du fichier
+ */
 export const deleteFileById = async (req, res) => {
     const { id } = req.params
 
@@ -80,6 +99,11 @@ export const deleteFileById = async (req, res) => {
     })
 }
 
+/**
+ * Récupère les fichiers par type de contenu.
+ * @route GET /files/type/:content_type
+ * @param {string} content_type - Type de contenu (ex: image/png, application/pdf)
+ */
 export const getFilesbyContentType = (req, res) => {
     const { content_type } = req.params
 
@@ -98,6 +122,12 @@ export const getFilesbyContentType = (req, res) => {
     })
 }
 
+/**
+ * Met à jour un fichier par son ID.
+ * @route PUT /files/:id
+ * @param {number} id - ID du fichier
+ * @body { content?, contentType? }
+ */
 export const updateFileById = async (req, res) => {
     const { id } = req.params
     const { content, contentType } = req.body

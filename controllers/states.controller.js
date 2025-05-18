@@ -1,5 +1,9 @@
 import { getStates } from '../services/states.services.js'
 
+/**
+ * Récupère tous les états possibles d'enchère.
+ * @route GET /states
+ */
 export const getAllStates = async (req, res) => {
     try {
         const states = await getStates()

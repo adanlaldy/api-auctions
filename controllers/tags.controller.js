@@ -1,6 +1,10 @@
 import { getTags, getTag, createTag, updateTag, deleteTag, getTagsByPostId, deleteTagByPostIdService } from '../services/tags.service.js'
 
 
+/**
+ * Récupère tous les tags.
+ * @route GET /tags
+ */
 export const getAllTags = async (req, res) => {
     const tags = await getTags()
 
@@ -17,6 +21,11 @@ export const getAllTags = async (req, res) => {
     })
 }
 
+/**
+ * Crée un nouveau tag.
+ * @route POST /tags
+ * @body { name }
+ */
 export const createTagController = async (req, res) => {
     const { name } = req.body
 
@@ -36,6 +45,11 @@ export const createTagController = async (req, res) => {
     })
 }
 
+/**
+ * Récupère un tag par son ID.
+ * @route GET /tags/:id
+ * @param {number} id - ID du tag
+ */
 export const getTagById = async (req, res) => {
     const { id } = req.params
 
@@ -54,6 +68,11 @@ export const getTagById = async (req, res) => {
     })
 }
 
+/**
+ * Supprime un tag par son ID.
+ * @route DELETE /tags/:id
+ * @param {number} id - ID du tag
+ */
 export const deleteTagById = async (req, res) => {
     const { id } = req.params
 
@@ -74,6 +93,12 @@ export const deleteTagById = async (req, res) => {
     })
 }
 
+/**
+ * Met à jour un tag par son ID.
+ * @route PUT /tags/:id
+ * @param {number} id - ID du tag
+ * @body { name }
+ */
 export const updateTagById = async (req, res) => {
     const { id } = req.params
     const { name } = req.body
@@ -103,6 +128,11 @@ export const updateTagById = async (req, res) => {
     })
 }
 
+/**
+ * Récupère les tags associés à un post.
+ * @route GET /tags/post/:postId
+ * @param {number} postId - ID du post
+ */
 export const getTagsByPostIdController = async (req, res) => {
     const { postId } = req.params
 
@@ -121,6 +151,11 @@ export const getTagsByPostIdController = async (req, res) => {
     })
 }
 
+/**
+ * Supprime les tags associés à un post.
+ * @route DELETE /tags/post/:postId
+ * @param {number} postId - ID du post
+ */
 export const deleteTagByPostId = async (req, res) => {
     const { postId } = req.params
 

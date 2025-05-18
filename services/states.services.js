@@ -21,6 +21,10 @@ const states = [
     "Sold"
 ]
 
+/**
+ * Récupère tous les états possibles d'enchère.
+ * @returns {Promise<Array>} Liste des états
+ */
 export const getStates = async () => {
     try {
         const states = await prisma.state.findMany()

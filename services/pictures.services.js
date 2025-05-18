@@ -4,10 +4,10 @@ import { PrismaClient } from '../generated/prisma/index.js';
 dotenv.config()
 const prisma = new PrismaClient()
 
-// export const getPictures = (req, res) => {
-//     return pictures;
-// }
-
+/**
+ * Récupère toutes les images.
+ * @returns {Promise<Array>} Liste des images
+ */
 export const getPictures = async () => {
     try {
         const pictures = await prisma.picture.findMany()
@@ -18,6 +18,11 @@ export const getPictures = async () => {
     }
 }
 
+/**
+ * Crée une nouvelle image pour une enchère.
+ * @param {Object} params - { path, auction_id }
+ * @returns {Promise<number>} ID de l'image créée
+ */
 export const createPicture = async ({ path, auction_id }) => {
     try {
         const picture = await prisma.picture.create({
@@ -32,6 +37,11 @@ export const createPicture = async ({ path, auction_id }) => {
     }
 }
 
+/**
+ * Récupère une image par son ID.
+ * @param {number} id - ID de l'image
+ * @returns {Promise<Object|null>} L'image ou null si non trouvée
+ */
 export const getById = async (id) => {
     try {
         const picture = await prisma.picture.findUnique({
@@ -44,6 +54,10 @@ export const getById = async (id) => {
     }
 }
 
+/**
+ * Supprime une image par son ID.
+ * @param {number} id - ID de l'image
+ */
 export const deleteById = async (id) => {
     try {
         await prisma.picture.delete({
@@ -55,7 +69,12 @@ export const deleteById = async (id) => {
     }
 }
 
-
+/**
+ * Met à jour une image par son ID.
+ * @param {number} id - ID de l'image
+ * @param {Object} picture - Données à mettre à jour
+ * @returns {Promise<Object>} L'image mise à jour
+ */
 export const updateById = async (id, picture) => {
     try {
         const updatedPicture = await prisma.picture.update({

@@ -5,6 +5,10 @@ dotenv.config()
 const prisma = new PrismaClient()
 
 
+/**
+ * Récupère tous les tags.
+ * @returns {Promise<Array>} Liste des tags
+ */
 export const getTags = async () => {
     try {
         const tags = await prisma.tag.findMany()
@@ -30,6 +34,11 @@ export const getTags = async () => {
 //     }
 // }
 
+/**
+ * Récupère un tag par son ID.
+ * @param {number} id - ID du tag
+ * @returns {Promise<Object>} Le tag trouvé
+ */
 export const getTag = async (id) => {
     try {
         const tag = await prisma.tag.findUnique({
@@ -45,6 +54,11 @@ export const getTag = async (id) => {
     }
 }
 
+/**
+ * Crée un nouveau tag.
+ * @param {Object} tag - Données du tag à créer
+ * @returns {Promise<Object>} Le tag créé
+ */
 export const createTag = async (tag) => {
     try {
         const newTag = await prisma.tag.create({
@@ -57,7 +71,12 @@ export const createTag = async (tag) => {
     }
 }
 
-
+/**
+ * Met à jour un tag par son ID.
+ * @param {number} id - ID du tag
+ * @param {Object} updatedTag - Données à mettre à jour
+ * @returns {Promise<Object>} Le tag mis à jour
+ */
 export const updateTag = async (id, updatedTag) => {
     try {
         const tag = await prisma.tag.findUnique({
@@ -77,6 +96,11 @@ export const updateTag = async (id, updatedTag) => {
     }
 }
 
+/**
+ * Supprime un tag par son ID.
+ * @param {number} id - ID du tag
+ * @returns {Promise<Object>} Le tag supprimé
+ */
 export const deleteTag = async (id) => {
     try {
         const tag = await prisma.tag.findUnique({
@@ -95,6 +119,11 @@ export const deleteTag = async (id) => {
     }
 }
 
+/**
+ * Récupère les tags associés à un post.
+ * @param {number} postId - ID du post
+ * @returns {Promise<Array>} Liste des tags associés
+ */
 export const getTagsByPostId = async (postId) => {
     try {
         const tags = await prisma.tag.findMany({
@@ -107,6 +136,11 @@ export const getTagsByPostId = async (postId) => {
     }
 }
 
+/**
+ * Supprime un tag par l'ID du post.
+ * @param {number} postId - ID du post
+ * @returns {Promise<Object>} Le tag supprimé
+ */
 export const deleteTagByPostIdService = async (postId) => {
     try {
         const tag = await prisma.tag.findUnique({

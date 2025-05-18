@@ -1,6 +1,10 @@
 import { getAll, create, getById, deleteById, updateById } from '../services/auctions.services.js'
 
 
+/**
+ * Récupère toutes les enchères.
+ * @route GET /auctions
+ */
 export const getAllAuctions = async (req, res) => {
     try {
         const auctions = await getAll()
@@ -15,6 +19,11 @@ export const getAllAuctions = async (req, res) => {
     }
 }
 
+/**
+ * Crée une nouvelle enchère.
+ * @route POST /auctions
+ * @body { title, description, initialPrice, startBidDate, endBidDate?, sellerId }
+ */
 export const createAuctions = (req, res) => {
     const { title, description, initialPrice, startBidDate, endBidDate, sellerId } = req.body
     // to define end_bid_date, created_at, updated_at, deleted_at, tag_id, buyer_id, state_id
@@ -33,6 +42,11 @@ export const createAuctions = (req, res) => {
     })
 }
 
+/**
+ * Récupère une enchère par son ID.
+ * @route GET /auctions/:id
+ * @param {number} id - ID de l’enchère
+ */
 export const getAuctionById = async (req, res) => {
     const id = Number(req.params.id)
     if (isNaN(id)) {
@@ -61,6 +75,11 @@ export const getAuctionById = async (req, res) => {
     }
 }
 
+/**
+ * Supprime une enchère par son ID.
+ * @route DELETE /auctions/:id
+ * @param {number} id - ID de l’enchère
+ */
 export const deleteAuctionById = async (req, res) => {
     const id = Number(req.params.id)
     if (isNaN(id)) {
@@ -90,6 +109,12 @@ export const deleteAuctionById = async (req, res) => {
     }
 }
 
+/**
+ * Met à jour une enchère par son ID.
+ * @route PUT /auctions/:id
+ * @param {number} id - ID de l’enchère
+ * @body { title?, description?, initialPrice?, actualBidPrice?, startBidDate?, endBidDate?, buyerId?, stateId? }
+ */
 export const updateAuctionById = async (req, res) => {
     const id = Number(req.params.id)
     if (isNaN(id)) {
@@ -121,6 +146,11 @@ export const updateAuctionById = async (req, res) => {
     }
 }
 
+/**
+ * Récupère les enchères selon leur état.
+ * @route GET /auctions/state/:state
+ * @param {string} state - État de l’enchère (Open, Pending, etc.)
+ */
 export const getAuctionsByState = async (req, res) => {
     const { state } = req.params
 
@@ -147,6 +177,11 @@ export const getAuctionsByState = async (req, res) => {
     }
 }
 
+/**
+ * Récupère les enchères selon une fourchette de prix.
+ * @route POST /auctions/price-range
+ * @body { minprice?, maxprice? }
+ */
 export const getAuctionByPriceRange = async (req, res) => {
     const { minprice, maxprice } = req.body;
     const minPrice = minprice !== undefined ? parseFloat(minprice) : undefined;
@@ -204,6 +239,11 @@ export const getAuctionByPriceRange = async (req, res) => {
 
 
 
+/**
+ * Récupère les enchères d’un vendeur donné.
+ * @route GET /auctions/seller/:sellerId
+ * @param {number} sellerId - ID du vendeur
+ */
 export const AuctionBySellerId = (req, res) => {
     const { sellerId } = req.params
 

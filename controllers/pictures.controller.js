@@ -1,13 +1,9 @@
 import { getPictures, createPicture, getById, deleteById, updateById } from '../services/pictures.services.js'
 
-// export const getAllPictures = (req, res) => {
-//     const pictures = getPictures()
-//     res.json({
-//         success: true,
-//         pictures: getPictures(),
-//     })
-// }
-
+/**
+ * Récupère toutes les images.
+ * @route GET /pictures
+ */
 export const getAllPictures = async (req, res) => {
     const pictures = await getPictures()
     res.json({
@@ -16,6 +12,11 @@ export const getAllPictures = async (req, res) => {
     })
 }
 
+/**
+ * Crée une nouvelle image pour une enchère.
+ * @route POST /pictures
+ * @body { path, auction_id }
+ */
 export const createNewPicture = async (req, res) => {
     let { path, auction_id } = req.body
     if (!path || !auction_id) {
@@ -46,25 +47,11 @@ export const createNewPicture = async (req, res) => {
     }
 }
 
-
-// export const getPictureById = async (req, res) => {
-//     const { id } = req.params
-
-//     const picture = await getById(id)
-
-//     if (!picture) {
-//         return res.status(404).json({
-//             success: false,
-//             message: 'Picture not found',
-//         })
-//     }
-
-//     res.json({
-//         success: true,
-//         picture,
-//     })
-// }
-
+/**
+ * Récupère une image par son ID.
+ * @route GET /pictures/:id
+ * @param {number} id - ID de l'image
+ */
 export const getPictureById = async (req, res) => {
     const { id } = req.params
     const picture = await getById(id)
@@ -80,26 +67,11 @@ export const getPictureById = async (req, res) => {
     })
 }
 
-// export const deletePictureById = (req, res) => {
-//     const { id } = req.params
-
-//     const picture = getById(id)
-
-//     if (!picture) {
-//         return res.status(404).json({
-//             success: false,
-//             message: 'Picture not found',
-//         })
-//     }
-
-//     deleteById(id)
-
-//     res.json({
-//         success: true,
-//         message: 'Picture deleted successfully',
-//     })
-// }
-
+/**
+ * Supprime une image par son ID.
+ * @route DELETE /pictures/:id
+ * @param {number} id - ID de l'image
+ */
 export const deletePictureById = async (req, res) => {
     const { id } = req.params
 
@@ -120,6 +92,11 @@ export const deletePictureById = async (req, res) => {
     })
 }
 
+/**
+ * Récupère toutes les images d'une enchère.
+ * @route GET /pictures/auction/:auction_id
+ * @param {number} auction_id - ID de l'enchère
+ */
 export const getPicturesByAuctionId = async (req, res) => {
     const { auction_id } = req.params
 
@@ -138,26 +115,11 @@ export const getPicturesByAuctionId = async (req, res) => {
     })
 }
 
-// export const deletePicturesByAuctionId = (req, res) => {
-//     const { auction_id } = req.params
-
-//     const pictures = getPictures().filter(picture => picture.auction_id === auction_id)
-
-//     if (pictures.length === 0) {
-//         return res.status(404).json({
-//             success: false,
-//             message: 'No pictures found for this auction',
-//         })
-//     }
-
-//     pictures.forEach(picture => deleteById(picture.id))
-
-//     res.json({
-//         success: true,
-//         message: 'Pictures deleted successfully',
-//     })
-// }
-
+/**
+ * Supprime toutes les images d'une enchère.
+ * @route DELETE /pictures/auction/:auction_id
+ * @param {number} auction_id - ID de l'enchère
+ */
 export const deletePicturesByAuctionId = async (req, res) => {
     const { auction_id } = req.params
 
@@ -178,7 +140,12 @@ export const deletePicturesByAuctionId = async (req, res) => {
     })
 }
 
-
+/**
+ * Met à jour une image par son ID.
+ * @route PUT /pictures/:id
+ * @param {number} id - ID de l'image
+ * @body { path? }
+ */
 export const updatePictureById = async (req, res) => {
     const { id } = req.params
     const { path, auction_id } = req.body

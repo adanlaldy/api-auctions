@@ -4,6 +4,10 @@ import { PrismaClient } from '../generated/prisma/index.js';
 dotenv.config()
 const prisma = new PrismaClient()
 
+/**
+ * Récupère toutes les enchères.
+ * @returns {Promise<Array>} Liste des enchères
+ */
 export const getAll = async () => {
     try {
         const auctions = await prisma.auction.findMany()
@@ -15,6 +19,11 @@ export const getAll = async () => {
     }
 }
 
+/**
+ * Crée une nouvelle enchère.
+ * @param {Object} auction - Données de l'enchère à créer
+ * @returns {Promise<Object>} L'enchère créée
+ */
 export const create = async (auction) => {
     try {
         const newAuction = await prisma.auction.create({
@@ -64,6 +73,11 @@ export const create = async (auction) => {
     }
 }
 
+/**
+ * Récupère une enchère par son ID.
+ * @param {number} id - ID de l'enchère
+ * @returns {Promise<Object|null>} L'enchère ou null si non trouvée
+ */
 export const getById = async (id) => {
     try {
         const auction = await prisma.auction.findUnique({
@@ -83,6 +97,10 @@ export const getById = async (id) => {
     }
 }
 
+/**
+ * Supprime une enchère par son ID.
+ * @param {number} id - ID de l'enchère
+ */
 export const deleteById = async (id) => {
     try {
         await prisma.auction.delete({
@@ -96,6 +114,11 @@ export const deleteById = async (id) => {
     }
 }
 
+/**
+ * Met à jour une enchère par son ID.
+ * @param {number} id - ID de l'enchère
+ * @param {Object} auction - Données à mettre à jour
+ */
 export const updateById = async (id, auction) => {
     try {
         await prisma.auction.update({
