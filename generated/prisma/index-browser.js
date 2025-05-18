@@ -120,6 +120,61 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   Serializable: 'Serializable'
 });
 
+exports.Prisma.LikesScalarFieldEnum = {
+  id: 'id',
+  user_id: 'user_id',
+  auction_id: 'auction_id'
+};
+
+exports.Prisma.MessagesScalarFieldEnum = {
+  id: 'id',
+  message: 'message',
+  conversation_id: 'conversation_id',
+  created_at: 'created_at',
+  is_read: 'is_read'
+};
+
+exports.Prisma.ConversationsScalarFieldEnum = {
+  id: 'id',
+  last_message_at: 'last_message_at',
+  created_at: 'created_at',
+  user1_id: 'user1_id',
+  user2_id: 'user2_id'
+};
+
+exports.Prisma.NotificationsScalarFieldEnum = {
+  id: 'id',
+  content: 'content',
+  is_read: 'is_read',
+  created_at: 'created_at',
+  user_id: 'user_id',
+  auction_id: 'auction_id',
+  message_id: 'message_id'
+};
+
+exports.Prisma.PurchasesScalarFieldEnum = {
+  id: 'id',
+  purchase_date: 'purchase_date',
+  final_price: 'final_price',
+  auction_id: 'auction_id',
+  user_id: 'user_id'
+};
+
+exports.Prisma.UsersScalarFieldEnum = {
+  id: 'id',
+  first_name: 'first_name',
+  last_name: 'last_name',
+  birth_date: 'birth_date',
+  email: 'email',
+  password: 'password',
+  picture: 'picture',
+  balance: 'balance',
+  role: 'role',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted_at: 'deleted_at'
+};
+
 exports.Prisma.FileScalarFieldEnum = {
   id: 'id',
   content: 'content',
@@ -165,9 +220,8 @@ exports.Prisma.SortOrder = {
   desc: 'desc'
 };
 
-exports.Prisma.QueryMode = {
-  default: 'default',
-  insensitive: 'insensitive'
+exports.Prisma.MessagesOrderByRelevanceFieldEnum = {
+  message: 'message'
 };
 
 exports.Prisma.NullsOrder = {
@@ -175,8 +229,49 @@ exports.Prisma.NullsOrder = {
   last: 'last'
 };
 
+exports.Prisma.NotificationsOrderByRelevanceFieldEnum = {
+  content: 'content'
+};
+
+exports.Prisma.UsersOrderByRelevanceFieldEnum = {
+  first_name: 'first_name',
+  last_name: 'last_name',
+  email: 'email',
+  password: 'password',
+  picture: 'picture',
+  role: 'role'
+};
+
+exports.Prisma.FileOrderByRelevanceFieldEnum = {
+  content: 'content',
+  contentType: 'contentType'
+};
+
+exports.Prisma.AuctionOrderByRelevanceFieldEnum = {
+  title: 'title',
+  description: 'description'
+};
+
+exports.Prisma.PictureOrderByRelevanceFieldEnum = {
+  path: 'path'
+};
+
+exports.Prisma.TagOrderByRelevanceFieldEnum = {
+  name: 'name'
+};
+
+exports.Prisma.StateOrderByRelevanceFieldEnum = {
+  stateType: 'stateType'
+};
+
 
 exports.Prisma.ModelName = {
+  Likes: 'Likes',
+  Messages: 'Messages',
+  Conversations: 'Conversations',
+  Notifications: 'Notifications',
+  Purchases: 'Purchases',
+  Users: 'Users',
   File: 'File',
   Auction: 'Auction',
   Picture: 'Picture',
