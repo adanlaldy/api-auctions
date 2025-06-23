@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mon-backend-api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=exemple
+      - DB_NAME=mon_app
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  db:
+    image: mariadb:11
+    container_name: mon-backend-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=Oui
+      - MYSQL_DATABASE=Valorium
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  db_data:
