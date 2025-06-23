@@ -4,7 +4,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -12,11 +12,10 @@ model Likes {
   id         Int     @id @default(autoincrement())
   user_id    Int
   auction_id Int
-  auction    Auction @relation(fields: [auction_id], references: [id], map: "Likes_auction_id_fk")
-  user       Users   @relation(fields: [user_id], references: [id], map: "Likes_user_id_fk")
+  user       Users   @relation(fields: [user_id], references: [id])
+  auction    Auction @relation(fields: [auction_id], references: [id])
 
   @@index([user_id], map: "Like_user_id_fkey")
-  @@index([auction_id], map: "Likes_auction_id_fkey")
 }
 
 model Messages {
@@ -25,20 +24,19 @@ model Messages {
   conversation_id Int
   created_at      DateTime      @default(now())
   is_read         Boolean       @default(false)
-  conversation    Conversations @relation(fields: [conversation_id], references: [id], map: "Messages_conversation_id_fk")
-
-  @@index([conversation_id], map: "Messages_conversation_id_fkey")
+  conversation    Conversations @relation(fields: [conversation_id], references: [id])
 }
 
 model Conversations {
-  id              Int        @id @default(autoincrement())
+  id              Int       @id @default(autoincrement())
   last_message_at DateTime?
-  created_at      DateTime   @default(now())
+  created_at      DateTime  @default(now())
   user1_id        Int
   user2_id        Int
-  user1           Users      @relation("User1", fields: [user1_id], references: [id], map: "Conversation_user1_id_fk")
-  user2           Users      @relation("User2", fields: [user2_id], references: [id], map: "Conversation_user2_id_fk")
-  message         Messages[]
+  user1           Users     @relation("User1", fields: [user1_id], references: [id])
+  user2           Users     @relation("User2", fields: [user2_id], references: [id])
+
+  message Messages[]
 
   @@index([user1_id], map: "Conversation_user1_id_fkey")
   @@index([user2_id], map: "Conversation_user2_id_fkey")
@@ -52,57 +50,56 @@ model Notifications {
   user_id    Int
   auction_id Int
   message_id Int?
-  auction    Auction  @relation(fields: [auction_id], references: [id], map: "Notifications_auction_id_fk")
-  user       Users    @relation(fields: [user_id], references: [id], map: "Notifications_user_id_fk")
+  user       Users    @relation(fields: [user_id], references: [id])
+  auction    Auction  @relation(fields: [auction_id], references: [id])
 
   @@index([user_id], map: "Notification_user_id_fkey")
-  @@index([auction_id], map: "Notifications_auction_id_fkey")
 }
 
 model Purchases {
   id            Int      @id @default(autoincrement())
   purchase_date DateTime @default(now())
-  final_price   Float
+  final_price   Float    @db.Float
   auction_id    Int
   user_id       Int
-  auction       Auction  @relation(fields: [auction_id], references: [id], map: "Purchases_auction_id_fk")
-  user          Users    @relation(fields: [user_id], references: [id], map: "Purchases_user_id_fk")
+  user          Users    @relation(fields: [user_id], references: [id])
+  auction       Auction  @relation(fields: [auction_id], references: [id])
 
   @@index([user_id], map: "Purchase_user_id_fkey")
-  @@index([auction_id], map: "Purchases_auction_id_fkey")
 }
 
 model Users {
-  id            Int             @id @default(autoincrement())
-  first_name    String          @db.VarChar(255)
-  last_name     String          @db.VarChar(255)
-  birth_date    DateTime        @db.Date
-  email         String          @db.VarChar(255)
-  password      String          @db.VarChar(255)
-  picture       String?         @db.VarChar(255)
-  balance       Float
-  role          String          @db.VarChar(255)
-  created_at    DateTime        @default(now())
-  updated_at    DateTime        @db.Date
-  deleted_at    DateTime?       @db.Date
-  buyer         Auction[]       @relation("Buyer", map: "Buyer_fkey")
-  seller        Auction[]       @relation("Seller", map: "Seller_fkey")
-  user1         Conversations[] @relation("User1", map: "User1_fkey")
-  user2         Conversations[] @relation("User2", map: "User2_fkey")
+  id         Int       @id @default(autoincrement())
+  first_name String    @db.VarChar(255)
+  last_name  String    @db.VarChar(255)
+  birth_date DateTime  @db.Date
+  email      String    @db.VarChar(255)
+  password   String    @db.VarChar(255)
+  picture    String?   @db.VarChar(255)
+  balance    Float     @db.Float
+  role       String    @db.VarChar(255)
+  created_at DateTime  @default(now())
+  updated_at DateTime  @db.Date
+  deleted_at DateTime? @db.Date
+
+  user1         Conversations[] @relation("User1")
+  user2         Conversations[] @relation("User2")
   likes         Likes[]
   notifications Notifications[]
   purchases     Purchases[]
+  buyer         Auction[]       @relation("Buyer")
+  seller        Auction[]       @relation("Seller")
 }
 
 model File {
   id          Int       @id @default(autoincrement())
   content     String
   contentType String
-  auctions    Auction[]
+  auctions    Auction[] // Relation inverse (facultative si un fichier peut être lié à plusieurs enchères)
 }
 
 model Auction {
-  id             Int             @id @default(autoincrement())
+  id             Int       @id @default(autoincrement())
   title          String
   description    String
   fileId         Int
@@ -110,37 +107,31 @@ model Auction {
   actualBidPrice Float
   startBidDate   DateTime
   endBidDate     DateTime?
-  createdAt      DateTime        @default(now())
-  updatedAt      DateTime        @updatedAt
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
   deletedAt      DateTime?
   tagId          Int
   sellerId       Int
   buyerId        Int?
   stateId        Int
-  buyer          Users?          @relation("Buyer", fields: [buyerId], references: [id], map: "Auction_buyerId_fk")
-  file           File            @relation(fields: [fileId], references: [id], map: "Auction_fileId_fk")
-  seller         Users           @relation("Seller", fields: [sellerId], references: [id], map: "Auction_sellerId_fk")
-  state          State           @relation(fields: [stateId], references: [id], map: "Auction_stateId_fk")
-  tag            Tag             @relation(fields: [tagId], references: [id], map: "Auction_tagId_fk")
-  likes          Likes[]         @relation(map: "Auction_likes_fk")
-  notifications  Notifications[] @relation(map: "Auction_notifications_fk")
-  pictures       Picture[]       @relation(map: "Auction_pictures_fk")
-  purchases      Purchases[]     @relation(map: "Auction_purchases_fk")
 
-  @@index([buyerId], map: "Auction_buyerId_fkey")
-  @@index([fileId], map: "Auction_fileId_fkey")
-  @@index([sellerId], map: "Auction_sellerId_fkey")
-  @@index([stateId], map: "Auction_stateId_fkey")
-  @@index([tagId], map: "Auction_tagId_fkey")
+  seller        Users           @relation("Seller", fields: [sellerId], references: [id])
+  buyer         Users?          @relation("Buyer", fields: [buyerId], references: [id])
+  file          File            @relation(fields: [fileId], references: [id])
+  tag           Tag             @relation(fields: [tagId], references: [id])
+  state         State           @relation(fields: [stateId], references: [id])
+  pictures      Picture[]
+  likes         Likes[]
+  notifications Notifications[]
+  purchases     Purchases[]
 }
 
 model Picture {
-  id        Int     @id @default(autoincrement())
+  id        Int    @id @default(autoincrement())
   path      String
   auctionId Int
-  auction   Auction @relation(fields: [auctionId], references: [id], map: "Picture_auctionId_fk")
 
-  @@index([auctionId], map: "Picture_auctionId_fkey")
+  auction Auction @relation(fields: [auctionId], references: [id])
 }
 
 model Tag {

@@ -26,74 +26,52 @@ export const getAll = async () => {
  */
 export const create = async (auction) => {
     try {
-        // Trouver l'id du state "Pending"
-        const pendingState = await prisma.state.findUnique({
-            where: { stateType: "Pending" }
-        });
-
-        if (!pendingState) {
-            throw new Error("Pending state not found");
-        }
-
-        const newAuctionData = {
-            title: auction.title,
-            description: auction.description,
-            initialPrice: auction.initialPrice,
-            startBidDate: new Date(auction.startBidDate),
-            endBidDate: auction.endBidDate
-                ? new Date(auction.endBidDate)
-                : new Date(new Date(auction.startBidDate).getTime() + 7 * 24 * 60 * 60 * 1000),
-
-            file: {
-                create: {
-                    content: "default file content",
-                    contentType: "text/plain",
-                },
-            },
-
-            tag: {
-                create: {
-                    name: "default tag",
-                },
-            },
-
-            // Connexion via stateId (clé étrangère)
-            state: {
-                connect: {
-                    id: pendingState.id,
-                },
-            },
-
-            actualBidPrice: 0,
-
-            ...(auction.buyerId && {
-                buyer: {
-                    connect: { id: auction.buyerId },
-                },
-            }),
-
-            pictures: {
-                create: [],
-            },
-
-            seller: {
-                connect: { id: auction.sellerId },
-            },
-        };
-
         const newAuction = await prisma.auction.create({
-            data: newAuctionData,
+            data: {
+                title: auction.title,
+                description: auction.description,
+                initialPrice: auction.initialPrice,
+                startBidDate: new Date(auction.startBidDate),
+                endBidDate: auction.endBidDate
+                    ? new Date(auction.endBidDate)
+                    : new Date(new Date(auction.startBidDate).getTime() + 7 * 24 * 60 * 60 * 1000),
+
+                file: {
+                    create: {
+                        content: "default file content", // à remplacer
+                        contentType: "text/plain",
+                    },
+                },
+
+                tag: {
+                    create: {
+                        name: "default tag", // à remplacer
+                    },
+                },
+
+                state: {
+                    connect: {
+                        stateType: "pending", // ou l'id si tu préfères: id: 1
+                    },
+                },
+                actualBidPrice: 0,
+                createdAt: new Date(),
+                updatedAt: new Date(),
+                deletedAt: null,
+                buyerId: null,
+                pictures: {
+                    create: [],
+                },
+                sellerId: auction.sellerId,
+            },
         });
 
-        return newAuction;
+        return newAuction
     } catch (error) {
-        console.error("Error creating auction:", error);
-        throw new Error("Failed to create auction");
+        console.error('Error creating auction:', error)
+        throw new Error('Failed to create auction')
     }
-};
-
-
-
+}
 
 /**
  * Récupère une enchère par son ID.

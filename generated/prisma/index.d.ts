@@ -808,10 +808,6 @@ export namespace Prisma {
             args: Prisma.LikesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.LikesCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$LikesPayload>[]
-          }
           delete: {
             args: Prisma.LikesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$LikesPayload>
@@ -827,10 +823,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.LikesUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.LikesUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$LikesPayload>[]
           }
           upsert: {
             args: Prisma.LikesUpsertArgs<ExtArgs>
@@ -882,10 +874,6 @@ export namespace Prisma {
             args: Prisma.MessagesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.MessagesCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$MessagesPayload>[]
-          }
           delete: {
             args: Prisma.MessagesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$MessagesPayload>
@@ -901,10 +889,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.MessagesUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.MessagesUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$MessagesPayload>[]
           }
           upsert: {
             args: Prisma.MessagesUpsertArgs<ExtArgs>
@@ -956,10 +940,6 @@ export namespace Prisma {
             args: Prisma.ConversationsCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.ConversationsCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ConversationsPayload>[]
-          }
           delete: {
             args: Prisma.ConversationsDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$ConversationsPayload>
@@ -975,10 +955,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.ConversationsUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.ConversationsUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$ConversationsPayload>[]
           }
           upsert: {
             args: Prisma.ConversationsUpsertArgs<ExtArgs>
@@ -1030,10 +1006,6 @@ export namespace Prisma {
             args: Prisma.NotificationsCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.NotificationsCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$NotificationsPayload>[]
-          }
           delete: {
             args: Prisma.NotificationsDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$NotificationsPayload>
@@ -1049,10 +1021,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.NotificationsUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.NotificationsUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$NotificationsPayload>[]
           }
           upsert: {
             args: Prisma.NotificationsUpsertArgs<ExtArgs>
@@ -1104,10 +1072,6 @@ export namespace Prisma {
             args: Prisma.PurchasesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.PurchasesCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PurchasesPayload>[]
-          }
           delete: {
             args: Prisma.PurchasesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$PurchasesPayload>
@@ -1123,10 +1087,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.PurchasesUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.PurchasesUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PurchasesPayload>[]
           }
           upsert: {
             args: Prisma.PurchasesUpsertArgs<ExtArgs>
@@ -1178,10 +1138,6 @@ export namespace Prisma {
             args: Prisma.UsersCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.UsersCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$UsersPayload>[]
-          }
           delete: {
             args: Prisma.UsersDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$UsersPayload>
@@ -1197,10 +1153,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.UsersUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.UsersUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$UsersPayload>[]
           }
           upsert: {
             args: Prisma.UsersUpsertArgs<ExtArgs>
@@ -1252,10 +1204,6 @@ export namespace Prisma {
             args: Prisma.FileCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.FileCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FilePayload>[]
-          }
           delete: {
             args: Prisma.FileDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$FilePayload>
@@ -1271,10 +1219,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.FileUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.FileUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FilePayload>[]
           }
           upsert: {
             args: Prisma.FileUpsertArgs<ExtArgs>
@@ -1326,10 +1270,6 @@ export namespace Prisma {
             args: Prisma.AuctionCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.AuctionCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AuctionPayload>[]
-          }
           delete: {
             args: Prisma.AuctionDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$AuctionPayload>
@@ -1345,10 +1285,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.AuctionUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.AuctionUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AuctionPayload>[]
           }
           upsert: {
             args: Prisma.AuctionUpsertArgs<ExtArgs>
@@ -1400,10 +1336,6 @@ export namespace Prisma {
             args: Prisma.PictureCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.PictureCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PicturePayload>[]
-          }
           delete: {
             args: Prisma.PictureDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$PicturePayload>
@@ -1419,10 +1351,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.PictureUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.PictureUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$PicturePayload>[]
           }
           upsert: {
             args: Prisma.PictureUpsertArgs<ExtArgs>
@@ -1474,10 +1402,6 @@ export namespace Prisma {
             args: Prisma.TagCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.TagCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$TagPayload>[]
-          }
           delete: {
             args: Prisma.TagDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$TagPayload>
@@ -1493,10 +1417,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.TagUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.TagUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$TagPayload>[]
           }
           upsert: {
             args: Prisma.TagUpsertArgs<ExtArgs>
@@ -1548,10 +1468,6 @@ export namespace Prisma {
             args: Prisma.StateCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
-          createManyAndReturn: {
-            args: Prisma.StateCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$StatePayload>[]
-          }
           delete: {
             args: Prisma.StateDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$StatePayload>
@@ -1567,10 +1483,6 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.StateUpdateManyArgs<ExtArgs>
             result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.StateUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$StatePayload>[]
           }
           upsert: {
             args: Prisma.StateUpsertArgs<ExtArgs>
@@ -1810,23 +1722,23 @@ export namespace Prisma {
    */
 
   export type UsersCountOutputType = {
-    buyer: number
-    seller: number
     user1: number
     user2: number
     likes: number
     notifications: number
     purchases: number
+    buyer: number
+    seller: number
   }
 
   export type UsersCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    buyer?: boolean | UsersCountOutputTypeCountBuyerArgs
-    seller?: boolean | UsersCountOutputTypeCountSellerArgs
     user1?: boolean | UsersCountOutputTypeCountUser1Args
     user2?: boolean | UsersCountOutputTypeCountUser2Args
     likes?: boolean | UsersCountOutputTypeCountLikesArgs
     notifications?: boolean | UsersCountOutputTypeCountNotificationsArgs
     purchases?: boolean | UsersCountOutputTypeCountPurchasesArgs
+    buyer?: boolean | UsersCountOutputTypeCountBuyerArgs
+    seller?: boolean | UsersCountOutputTypeCountSellerArgs
   }
 
   // Custom InputTypes
@@ -1838,20 +1750,6 @@ export namespace Prisma {
      * Select specific fields to fetch from the UsersCountOutputType
      */
     select?: UsersCountOutputTypeSelect<ExtArgs> | null
-  }
-
-  /**
-   * UsersCountOutputType without action
-   */
-  export type UsersCountOutputTypeCountBuyerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: AuctionWhereInput
-  }
-
-  /**
-   * UsersCountOutputType without action
-   */
-  export type UsersCountOutputTypeCountSellerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: AuctionWhereInput
   }
 
   /**
@@ -1887,6 +1785,20 @@ export namespace Prisma {
    */
   export type UsersCountOutputTypeCountPurchasesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: PurchasesWhereInput
+  }
+
+  /**
+   * UsersCountOutputType without action
+   */
+  export type UsersCountOutputTypeCountBuyerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: AuctionWhereInput
+  }
+
+  /**
+   * UsersCountOutputType without action
+   */
+  export type UsersCountOutputTypeCountSellerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: AuctionWhereInput
   }
 
 
@@ -1926,16 +1838,16 @@ export namespace Prisma {
    */
 
   export type AuctionCountOutputType = {
+    pictures: number
     likes: number
     notifications: number
-    pictures: number
     purchases: number
   }
 
   export type AuctionCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    pictures?: boolean | AuctionCountOutputTypeCountPicturesArgs
     likes?: boolean | AuctionCountOutputTypeCountLikesArgs
     notifications?: boolean | AuctionCountOutputTypeCountNotificationsArgs
-    pictures?: boolean | AuctionCountOutputTypeCountPicturesArgs
     purchases?: boolean | AuctionCountOutputTypeCountPurchasesArgs
   }
 
@@ -1953,6 +1865,13 @@ export namespace Prisma {
   /**
    * AuctionCountOutputType without action
    */
+  export type AuctionCountOutputTypeCountPicturesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: PictureWhereInput
+  }
+
+  /**
+   * AuctionCountOutputType without action
+   */
   export type AuctionCountOutputTypeCountLikesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: LikesWhereInput
   }
@@ -1962,13 +1881,6 @@ export namespace Prisma {
    */
   export type AuctionCountOutputTypeCountNotificationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: NotificationsWhereInput
-  }
-
-  /**
-   * AuctionCountOutputType without action
-   */
-  export type AuctionCountOutputTypeCountPicturesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: PictureWhereInput
   }
 
   /**
@@ -2235,25 +2147,11 @@ export namespace Prisma {
     id?: boolean
     user_id?: boolean
     auction_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
     user?: boolean | UsersDefaultArgs<ExtArgs>
+    auction?: boolean | AuctionDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["likes"]>
 
-  export type LikesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    user_id?: boolean
-    auction_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["likes"]>
 
-  export type LikesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    user_id?: boolean
-    auction_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["likes"]>
 
   export type LikesSelectScalar = {
     id?: boolean
@@ -2263,23 +2161,15 @@ export namespace Prisma {
 
   export type LikesOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "user_id" | "auction_id", ExtArgs["result"]["likes"]>
   export type LikesInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
     user?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type LikesIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type LikesIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
   }
 
   export type $LikesPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Likes"
     objects: {
-      auction: Prisma.$AuctionPayload<ExtArgs>
       user: Prisma.$UsersPayload<ExtArgs>
+      auction: Prisma.$AuctionPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
@@ -2403,30 +2293,6 @@ export namespace Prisma {
     createMany<T extends LikesCreateManyArgs>(args?: SelectSubset<T, LikesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Likes and returns the data saved in the database.
-     * @param {LikesCreateManyAndReturnArgs} args - Arguments to create many Likes.
-     * @example
-     * // Create many Likes
-     * const likes = await prisma.likes.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Likes and only return the `id`
-     * const likesWithIdOnly = await prisma.likes.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends LikesCreateManyAndReturnArgs>(args?: SelectSubset<T, LikesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$LikesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Likes.
      * @param {LikesDeleteArgs} args - Arguments to delete one Likes.
      * @example
@@ -2489,36 +2355,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends LikesUpdateManyArgs>(args: SelectSubset<T, LikesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Likes and returns the data updated in the database.
-     * @param {LikesUpdateManyAndReturnArgs} args - Arguments to update many Likes.
-     * @example
-     * // Update many Likes
-     * const likes = await prisma.likes.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Likes and only return the `id`
-     * const likesWithIdOnly = await prisma.likes.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends LikesUpdateManyAndReturnArgs>(args: SelectSubset<T, LikesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$LikesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Likes.
@@ -2679,8 +2515,8 @@ export namespace Prisma {
    */
   export interface Prisma__LikesClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    auction<T extends AuctionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AuctionDefaultArgs<ExtArgs>>): Prisma__AuctionClient<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     user<T extends UsersDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UsersDefaultArgs<ExtArgs>>): Prisma__UsersClient<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    auction<T extends AuctionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AuctionDefaultArgs<ExtArgs>>): Prisma__AuctionClient<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2946,29 +2782,6 @@ export namespace Prisma {
   }
 
   /**
-   * Likes createManyAndReturn
-   */
-  export type LikesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Likes
-     */
-    select?: LikesSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Likes
-     */
-    omit?: LikesOmit<ExtArgs> | null
-    /**
-     * The data used to create many Likes.
-     */
-    data: LikesCreateManyInput | LikesCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: LikesIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Likes update
    */
   export type LikesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -3010,36 +2823,6 @@ export namespace Prisma {
      * Limit how many Likes to update.
      */
     limit?: number
-  }
-
-  /**
-   * Likes updateManyAndReturn
-   */
-  export type LikesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Likes
-     */
-    select?: LikesSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Likes
-     */
-    omit?: LikesOmit<ExtArgs> | null
-    /**
-     * The data used to update Likes.
-     */
-    data: XOR<LikesUpdateManyMutationInput, LikesUncheckedUpdateManyInput>
-    /**
-     * Filter which Likes to update
-     */
-    where?: LikesWhereInput
-    /**
-     * Limit how many Likes to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: LikesIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -3332,23 +3115,7 @@ export namespace Prisma {
     conversation?: boolean | ConversationsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["messages"]>
 
-  export type MessagesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    message?: boolean
-    conversation_id?: boolean
-    created_at?: boolean
-    is_read?: boolean
-    conversation?: boolean | ConversationsDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["messages"]>
 
-  export type MessagesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    message?: boolean
-    conversation_id?: boolean
-    created_at?: boolean
-    is_read?: boolean
-    conversation?: boolean | ConversationsDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["messages"]>
 
   export type MessagesSelectScalar = {
     id?: boolean
@@ -3360,12 +3127,6 @@ export namespace Prisma {
 
   export type MessagesOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "message" | "conversation_id" | "created_at" | "is_read", ExtArgs["result"]["messages"]>
   export type MessagesInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    conversation?: boolean | ConversationsDefaultArgs<ExtArgs>
-  }
-  export type MessagesIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    conversation?: boolean | ConversationsDefaultArgs<ExtArgs>
-  }
-  export type MessagesIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     conversation?: boolean | ConversationsDefaultArgs<ExtArgs>
   }
 
@@ -3498,30 +3259,6 @@ export namespace Prisma {
     createMany<T extends MessagesCreateManyArgs>(args?: SelectSubset<T, MessagesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Messages and returns the data saved in the database.
-     * @param {MessagesCreateManyAndReturnArgs} args - Arguments to create many Messages.
-     * @example
-     * // Create many Messages
-     * const messages = await prisma.messages.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Messages and only return the `id`
-     * const messagesWithIdOnly = await prisma.messages.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends MessagesCreateManyAndReturnArgs>(args?: SelectSubset<T, MessagesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$MessagesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Messages.
      * @param {MessagesDeleteArgs} args - Arguments to delete one Messages.
      * @example
@@ -3584,36 +3321,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends MessagesUpdateManyArgs>(args: SelectSubset<T, MessagesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Messages and returns the data updated in the database.
-     * @param {MessagesUpdateManyAndReturnArgs} args - Arguments to update many Messages.
-     * @example
-     * // Update many Messages
-     * const messages = await prisma.messages.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Messages and only return the `id`
-     * const messagesWithIdOnly = await prisma.messages.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends MessagesUpdateManyAndReturnArgs>(args: SelectSubset<T, MessagesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$MessagesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Messages.
@@ -4042,29 +3749,6 @@ export namespace Prisma {
   }
 
   /**
-   * Messages createManyAndReturn
-   */
-  export type MessagesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Messages
-     */
-    select?: MessagesSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Messages
-     */
-    omit?: MessagesOmit<ExtArgs> | null
-    /**
-     * The data used to create many Messages.
-     */
-    data: MessagesCreateManyInput | MessagesCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: MessagesIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Messages update
    */
   export type MessagesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4106,36 +3790,6 @@ export namespace Prisma {
      * Limit how many Messages to update.
      */
     limit?: number
-  }
-
-  /**
-   * Messages updateManyAndReturn
-   */
-  export type MessagesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Messages
-     */
-    select?: MessagesSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Messages
-     */
-    omit?: MessagesOmit<ExtArgs> | null
-    /**
-     * The data used to update Messages.
-     */
-    data: XOR<MessagesUpdateManyMutationInput, MessagesUncheckedUpdateManyInput>
-    /**
-     * Filter which Messages to update
-     */
-    where?: MessagesWhereInput
-    /**
-     * Limit how many Messages to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: MessagesIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -4435,25 +4089,7 @@ export namespace Prisma {
     _count?: boolean | ConversationsCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["conversations"]>
 
-  export type ConversationsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    last_message_at?: boolean
-    created_at?: boolean
-    user1_id?: boolean
-    user2_id?: boolean
-    user1?: boolean | UsersDefaultArgs<ExtArgs>
-    user2?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["conversations"]>
 
-  export type ConversationsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    last_message_at?: boolean
-    created_at?: boolean
-    user1_id?: boolean
-    user2_id?: boolean
-    user1?: boolean | UsersDefaultArgs<ExtArgs>
-    user2?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["conversations"]>
 
   export type ConversationsSelectScalar = {
     id?: boolean
@@ -4469,14 +4105,6 @@ export namespace Prisma {
     user2?: boolean | UsersDefaultArgs<ExtArgs>
     message?: boolean | Conversations$messageArgs<ExtArgs>
     _count?: boolean | ConversationsCountOutputTypeDefaultArgs<ExtArgs>
-  }
-  export type ConversationsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    user1?: boolean | UsersDefaultArgs<ExtArgs>
-    user2?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type ConversationsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    user1?: boolean | UsersDefaultArgs<ExtArgs>
-    user2?: boolean | UsersDefaultArgs<ExtArgs>
   }
 
   export type $ConversationsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4610,30 +4238,6 @@ export namespace Prisma {
     createMany<T extends ConversationsCreateManyArgs>(args?: SelectSubset<T, ConversationsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Conversations and returns the data saved in the database.
-     * @param {ConversationsCreateManyAndReturnArgs} args - Arguments to create many Conversations.
-     * @example
-     * // Create many Conversations
-     * const conversations = await prisma.conversations.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Conversations and only return the `id`
-     * const conversationsWithIdOnly = await prisma.conversations.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends ConversationsCreateManyAndReturnArgs>(args?: SelectSubset<T, ConversationsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ConversationsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Conversations.
      * @param {ConversationsDeleteArgs} args - Arguments to delete one Conversations.
      * @example
@@ -4696,36 +4300,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends ConversationsUpdateManyArgs>(args: SelectSubset<T, ConversationsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Conversations and returns the data updated in the database.
-     * @param {ConversationsUpdateManyAndReturnArgs} args - Arguments to update many Conversations.
-     * @example
-     * // Update many Conversations
-     * const conversations = await prisma.conversations.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Conversations and only return the `id`
-     * const conversationsWithIdOnly = await prisma.conversations.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends ConversationsUpdateManyAndReturnArgs>(args: SelectSubset<T, ConversationsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ConversationsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Conversations.
@@ -5156,29 +4730,6 @@ export namespace Prisma {
   }
 
   /**
-   * Conversations createManyAndReturn
-   */
-  export type ConversationsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Conversations
-     */
-    select?: ConversationsSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Conversations
-     */
-    omit?: ConversationsOmit<ExtArgs> | null
-    /**
-     * The data used to create many Conversations.
-     */
-    data: ConversationsCreateManyInput | ConversationsCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ConversationsIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Conversations update
    */
   export type ConversationsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -5220,36 +4771,6 @@ export namespace Prisma {
      * Limit how many Conversations to update.
      */
     limit?: number
-  }
-
-  /**
-   * Conversations updateManyAndReturn
-   */
-  export type ConversationsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Conversations
-     */
-    select?: ConversationsSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Conversations
-     */
-    omit?: ConversationsOmit<ExtArgs> | null
-    /**
-     * The data used to update Conversations.
-     */
-    data: XOR<ConversationsUpdateManyMutationInput, ConversationsUncheckedUpdateManyInput>
-    /**
-     * Filter which Conversations to update
-     */
-    where?: ConversationsWhereInput
-    /**
-     * Limit how many Conversations to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ConversationsIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -5587,33 +5108,11 @@ export namespace Prisma {
     user_id?: boolean
     auction_id?: boolean
     message_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
     user?: boolean | UsersDefaultArgs<ExtArgs>
+    auction?: boolean | AuctionDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["notifications"]>
 
-  export type NotificationsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    content?: boolean
-    is_read?: boolean
-    created_at?: boolean
-    user_id?: boolean
-    auction_id?: boolean
-    message_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["notifications"]>
 
-  export type NotificationsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    content?: boolean
-    is_read?: boolean
-    created_at?: boolean
-    user_id?: boolean
-    auction_id?: boolean
-    message_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["notifications"]>
 
   export type NotificationsSelectScalar = {
     id?: boolean
@@ -5627,23 +5126,15 @@ export namespace Prisma {
 
   export type NotificationsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "content" | "is_read" | "created_at" | "user_id" | "auction_id" | "message_id", ExtArgs["result"]["notifications"]>
   export type NotificationsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
     user?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type NotificationsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type NotificationsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
   }
 
   export type $NotificationsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Notifications"
     objects: {
-      auction: Prisma.$AuctionPayload<ExtArgs>
       user: Prisma.$UsersPayload<ExtArgs>
+      auction: Prisma.$AuctionPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
@@ -5771,30 +5262,6 @@ export namespace Prisma {
     createMany<T extends NotificationsCreateManyArgs>(args?: SelectSubset<T, NotificationsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Notifications and returns the data saved in the database.
-     * @param {NotificationsCreateManyAndReturnArgs} args - Arguments to create many Notifications.
-     * @example
-     * // Create many Notifications
-     * const notifications = await prisma.notifications.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Notifications and only return the `id`
-     * const notificationsWithIdOnly = await prisma.notifications.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends NotificationsCreateManyAndReturnArgs>(args?: SelectSubset<T, NotificationsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Notifications.
      * @param {NotificationsDeleteArgs} args - Arguments to delete one Notifications.
      * @example
@@ -5857,36 +5324,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends NotificationsUpdateManyArgs>(args: SelectSubset<T, NotificationsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Notifications and returns the data updated in the database.
-     * @param {NotificationsUpdateManyAndReturnArgs} args - Arguments to update many Notifications.
-     * @example
-     * // Update many Notifications
-     * const notifications = await prisma.notifications.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Notifications and only return the `id`
-     * const notificationsWithIdOnly = await prisma.notifications.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends NotificationsUpdateManyAndReturnArgs>(args: SelectSubset<T, NotificationsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Notifications.
@@ -6047,8 +5484,8 @@ export namespace Prisma {
    */
   export interface Prisma__NotificationsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    auction<T extends AuctionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AuctionDefaultArgs<ExtArgs>>): Prisma__AuctionClient<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     user<T extends UsersDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UsersDefaultArgs<ExtArgs>>): Prisma__UsersClient<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    auction<T extends AuctionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AuctionDefaultArgs<ExtArgs>>): Prisma__AuctionClient<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -6318,29 +5755,6 @@ export namespace Prisma {
   }
 
   /**
-   * Notifications createManyAndReturn
-   */
-  export type NotificationsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Notifications
-     */
-    select?: NotificationsSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Notifications
-     */
-    omit?: NotificationsOmit<ExtArgs> | null
-    /**
-     * The data used to create many Notifications.
-     */
-    data: NotificationsCreateManyInput | NotificationsCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: NotificationsIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Notifications update
    */
   export type NotificationsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -6382,36 +5796,6 @@ export namespace Prisma {
      * Limit how many Notifications to update.
      */
     limit?: number
-  }
-
-  /**
-   * Notifications updateManyAndReturn
-   */
-  export type NotificationsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Notifications
-     */
-    select?: NotificationsSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Notifications
-     */
-    omit?: NotificationsOmit<ExtArgs> | null
-    /**
-     * The data used to update Notifications.
-     */
-    data: XOR<NotificationsUpdateManyMutationInput, NotificationsUncheckedUpdateManyInput>
-    /**
-     * Filter which Notifications to update
-     */
-    where?: NotificationsWhereInput
-    /**
-     * Limit how many Notifications to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: NotificationsIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -6709,29 +6093,11 @@ export namespace Prisma {
     final_price?: boolean
     auction_id?: boolean
     user_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
     user?: boolean | UsersDefaultArgs<ExtArgs>
+    auction?: boolean | AuctionDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["purchases"]>
 
-  export type PurchasesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    purchase_date?: boolean
-    final_price?: boolean
-    auction_id?: boolean
-    user_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["purchases"]>
 
-  export type PurchasesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    purchase_date?: boolean
-    final_price?: boolean
-    auction_id?: boolean
-    user_id?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["purchases"]>
 
   export type PurchasesSelectScalar = {
     id?: boolean
@@ -6743,23 +6109,15 @@ export namespace Prisma {
 
   export type PurchasesOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "purchase_date" | "final_price" | "auction_id" | "user_id", ExtArgs["result"]["purchases"]>
   export type PurchasesInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
     user?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type PurchasesIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
-  }
-  export type PurchasesIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-    user?: boolean | UsersDefaultArgs<ExtArgs>
   }
 
   export type $PurchasesPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Purchases"
     objects: {
-      auction: Prisma.$AuctionPayload<ExtArgs>
       user: Prisma.$UsersPayload<ExtArgs>
+      auction: Prisma.$AuctionPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
@@ -6885,30 +6243,6 @@ export namespace Prisma {
     createMany<T extends PurchasesCreateManyArgs>(args?: SelectSubset<T, PurchasesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Purchases and returns the data saved in the database.
-     * @param {PurchasesCreateManyAndReturnArgs} args - Arguments to create many Purchases.
-     * @example
-     * // Create many Purchases
-     * const purchases = await prisma.purchases.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Purchases and only return the `id`
-     * const purchasesWithIdOnly = await prisma.purchases.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends PurchasesCreateManyAndReturnArgs>(args?: SelectSubset<T, PurchasesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PurchasesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Purchases.
      * @param {PurchasesDeleteArgs} args - Arguments to delete one Purchases.
      * @example
@@ -6971,36 +6305,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends PurchasesUpdateManyArgs>(args: SelectSubset<T, PurchasesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Purchases and returns the data updated in the database.
-     * @param {PurchasesUpdateManyAndReturnArgs} args - Arguments to update many Purchases.
-     * @example
-     * // Update many Purchases
-     * const purchases = await prisma.purchases.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Purchases and only return the `id`
-     * const purchasesWithIdOnly = await prisma.purchases.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends PurchasesUpdateManyAndReturnArgs>(args: SelectSubset<T, PurchasesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PurchasesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Purchases.
@@ -7161,8 +6465,8 @@ export namespace Prisma {
    */
   export interface Prisma__PurchasesClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    auction<T extends AuctionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AuctionDefaultArgs<ExtArgs>>): Prisma__AuctionClient<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     user<T extends UsersDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UsersDefaultArgs<ExtArgs>>): Prisma__UsersClient<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    auction<T extends AuctionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AuctionDefaultArgs<ExtArgs>>): Prisma__AuctionClient<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -7430,29 +6734,6 @@ export namespace Prisma {
   }
 
   /**
-   * Purchases createManyAndReturn
-   */
-  export type PurchasesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Purchases
-     */
-    select?: PurchasesSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Purchases
-     */
-    omit?: PurchasesOmit<ExtArgs> | null
-    /**
-     * The data used to create many Purchases.
-     */
-    data: PurchasesCreateManyInput | PurchasesCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PurchasesIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Purchases update
    */
   export type PurchasesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -7494,36 +6775,6 @@ export namespace Prisma {
      * Limit how many Purchases to update.
      */
     limit?: number
-  }
-
-  /**
-   * Purchases updateManyAndReturn
-   */
-  export type PurchasesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Purchases
-     */
-    select?: PurchasesSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Purchases
-     */
-    omit?: PurchasesOmit<ExtArgs> | null
-    /**
-     * The data used to update Purchases.
-     */
-    data: XOR<PurchasesUpdateManyMutationInput, PurchasesUncheckedUpdateManyInput>
-    /**
-     * Filter which Purchases to update
-     */
-    where?: PurchasesWhereInput
-    /**
-     * Limit how many Purchases to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PurchasesIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -7869,45 +7120,17 @@ export namespace Prisma {
     created_at?: boolean
     updated_at?: boolean
     deleted_at?: boolean
-    buyer?: boolean | Users$buyerArgs<ExtArgs>
-    seller?: boolean | Users$sellerArgs<ExtArgs>
     user1?: boolean | Users$user1Args<ExtArgs>
     user2?: boolean | Users$user2Args<ExtArgs>
     likes?: boolean | Users$likesArgs<ExtArgs>
     notifications?: boolean | Users$notificationsArgs<ExtArgs>
     purchases?: boolean | Users$purchasesArgs<ExtArgs>
+    buyer?: boolean | Users$buyerArgs<ExtArgs>
+    seller?: boolean | Users$sellerArgs<ExtArgs>
     _count?: boolean | UsersCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["users"]>
 
-  export type UsersSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    first_name?: boolean
-    last_name?: boolean
-    birth_date?: boolean
-    email?: boolean
-    password?: boolean
-    picture?: boolean
-    balance?: boolean
-    role?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    deleted_at?: boolean
-  }, ExtArgs["result"]["users"]>
 
-  export type UsersSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    first_name?: boolean
-    last_name?: boolean
-    birth_date?: boolean
-    email?: boolean
-    password?: boolean
-    picture?: boolean
-    balance?: boolean
-    role?: boolean
-    created_at?: boolean
-    updated_at?: boolean
-    deleted_at?: boolean
-  }, ExtArgs["result"]["users"]>
 
   export type UsersSelectScalar = {
     id?: boolean
@@ -7926,28 +7149,26 @@ export namespace Prisma {
 
   export type UsersOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "first_name" | "last_name" | "birth_date" | "email" | "password" | "picture" | "balance" | "role" | "created_at" | "updated_at" | "deleted_at", ExtArgs["result"]["users"]>
   export type UsersInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    buyer?: boolean | Users$buyerArgs<ExtArgs>
-    seller?: boolean | Users$sellerArgs<ExtArgs>
     user1?: boolean | Users$user1Args<ExtArgs>
     user2?: boolean | Users$user2Args<ExtArgs>
     likes?: boolean | Users$likesArgs<ExtArgs>
     notifications?: boolean | Users$notificationsArgs<ExtArgs>
     purchases?: boolean | Users$purchasesArgs<ExtArgs>
+    buyer?: boolean | Users$buyerArgs<ExtArgs>
+    seller?: boolean | Users$sellerArgs<ExtArgs>
     _count?: boolean | UsersCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type UsersIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
-  export type UsersIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $UsersPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Users"
     objects: {
-      buyer: Prisma.$AuctionPayload<ExtArgs>[]
-      seller: Prisma.$AuctionPayload<ExtArgs>[]
       user1: Prisma.$ConversationsPayload<ExtArgs>[]
       user2: Prisma.$ConversationsPayload<ExtArgs>[]
       likes: Prisma.$LikesPayload<ExtArgs>[]
       notifications: Prisma.$NotificationsPayload<ExtArgs>[]
       purchases: Prisma.$PurchasesPayload<ExtArgs>[]
+      buyer: Prisma.$AuctionPayload<ExtArgs>[]
+      seller: Prisma.$AuctionPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
@@ -8080,30 +7301,6 @@ export namespace Prisma {
     createMany<T extends UsersCreateManyArgs>(args?: SelectSubset<T, UsersCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Users and returns the data saved in the database.
-     * @param {UsersCreateManyAndReturnArgs} args - Arguments to create many Users.
-     * @example
-     * // Create many Users
-     * const users = await prisma.users.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Users and only return the `id`
-     * const usersWithIdOnly = await prisma.users.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends UsersCreateManyAndReturnArgs>(args?: SelectSubset<T, UsersCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Users.
      * @param {UsersDeleteArgs} args - Arguments to delete one Users.
      * @example
@@ -8166,36 +7363,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends UsersUpdateManyArgs>(args: SelectSubset<T, UsersUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Users and returns the data updated in the database.
-     * @param {UsersUpdateManyAndReturnArgs} args - Arguments to update many Users.
-     * @example
-     * // Update many Users
-     * const users = await prisma.users.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Users and only return the `id`
-     * const usersWithIdOnly = await prisma.users.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends UsersUpdateManyAndReturnArgs>(args: SelectSubset<T, UsersUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Users.
@@ -8356,13 +7523,13 @@ export namespace Prisma {
    */
   export interface Prisma__UsersClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    buyer<T extends Users$buyerArgs<ExtArgs> = {}>(args?: Subset<T, Users$buyerArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    seller<T extends Users$sellerArgs<ExtArgs> = {}>(args?: Subset<T, Users$sellerArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     user1<T extends Users$user1Args<ExtArgs> = {}>(args?: Subset<T, Users$user1Args<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ConversationsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     user2<T extends Users$user2Args<ExtArgs> = {}>(args?: Subset<T, Users$user2Args<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ConversationsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     likes<T extends Users$likesArgs<ExtArgs> = {}>(args?: Subset<T, Users$likesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$LikesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     notifications<T extends Users$notificationsArgs<ExtArgs> = {}>(args?: Subset<T, Users$notificationsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     purchases<T extends Users$purchasesArgs<ExtArgs> = {}>(args?: Subset<T, Users$purchasesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PurchasesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    buyer<T extends Users$buyerArgs<ExtArgs> = {}>(args?: Subset<T, Users$buyerArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    seller<T extends Users$sellerArgs<ExtArgs> = {}>(args?: Subset<T, Users$sellerArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -8637,25 +7804,6 @@ export namespace Prisma {
   }
 
   /**
-   * Users createManyAndReturn
-   */
-  export type UsersCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Users
-     */
-    select?: UsersSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Users
-     */
-    omit?: UsersOmit<ExtArgs> | null
-    /**
-     * The data used to create many Users.
-     */
-    data: UsersCreateManyInput | UsersCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
    * Users update
    */
   export type UsersUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -8685,32 +7833,6 @@ export namespace Prisma {
    * Users updateMany
    */
   export type UsersUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to update Users.
-     */
-    data: XOR<UsersUpdateManyMutationInput, UsersUncheckedUpdateManyInput>
-    /**
-     * Filter which Users to update
-     */
-    where?: UsersWhereInput
-    /**
-     * Limit how many Users to update.
-     */
-    limit?: number
-  }
-
-  /**
-   * Users updateManyAndReturn
-   */
-  export type UsersUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Users
-     */
-    select?: UsersSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Users
-     */
-    omit?: UsersOmit<ExtArgs> | null
     /**
      * The data used to update Users.
      */
@@ -8789,54 +7911,6 @@ export namespace Prisma {
      * Limit how many Users to delete.
      */
     limit?: number
-  }
-
-  /**
-   * Users.buyer
-   */
-  export type Users$buyerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Auction
-     */
-    select?: AuctionSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Auction
-     */
-    omit?: AuctionOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AuctionInclude<ExtArgs> | null
-    where?: AuctionWhereInput
-    orderBy?: AuctionOrderByWithRelationInput | AuctionOrderByWithRelationInput[]
-    cursor?: AuctionWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: AuctionScalarFieldEnum | AuctionScalarFieldEnum[]
-  }
-
-  /**
-   * Users.seller
-   */
-  export type Users$sellerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Auction
-     */
-    select?: AuctionSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Auction
-     */
-    omit?: AuctionOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AuctionInclude<ExtArgs> | null
-    where?: AuctionWhereInput
-    orderBy?: AuctionOrderByWithRelationInput | AuctionOrderByWithRelationInput[]
-    cursor?: AuctionWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: AuctionScalarFieldEnum | AuctionScalarFieldEnum[]
   }
 
   /**
@@ -8957,6 +8031,54 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: PurchasesScalarFieldEnum | PurchasesScalarFieldEnum[]
+  }
+
+  /**
+   * Users.buyer
+   */
+  export type Users$buyerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Auction
+     */
+    select?: AuctionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Auction
+     */
+    omit?: AuctionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AuctionInclude<ExtArgs> | null
+    where?: AuctionWhereInput
+    orderBy?: AuctionOrderByWithRelationInput | AuctionOrderByWithRelationInput[]
+    cursor?: AuctionWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: AuctionScalarFieldEnum | AuctionScalarFieldEnum[]
+  }
+
+  /**
+   * Users.seller
+   */
+  export type Users$sellerArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Auction
+     */
+    select?: AuctionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Auction
+     */
+    omit?: AuctionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AuctionInclude<ExtArgs> | null
+    where?: AuctionWhereInput
+    orderBy?: AuctionOrderByWithRelationInput | AuctionOrderByWithRelationInput[]
+    cursor?: AuctionWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: AuctionScalarFieldEnum | AuctionScalarFieldEnum[]
   }
 
   /**
@@ -9164,17 +8286,7 @@ export namespace Prisma {
     _count?: boolean | FileCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["file"]>
 
-  export type FileSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    content?: boolean
-    contentType?: boolean
-  }, ExtArgs["result"]["file"]>
 
-  export type FileSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    content?: boolean
-    contentType?: boolean
-  }, ExtArgs["result"]["file"]>
 
   export type FileSelectScalar = {
     id?: boolean
@@ -9187,8 +8299,6 @@ export namespace Prisma {
     auctions?: boolean | File$auctionsArgs<ExtArgs>
     _count?: boolean | FileCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type FileIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
-  export type FileIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $FilePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "File"
@@ -9317,30 +8427,6 @@ export namespace Prisma {
     createMany<T extends FileCreateManyArgs>(args?: SelectSubset<T, FileCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Files and returns the data saved in the database.
-     * @param {FileCreateManyAndReturnArgs} args - Arguments to create many Files.
-     * @example
-     * // Create many Files
-     * const file = await prisma.file.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Files and only return the `id`
-     * const fileWithIdOnly = await prisma.file.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends FileCreateManyAndReturnArgs>(args?: SelectSubset<T, FileCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FilePayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a File.
      * @param {FileDeleteArgs} args - Arguments to delete one File.
      * @example
@@ -9403,36 +8489,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends FileUpdateManyArgs>(args: SelectSubset<T, FileUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Files and returns the data updated in the database.
-     * @param {FileUpdateManyAndReturnArgs} args - Arguments to update many Files.
-     * @example
-     * // Update many Files
-     * const file = await prisma.file.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Files and only return the `id`
-     * const fileWithIdOnly = await prisma.file.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends FileUpdateManyAndReturnArgs>(args: SelectSubset<T, FileUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FilePayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one File.
@@ -9859,25 +8915,6 @@ export namespace Prisma {
   }
 
   /**
-   * File createManyAndReturn
-   */
-  export type FileCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the File
-     */
-    select?: FileSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the File
-     */
-    omit?: FileOmit<ExtArgs> | null
-    /**
-     * The data used to create many Files.
-     */
-    data: FileCreateManyInput | FileCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
    * File update
    */
   export type FileUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -9907,32 +8944,6 @@ export namespace Prisma {
    * File updateMany
    */
   export type FileUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to update Files.
-     */
-    data: XOR<FileUpdateManyMutationInput, FileUncheckedUpdateManyInput>
-    /**
-     * Filter which Files to update
-     */
-    where?: FileWhereInput
-    /**
-     * Limit how many Files to update.
-     */
-    limit?: number
-  }
-
-  /**
-   * File updateManyAndReturn
-   */
-  export type FileUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the File
-     */
-    select?: FileSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the File
-     */
-    omit?: FileOmit<ExtArgs> | null
     /**
      * The data used to update Files.
      */
@@ -10362,63 +9373,19 @@ export namespace Prisma {
     sellerId?: boolean
     buyerId?: boolean
     stateId?: boolean
+    seller?: boolean | UsersDefaultArgs<ExtArgs>
     buyer?: boolean | Auction$buyerArgs<ExtArgs>
     file?: boolean | FileDefaultArgs<ExtArgs>
-    seller?: boolean | UsersDefaultArgs<ExtArgs>
-    state?: boolean | StateDefaultArgs<ExtArgs>
     tag?: boolean | TagDefaultArgs<ExtArgs>
+    state?: boolean | StateDefaultArgs<ExtArgs>
+    pictures?: boolean | Auction$picturesArgs<ExtArgs>
     likes?: boolean | Auction$likesArgs<ExtArgs>
     notifications?: boolean | Auction$notificationsArgs<ExtArgs>
-    pictures?: boolean | Auction$picturesArgs<ExtArgs>
     purchases?: boolean | Auction$purchasesArgs<ExtArgs>
     _count?: boolean | AuctionCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["auction"]>
 
-  export type AuctionSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    title?: boolean
-    description?: boolean
-    fileId?: boolean
-    initialPrice?: boolean
-    actualBidPrice?: boolean
-    startBidDate?: boolean
-    endBidDate?: boolean
-    createdAt?: boolean
-    updatedAt?: boolean
-    deletedAt?: boolean
-    tagId?: boolean
-    sellerId?: boolean
-    buyerId?: boolean
-    stateId?: boolean
-    buyer?: boolean | Auction$buyerArgs<ExtArgs>
-    file?: boolean | FileDefaultArgs<ExtArgs>
-    seller?: boolean | UsersDefaultArgs<ExtArgs>
-    state?: boolean | StateDefaultArgs<ExtArgs>
-    tag?: boolean | TagDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["auction"]>
 
-  export type AuctionSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    title?: boolean
-    description?: boolean
-    fileId?: boolean
-    initialPrice?: boolean
-    actualBidPrice?: boolean
-    startBidDate?: boolean
-    endBidDate?: boolean
-    createdAt?: boolean
-    updatedAt?: boolean
-    deletedAt?: boolean
-    tagId?: boolean
-    sellerId?: boolean
-    buyerId?: boolean
-    stateId?: boolean
-    buyer?: boolean | Auction$buyerArgs<ExtArgs>
-    file?: boolean | FileDefaultArgs<ExtArgs>
-    seller?: boolean | UsersDefaultArgs<ExtArgs>
-    state?: boolean | StateDefaultArgs<ExtArgs>
-    tag?: boolean | TagDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["auction"]>
 
   export type AuctionSelectScalar = {
     id?: boolean
@@ -10440,43 +9407,29 @@ export namespace Prisma {
 
   export type AuctionOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "description" | "fileId" | "initialPrice" | "actualBidPrice" | "startBidDate" | "endBidDate" | "createdAt" | "updatedAt" | "deletedAt" | "tagId" | "sellerId" | "buyerId" | "stateId", ExtArgs["result"]["auction"]>
   export type AuctionInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    seller?: boolean | UsersDefaultArgs<ExtArgs>
     buyer?: boolean | Auction$buyerArgs<ExtArgs>
     file?: boolean | FileDefaultArgs<ExtArgs>
-    seller?: boolean | UsersDefaultArgs<ExtArgs>
-    state?: boolean | StateDefaultArgs<ExtArgs>
     tag?: boolean | TagDefaultArgs<ExtArgs>
+    state?: boolean | StateDefaultArgs<ExtArgs>
+    pictures?: boolean | Auction$picturesArgs<ExtArgs>
     likes?: boolean | Auction$likesArgs<ExtArgs>
     notifications?: boolean | Auction$notificationsArgs<ExtArgs>
-    pictures?: boolean | Auction$picturesArgs<ExtArgs>
     purchases?: boolean | Auction$purchasesArgs<ExtArgs>
     _count?: boolean | AuctionCountOutputTypeDefaultArgs<ExtArgs>
-  }
-  export type AuctionIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    buyer?: boolean | Auction$buyerArgs<ExtArgs>
-    file?: boolean | FileDefaultArgs<ExtArgs>
-    seller?: boolean | UsersDefaultArgs<ExtArgs>
-    state?: boolean | StateDefaultArgs<ExtArgs>
-    tag?: boolean | TagDefaultArgs<ExtArgs>
-  }
-  export type AuctionIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    buyer?: boolean | Auction$buyerArgs<ExtArgs>
-    file?: boolean | FileDefaultArgs<ExtArgs>
-    seller?: boolean | UsersDefaultArgs<ExtArgs>
-    state?: boolean | StateDefaultArgs<ExtArgs>
-    tag?: boolean | TagDefaultArgs<ExtArgs>
   }
 
   export type $AuctionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Auction"
     objects: {
+      seller: Prisma.$UsersPayload<ExtArgs>
       buyer: Prisma.$UsersPayload<ExtArgs> | null
       file: Prisma.$FilePayload<ExtArgs>
-      seller: Prisma.$UsersPayload<ExtArgs>
-      state: Prisma.$StatePayload<ExtArgs>
       tag: Prisma.$TagPayload<ExtArgs>
+      state: Prisma.$StatePayload<ExtArgs>
+      pictures: Prisma.$PicturePayload<ExtArgs>[]
       likes: Prisma.$LikesPayload<ExtArgs>[]
       notifications: Prisma.$NotificationsPayload<ExtArgs>[]
-      pictures: Prisma.$PicturePayload<ExtArgs>[]
       purchases: Prisma.$PurchasesPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
@@ -10613,30 +9566,6 @@ export namespace Prisma {
     createMany<T extends AuctionCreateManyArgs>(args?: SelectSubset<T, AuctionCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Auctions and returns the data saved in the database.
-     * @param {AuctionCreateManyAndReturnArgs} args - Arguments to create many Auctions.
-     * @example
-     * // Create many Auctions
-     * const auction = await prisma.auction.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Auctions and only return the `id`
-     * const auctionWithIdOnly = await prisma.auction.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends AuctionCreateManyAndReturnArgs>(args?: SelectSubset<T, AuctionCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Auction.
      * @param {AuctionDeleteArgs} args - Arguments to delete one Auction.
      * @example
@@ -10699,36 +9628,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends AuctionUpdateManyArgs>(args: SelectSubset<T, AuctionUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Auctions and returns the data updated in the database.
-     * @param {AuctionUpdateManyAndReturnArgs} args - Arguments to update many Auctions.
-     * @example
-     * // Update many Auctions
-     * const auction = await prisma.auction.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Auctions and only return the `id`
-     * const auctionWithIdOnly = await prisma.auction.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends AuctionUpdateManyAndReturnArgs>(args: SelectSubset<T, AuctionUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AuctionPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Auction.
@@ -10889,14 +9788,14 @@ export namespace Prisma {
    */
   export interface Prisma__AuctionClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
+    seller<T extends UsersDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UsersDefaultArgs<ExtArgs>>): Prisma__UsersClient<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     buyer<T extends Auction$buyerArgs<ExtArgs> = {}>(args?: Subset<T, Auction$buyerArgs<ExtArgs>>): Prisma__UsersClient<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
     file<T extends FileDefaultArgs<ExtArgs> = {}>(args?: Subset<T, FileDefaultArgs<ExtArgs>>): Prisma__FileClient<$Result.GetResult<Prisma.$FilePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    seller<T extends UsersDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UsersDefaultArgs<ExtArgs>>): Prisma__UsersClient<$Result.GetResult<Prisma.$UsersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    state<T extends StateDefaultArgs<ExtArgs> = {}>(args?: Subset<T, StateDefaultArgs<ExtArgs>>): Prisma__StateClient<$Result.GetResult<Prisma.$StatePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     tag<T extends TagDefaultArgs<ExtArgs> = {}>(args?: Subset<T, TagDefaultArgs<ExtArgs>>): Prisma__TagClient<$Result.GetResult<Prisma.$TagPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    state<T extends StateDefaultArgs<ExtArgs> = {}>(args?: Subset<T, StateDefaultArgs<ExtArgs>>): Prisma__StateClient<$Result.GetResult<Prisma.$StatePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    pictures<T extends Auction$picturesArgs<ExtArgs> = {}>(args?: Subset<T, Auction$picturesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PicturePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     likes<T extends Auction$likesArgs<ExtArgs> = {}>(args?: Subset<T, Auction$likesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$LikesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     notifications<T extends Auction$notificationsArgs<ExtArgs> = {}>(args?: Subset<T, Auction$notificationsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    pictures<T extends Auction$picturesArgs<ExtArgs> = {}>(args?: Subset<T, Auction$picturesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PicturePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     purchases<T extends Auction$purchasesArgs<ExtArgs> = {}>(args?: Subset<T, Auction$purchasesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PurchasesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -11175,29 +10074,6 @@ export namespace Prisma {
   }
 
   /**
-   * Auction createManyAndReturn
-   */
-  export type AuctionCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Auction
-     */
-    select?: AuctionSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Auction
-     */
-    omit?: AuctionOmit<ExtArgs> | null
-    /**
-     * The data used to create many Auctions.
-     */
-    data: AuctionCreateManyInput | AuctionCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AuctionIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Auction update
    */
   export type AuctionUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -11239,36 +10115,6 @@ export namespace Prisma {
      * Limit how many Auctions to update.
      */
     limit?: number
-  }
-
-  /**
-   * Auction updateManyAndReturn
-   */
-  export type AuctionUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Auction
-     */
-    select?: AuctionSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Auction
-     */
-    omit?: AuctionOmit<ExtArgs> | null
-    /**
-     * The data used to update Auctions.
-     */
-    data: XOR<AuctionUpdateManyMutationInput, AuctionUncheckedUpdateManyInput>
-    /**
-     * Filter which Auctions to update
-     */
-    where?: AuctionWhereInput
-    /**
-     * Limit how many Auctions to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AuctionIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -11357,6 +10203,30 @@ export namespace Prisma {
   }
 
   /**
+   * Auction.pictures
+   */
+  export type Auction$picturesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Picture
+     */
+    select?: PictureSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Picture
+     */
+    omit?: PictureOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PictureInclude<ExtArgs> | null
+    where?: PictureWhereInput
+    orderBy?: PictureOrderByWithRelationInput | PictureOrderByWithRelationInput[]
+    cursor?: PictureWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: PictureScalarFieldEnum | PictureScalarFieldEnum[]
+  }
+
+  /**
    * Auction.likes
    */
   export type Auction$likesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -11402,30 +10272,6 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: NotificationsScalarFieldEnum | NotificationsScalarFieldEnum[]
-  }
-
-  /**
-   * Auction.pictures
-   */
-  export type Auction$picturesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Picture
-     */
-    select?: PictureSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Picture
-     */
-    omit?: PictureOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PictureInclude<ExtArgs> | null
-    where?: PictureWhereInput
-    orderBy?: PictureOrderByWithRelationInput | PictureOrderByWithRelationInput[]
-    cursor?: PictureWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: PictureScalarFieldEnum | PictureScalarFieldEnum[]
   }
 
   /**
@@ -11660,19 +10506,7 @@ export namespace Prisma {
     auction?: boolean | AuctionDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["picture"]>
 
-  export type PictureSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    path?: boolean
-    auctionId?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["picture"]>
 
-  export type PictureSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    path?: boolean
-    auctionId?: boolean
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["picture"]>
 
   export type PictureSelectScalar = {
     id?: boolean
@@ -11682,12 +10516,6 @@ export namespace Prisma {
 
   export type PictureOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "path" | "auctionId", ExtArgs["result"]["picture"]>
   export type PictureInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-  }
-  export type PictureIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    auction?: boolean | AuctionDefaultArgs<ExtArgs>
-  }
-  export type PictureIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     auction?: boolean | AuctionDefaultArgs<ExtArgs>
   }
 
@@ -11818,30 +10646,6 @@ export namespace Prisma {
     createMany<T extends PictureCreateManyArgs>(args?: SelectSubset<T, PictureCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Pictures and returns the data saved in the database.
-     * @param {PictureCreateManyAndReturnArgs} args - Arguments to create many Pictures.
-     * @example
-     * // Create many Pictures
-     * const picture = await prisma.picture.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Pictures and only return the `id`
-     * const pictureWithIdOnly = await prisma.picture.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends PictureCreateManyAndReturnArgs>(args?: SelectSubset<T, PictureCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PicturePayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Picture.
      * @param {PictureDeleteArgs} args - Arguments to delete one Picture.
      * @example
@@ -11904,36 +10708,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends PictureUpdateManyArgs>(args: SelectSubset<T, PictureUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Pictures and returns the data updated in the database.
-     * @param {PictureUpdateManyAndReturnArgs} args - Arguments to update many Pictures.
-     * @example
-     * // Update many Pictures
-     * const picture = await prisma.picture.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Pictures and only return the `id`
-     * const pictureWithIdOnly = await prisma.picture.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends PictureUpdateManyAndReturnArgs>(args: SelectSubset<T, PictureUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PicturePayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Picture.
@@ -12360,29 +11134,6 @@ export namespace Prisma {
   }
 
   /**
-   * Picture createManyAndReturn
-   */
-  export type PictureCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Picture
-     */
-    select?: PictureSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Picture
-     */
-    omit?: PictureOmit<ExtArgs> | null
-    /**
-     * The data used to create many Pictures.
-     */
-    data: PictureCreateManyInput | PictureCreateManyInput[]
-    skipDuplicates?: boolean
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PictureIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
    * Picture update
    */
   export type PictureUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -12424,36 +11175,6 @@ export namespace Prisma {
      * Limit how many Pictures to update.
      */
     limit?: number
-  }
-
-  /**
-   * Picture updateManyAndReturn
-   */
-  export type PictureUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Picture
-     */
-    select?: PictureSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Picture
-     */
-    omit?: PictureOmit<ExtArgs> | null
-    /**
-     * The data used to update Pictures.
-     */
-    data: XOR<PictureUpdateManyMutationInput, PictureUncheckedUpdateManyInput>
-    /**
-     * Filter which Pictures to update
-     */
-    where?: PictureWhereInput
-    /**
-     * Limit how many Pictures to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: PictureIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -12719,15 +11440,7 @@ export namespace Prisma {
     _count?: boolean | TagCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["tag"]>
 
-  export type TagSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-  }, ExtArgs["result"]["tag"]>
 
-  export type TagSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-  }, ExtArgs["result"]["tag"]>
 
   export type TagSelectScalar = {
     id?: boolean
@@ -12739,8 +11452,6 @@ export namespace Prisma {
     auctions?: boolean | Tag$auctionsArgs<ExtArgs>
     _count?: boolean | TagCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type TagIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
-  export type TagIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $TagPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Tag"
@@ -12868,30 +11579,6 @@ export namespace Prisma {
     createMany<T extends TagCreateManyArgs>(args?: SelectSubset<T, TagCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Tags and returns the data saved in the database.
-     * @param {TagCreateManyAndReturnArgs} args - Arguments to create many Tags.
-     * @example
-     * // Create many Tags
-     * const tag = await prisma.tag.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Tags and only return the `id`
-     * const tagWithIdOnly = await prisma.tag.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends TagCreateManyAndReturnArgs>(args?: SelectSubset<T, TagCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TagPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a Tag.
      * @param {TagDeleteArgs} args - Arguments to delete one Tag.
      * @example
@@ -12954,36 +11641,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends TagUpdateManyArgs>(args: SelectSubset<T, TagUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Tags and returns the data updated in the database.
-     * @param {TagUpdateManyAndReturnArgs} args - Arguments to update many Tags.
-     * @example
-     * // Update many Tags
-     * const tag = await prisma.tag.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Tags and only return the `id`
-     * const tagWithIdOnly = await prisma.tag.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends TagUpdateManyAndReturnArgs>(args: SelectSubset<T, TagUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TagPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Tag.
@@ -13409,25 +12066,6 @@ export namespace Prisma {
   }
 
   /**
-   * Tag createManyAndReturn
-   */
-  export type TagCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Tag
-     */
-    select?: TagSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Tag
-     */
-    omit?: TagOmit<ExtArgs> | null
-    /**
-     * The data used to create many Tags.
-     */
-    data: TagCreateManyInput | TagCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
    * Tag update
    */
   export type TagUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -13457,32 +12095,6 @@ export namespace Prisma {
    * Tag updateMany
    */
   export type TagUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to update Tags.
-     */
-    data: XOR<TagUpdateManyMutationInput, TagUncheckedUpdateManyInput>
-    /**
-     * Filter which Tags to update
-     */
-    where?: TagWhereInput
-    /**
-     * Limit how many Tags to update.
-     */
-    limit?: number
-  }
-
-  /**
-   * Tag updateManyAndReturn
-   */
-  export type TagUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Tag
-     */
-    select?: TagSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Tag
-     */
-    omit?: TagOmit<ExtArgs> | null
     /**
      * The data used to update Tags.
      */
@@ -13784,15 +12396,7 @@ export namespace Prisma {
     _count?: boolean | StateCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["state"]>
 
-  export type StateSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    stateType?: boolean
-  }, ExtArgs["result"]["state"]>
 
-  export type StateSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    stateType?: boolean
-  }, ExtArgs["result"]["state"]>
 
   export type StateSelectScalar = {
     id?: boolean
@@ -13804,8 +12408,6 @@ export namespace Prisma {
     auctions?: boolean | State$auctionsArgs<ExtArgs>
     _count?: boolean | StateCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type StateIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
-  export type StateIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $StatePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "State"
@@ -13933,30 +12535,6 @@ export namespace Prisma {
     createMany<T extends StateCreateManyArgs>(args?: SelectSubset<T, StateCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many States and returns the data saved in the database.
-     * @param {StateCreateManyAndReturnArgs} args - Arguments to create many States.
-     * @example
-     * // Create many States
-     * const state = await prisma.state.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many States and only return the `id`
-     * const stateWithIdOnly = await prisma.state.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends StateCreateManyAndReturnArgs>(args?: SelectSubset<T, StateCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$StatePayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
      * Delete a State.
      * @param {StateDeleteArgs} args - Arguments to delete one State.
      * @example
@@ -14019,36 +12597,6 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends StateUpdateManyArgs>(args: SelectSubset<T, StateUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more States and returns the data updated in the database.
-     * @param {StateUpdateManyAndReturnArgs} args - Arguments to update many States.
-     * @example
-     * // Update many States
-     * const state = await prisma.state.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more States and only return the `id`
-     * const stateWithIdOnly = await prisma.state.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends StateUpdateManyAndReturnArgs>(args: SelectSubset<T, StateUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$StatePayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one State.
@@ -14474,25 +13022,6 @@ export namespace Prisma {
   }
 
   /**
-   * State createManyAndReturn
-   */
-  export type StateCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the State
-     */
-    select?: StateSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the State
-     */
-    omit?: StateOmit<ExtArgs> | null
-    /**
-     * The data used to create many States.
-     */
-    data: StateCreateManyInput | StateCreateManyInput[]
-    skipDuplicates?: boolean
-  }
-
-  /**
    * State update
    */
   export type StateUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -14522,32 +13051,6 @@ export namespace Prisma {
    * State updateMany
    */
   export type StateUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to update States.
-     */
-    data: XOR<StateUpdateManyMutationInput, StateUncheckedUpdateManyInput>
-    /**
-     * Filter which States to update
-     */
-    where?: StateWhereInput
-    /**
-     * Limit how many States to update.
-     */
-    limit?: number
-  }
-
-  /**
-   * State updateManyAndReturn
-   */
-  export type StateUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the State
-     */
-    select?: StateSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the State
-     */
-    omit?: StateOmit<ExtArgs> | null
     /**
      * The data used to update States.
      */
@@ -14821,12 +13324,11 @@ export namespace Prisma {
   export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
 
 
-  export const QueryMode: {
-    default: 'default',
-    insensitive: 'insensitive'
+  export const MessagesOrderByRelevanceFieldEnum: {
+    message: 'message'
   };
 
-  export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
+  export type MessagesOrderByRelevanceFieldEnum = (typeof MessagesOrderByRelevanceFieldEnum)[keyof typeof MessagesOrderByRelevanceFieldEnum]
 
 
   export const NullsOrder: {
@@ -14835,6 +13337,62 @@ export namespace Prisma {
   };
 
   export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
+
+
+  export const NotificationsOrderByRelevanceFieldEnum: {
+    content: 'content'
+  };
+
+  export type NotificationsOrderByRelevanceFieldEnum = (typeof NotificationsOrderByRelevanceFieldEnum)[keyof typeof NotificationsOrderByRelevanceFieldEnum]
+
+
+  export const UsersOrderByRelevanceFieldEnum: {
+    first_name: 'first_name',
+    last_name: 'last_name',
+    email: 'email',
+    password: 'password',
+    picture: 'picture',
+    role: 'role'
+  };
+
+  export type UsersOrderByRelevanceFieldEnum = (typeof UsersOrderByRelevanceFieldEnum)[keyof typeof UsersOrderByRelevanceFieldEnum]
+
+
+  export const FileOrderByRelevanceFieldEnum: {
+    content: 'content',
+    contentType: 'contentType'
+  };
+
+  export type FileOrderByRelevanceFieldEnum = (typeof FileOrderByRelevanceFieldEnum)[keyof typeof FileOrderByRelevanceFieldEnum]
+
+
+  export const AuctionOrderByRelevanceFieldEnum: {
+    title: 'title',
+    description: 'description'
+  };
+
+  export type AuctionOrderByRelevanceFieldEnum = (typeof AuctionOrderByRelevanceFieldEnum)[keyof typeof AuctionOrderByRelevanceFieldEnum]
+
+
+  export const PictureOrderByRelevanceFieldEnum: {
+    path: 'path'
+  };
+
+  export type PictureOrderByRelevanceFieldEnum = (typeof PictureOrderByRelevanceFieldEnum)[keyof typeof PictureOrderByRelevanceFieldEnum]
+
+
+  export const TagOrderByRelevanceFieldEnum: {
+    name: 'name'
+  };
+
+  export type TagOrderByRelevanceFieldEnum = (typeof TagOrderByRelevanceFieldEnum)[keyof typeof TagOrderByRelevanceFieldEnum]
+
+
+  export const StateOrderByRelevanceFieldEnum: {
+    stateType: 'stateType'
+  };
+
+  export type StateOrderByRelevanceFieldEnum = (typeof StateOrderByRelevanceFieldEnum)[keyof typeof StateOrderByRelevanceFieldEnum]
 
 
   /**
@@ -14850,13 +13408,6 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'Int[]'
-   */
-  export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
-    
-
-
-  /**
    * Reference to a field of type 'String'
    */
   export type StringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String'>
@@ -14864,23 +13415,9 @@ export namespace Prisma {
 
 
   /**
-   * Reference to a field of type 'String[]'
-   */
-  export type ListStringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String[]'>
-    
-
-
-  /**
    * Reference to a field of type 'DateTime'
    */
   export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime'>
-    
-
-
-  /**
-   * Reference to a field of type 'DateTime[]'
-   */
-  export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime[]'>
     
 
 
@@ -14896,13 +13433,6 @@ export namespace Prisma {
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
     
-
-
-  /**
-   * Reference to a field of type 'Float[]'
-   */
-  export type ListFloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float[]'>
-    
   /**
    * Deep Input Types
    */
@@ -14915,16 +13445,16 @@ export namespace Prisma {
     id?: IntFilter<"Likes"> | number
     user_id?: IntFilter<"Likes"> | number
     auction_id?: IntFilter<"Likes"> | number
-    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
     user?: XOR<UsersScalarRelationFilter, UsersWhereInput>
+    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
   }
 
   export type LikesOrderByWithRelationInput = {
     id?: SortOrder
     user_id?: SortOrder
     auction_id?: SortOrder
-    auction?: AuctionOrderByWithRelationInput
     user?: UsersOrderByWithRelationInput
+    auction?: AuctionOrderByWithRelationInput
   }
 
   export type LikesWhereUniqueInput = Prisma.AtLeast<{
@@ -14934,8 +13464,8 @@ export namespace Prisma {
     NOT?: LikesWhereInput | LikesWhereInput[]
     user_id?: IntFilter<"Likes"> | number
     auction_id?: IntFilter<"Likes"> | number
-    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
     user?: XOR<UsersScalarRelationFilter, UsersWhereInput>
+    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
   }, "id">
 
   export type LikesOrderByWithAggregationInput = {
@@ -14977,6 +13507,7 @@ export namespace Prisma {
     created_at?: SortOrder
     is_read?: SortOrder
     conversation?: ConversationsOrderByWithRelationInput
+    _relevance?: MessagesOrderByRelevanceInput
   }
 
   export type MessagesWhereUniqueInput = Prisma.AtLeast<{
@@ -15089,8 +13620,8 @@ export namespace Prisma {
     user_id?: IntFilter<"Notifications"> | number
     auction_id?: IntFilter<"Notifications"> | number
     message_id?: IntNullableFilter<"Notifications"> | number | null
-    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
     user?: XOR<UsersScalarRelationFilter, UsersWhereInput>
+    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
   }
 
   export type NotificationsOrderByWithRelationInput = {
@@ -15101,8 +13632,9 @@ export namespace Prisma {
     user_id?: SortOrder
     auction_id?: SortOrder
     message_id?: SortOrderInput | SortOrder
-    auction?: AuctionOrderByWithRelationInput
     user?: UsersOrderByWithRelationInput
+    auction?: AuctionOrderByWithRelationInput
+    _relevance?: NotificationsOrderByRelevanceInput
   }
 
   export type NotificationsWhereUniqueInput = Prisma.AtLeast<{
@@ -15116,8 +13648,8 @@ export namespace Prisma {
     user_id?: IntFilter<"Notifications"> | number
     auction_id?: IntFilter<"Notifications"> | number
     message_id?: IntNullableFilter<"Notifications"> | number | null
-    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
     user?: XOR<UsersScalarRelationFilter, UsersWhereInput>
+    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
   }, "id">
 
   export type NotificationsOrderByWithAggregationInput = {
@@ -15157,8 +13689,8 @@ export namespace Prisma {
     final_price?: FloatFilter<"Purchases"> | number
     auction_id?: IntFilter<"Purchases"> | number
     user_id?: IntFilter<"Purchases"> | number
-    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
     user?: XOR<UsersScalarRelationFilter, UsersWhereInput>
+    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
   }
 
   export type PurchasesOrderByWithRelationInput = {
@@ -15167,8 +13699,8 @@ export namespace Prisma {
     final_price?: SortOrder
     auction_id?: SortOrder
     user_id?: SortOrder
-    auction?: AuctionOrderByWithRelationInput
     user?: UsersOrderByWithRelationInput
+    auction?: AuctionOrderByWithRelationInput
   }
 
   export type PurchasesWhereUniqueInput = Prisma.AtLeast<{
@@ -15180,8 +13712,8 @@ export namespace Prisma {
     final_price?: FloatFilter<"Purchases"> | number
     auction_id?: IntFilter<"Purchases"> | number
     user_id?: IntFilter<"Purchases"> | number
-    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
     user?: XOR<UsersScalarRelationFilter, UsersWhereInput>
+    auction?: XOR<AuctionScalarRelationFilter, AuctionWhereInput>
   }, "id">
 
   export type PurchasesOrderByWithAggregationInput = {
@@ -15224,13 +13756,13 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"Users"> | Date | string
     updated_at?: DateTimeFilter<"Users"> | Date | string
     deleted_at?: DateTimeNullableFilter<"Users"> | Date | string | null
-    buyer?: AuctionListRelationFilter
-    seller?: AuctionListRelationFilter
     user1?: ConversationsListRelationFilter
     user2?: ConversationsListRelationFilter
     likes?: LikesListRelationFilter
     notifications?: NotificationsListRelationFilter
     purchases?: PurchasesListRelationFilter
+    buyer?: AuctionListRelationFilter
+    seller?: AuctionListRelationFilter
   }
 
   export type UsersOrderByWithRelationInput = {
@@ -15246,13 +13778,14 @@ export namespace Prisma {
     created_at?: SortOrder
     updated_at?: SortOrder
     deleted_at?: SortOrderInput | SortOrder
-    buyer?: AuctionOrderByRelationAggregateInput
-    seller?: AuctionOrderByRelationAggregateInput
     user1?: ConversationsOrderByRelationAggregateInput
     user2?: ConversationsOrderByRelationAggregateInput
     likes?: LikesOrderByRelationAggregateInput
     notifications?: NotificationsOrderByRelationAggregateInput
     purchases?: PurchasesOrderByRelationAggregateInput
+    buyer?: AuctionOrderByRelationAggregateInput
+    seller?: AuctionOrderByRelationAggregateInput
+    _relevance?: UsersOrderByRelevanceInput
   }
 
   export type UsersWhereUniqueInput = Prisma.AtLeast<{
@@ -15271,13 +13804,13 @@ export namespace Prisma {
     created_at?: DateTimeFilter<"Users"> | Date | string
     updated_at?: DateTimeFilter<"Users"> | Date | string
     deleted_at?: DateTimeNullableFilter<"Users"> | Date | string | null
-    buyer?: AuctionListRelationFilter
-    seller?: AuctionListRelationFilter
     user1?: ConversationsListRelationFilter
     user2?: ConversationsListRelationFilter
     likes?: LikesListRelationFilter
     notifications?: NotificationsListRelationFilter
     purchases?: PurchasesListRelationFilter
+    buyer?: AuctionListRelationFilter
+    seller?: AuctionListRelationFilter
   }, "id">
 
   export type UsersOrderByWithAggregationInput = {
@@ -15333,6 +13866,7 @@ export namespace Prisma {
     content?: SortOrder
     contentType?: SortOrder
     auctions?: AuctionOrderByRelationAggregateInput
+    _relevance?: FileOrderByRelevanceInput
   }
 
   export type FileWhereUniqueInput = Prisma.AtLeast<{
@@ -15384,14 +13918,14 @@ export namespace Prisma {
     sellerId?: IntFilter<"Auction"> | number
     buyerId?: IntNullableFilter<"Auction"> | number | null
     stateId?: IntFilter<"Auction"> | number
+    seller?: XOR<UsersScalarRelationFilter, UsersWhereInput>
     buyer?: XOR<UsersNullableScalarRelationFilter, UsersWhereInput> | null
     file?: XOR<FileScalarRelationFilter, FileWhereInput>
-    seller?: XOR<UsersScalarRelationFilter, UsersWhereInput>
-    state?: XOR<StateScalarRelationFilter, StateWhereInput>
     tag?: XOR<TagScalarRelationFilter, TagWhereInput>
+    state?: XOR<StateScalarRelationFilter, StateWhereInput>
+    pictures?: PictureListRelationFilter
     likes?: LikesListRelationFilter
     notifications?: NotificationsListRelationFilter
-    pictures?: PictureListRelationFilter
     purchases?: PurchasesListRelationFilter
   }
 
@@ -15411,15 +13945,16 @@ export namespace Prisma {
     sellerId?: SortOrder
     buyerId?: SortOrderInput | SortOrder
     stateId?: SortOrder
+    seller?: UsersOrderByWithRelationInput
     buyer?: UsersOrderByWithRelationInput
     file?: FileOrderByWithRelationInput
-    seller?: UsersOrderByWithRelationInput
-    state?: StateOrderByWithRelationInput
     tag?: TagOrderByWithRelationInput
+    state?: StateOrderByWithRelationInput
+    pictures?: PictureOrderByRelationAggregateInput
     likes?: LikesOrderByRelationAggregateInput
     notifications?: NotificationsOrderByRelationAggregateInput
-    pictures?: PictureOrderByRelationAggregateInput
     purchases?: PurchasesOrderByRelationAggregateInput
+    _relevance?: AuctionOrderByRelevanceInput
   }
 
   export type AuctionWhereUniqueInput = Prisma.AtLeast<{
@@ -15441,14 +13976,14 @@ export namespace Prisma {
     sellerId?: IntFilter<"Auction"> | number
     buyerId?: IntNullableFilter<"Auction"> | number | null
     stateId?: IntFilter<"Auction"> | number
+    seller?: XOR<UsersScalarRelationFilter, UsersWhereInput>
     buyer?: XOR<UsersNullableScalarRelationFilter, UsersWhereInput> | null
     file?: XOR<FileScalarRelationFilter, FileWhereInput>
-    seller?: XOR<UsersScalarRelationFilter, UsersWhereInput>
-    state?: XOR<StateScalarRelationFilter, StateWhereInput>
     tag?: XOR<TagScalarRelationFilter, TagWhereInput>
+    state?: XOR<StateScalarRelationFilter, StateWhereInput>
+    pictures?: PictureListRelationFilter
     likes?: LikesListRelationFilter
     notifications?: NotificationsListRelationFilter
-    pictures?: PictureListRelationFilter
     purchases?: PurchasesListRelationFilter
   }, "id">
 
@@ -15511,6 +14046,7 @@ export namespace Prisma {
     path?: SortOrder
     auctionId?: SortOrder
     auction?: AuctionOrderByWithRelationInput
+    _relevance?: PictureOrderByRelevanceInput
   }
 
   export type PictureWhereUniqueInput = Prisma.AtLeast<{
@@ -15556,6 +14092,7 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     auctions?: AuctionOrderByRelationAggregateInput
+    _relevance?: TagOrderByRelevanceInput
   }
 
   export type TagWhereUniqueInput = Prisma.AtLeast<{
@@ -15598,6 +14135,7 @@ export namespace Prisma {
     id?: SortOrder
     stateType?: SortOrder
     auctions?: AuctionOrderByRelationAggregateInput
+    _relevance?: StateOrderByRelevanceInput
   }
 
   export type StateWhereUniqueInput = Prisma.AtLeast<{
@@ -15628,8 +14166,8 @@ export namespace Prisma {
   }
 
   export type LikesCreateInput = {
-    auction: AuctionCreateNestedOneWithoutLikesInput
     user: UsersCreateNestedOneWithoutLikesInput
+    auction: AuctionCreateNestedOneWithoutLikesInput
   }
 
   export type LikesUncheckedCreateInput = {
@@ -15639,8 +14177,8 @@ export namespace Prisma {
   }
 
   export type LikesUpdateInput = {
-    auction?: AuctionUpdateOneRequiredWithoutLikesNestedInput
     user?: UsersUpdateOneRequiredWithoutLikesNestedInput
+    auction?: AuctionUpdateOneRequiredWithoutLikesNestedInput
   }
 
   export type LikesUncheckedUpdateInput = {
@@ -15777,8 +14315,8 @@ export namespace Prisma {
     is_read?: boolean
     created_at?: Date | string
     message_id?: number | null
-    auction: AuctionCreateNestedOneWithoutNotificationsInput
     user: UsersCreateNestedOneWithoutNotificationsInput
+    auction: AuctionCreateNestedOneWithoutNotificationsInput
   }
 
   export type NotificationsUncheckedCreateInput = {
@@ -15796,8 +14334,8 @@ export namespace Prisma {
     is_read?: BoolFieldUpdateOperationsInput | boolean
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     message_id?: NullableIntFieldUpdateOperationsInput | number | null
-    auction?: AuctionUpdateOneRequiredWithoutNotificationsNestedInput
     user?: UsersUpdateOneRequiredWithoutNotificationsNestedInput
+    auction?: AuctionUpdateOneRequiredWithoutNotificationsNestedInput
   }
 
   export type NotificationsUncheckedUpdateInput = {
@@ -15840,8 +14378,8 @@ export namespace Prisma {
   export type PurchasesCreateInput = {
     purchase_date?: Date | string
     final_price: number
-    auction: AuctionCreateNestedOneWithoutPurchasesInput
     user: UsersCreateNestedOneWithoutPurchasesInput
+    auction: AuctionCreateNestedOneWithoutPurchasesInput
   }
 
   export type PurchasesUncheckedCreateInput = {
@@ -15855,8 +14393,8 @@ export namespace Prisma {
   export type PurchasesUpdateInput = {
     purchase_date?: DateTimeFieldUpdateOperationsInput | Date | string
     final_price?: FloatFieldUpdateOperationsInput | number
-    auction?: AuctionUpdateOneRequiredWithoutPurchasesNestedInput
     user?: UsersUpdateOneRequiredWithoutPurchasesNestedInput
+    auction?: AuctionUpdateOneRequiredWithoutPurchasesNestedInput
   }
 
   export type PurchasesUncheckedUpdateInput = {
@@ -15900,13 +14438,13 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    seller?: AuctionCreateNestedManyWithoutSellerInput
     user1?: ConversationsCreateNestedManyWithoutUser1Input
     user2?: ConversationsCreateNestedManyWithoutUser2Input
     likes?: LikesCreateNestedManyWithoutUserInput
     notifications?: NotificationsCreateNestedManyWithoutUserInput
     purchases?: PurchasesCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
   }
 
   export type UsersUncheckedCreateInput = {
@@ -15922,13 +14460,13 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
     user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
     user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
     likes?: LikesUncheckedCreateNestedManyWithoutUserInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
   }
 
   export type UsersUpdateInput = {
@@ -15943,13 +14481,13 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUpdateManyWithoutUser2NestedInput
     likes?: LikesUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUncheckedUpdateInput = {
@@ -15965,13 +14503,13 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
     likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersCreateManyInput = {
@@ -16071,14 +14609,14 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
     tag: TagCreateNestedOneWithoutAuctionsInput
+    state: StateCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
     likes?: LikesCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
   }
 
@@ -16098,9 +14636,9 @@ export namespace Prisma {
     sellerId: number
     buyerId?: number | null
     stateId: number
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
   }
 
@@ -16114,14 +14652,14 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
     buyer?: UsersUpdateOneWithoutBuyerNestedInput
     file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
     tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     likes?: LikesUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
   }
 
@@ -16141,9 +14679,9 @@ export namespace Prisma {
     sellerId?: IntFieldUpdateOperationsInput | number
     buyerId?: NullableIntFieldUpdateOperationsInput | number | null
     stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
@@ -16307,8 +14845,8 @@ export namespace Prisma {
 
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -16316,14 +14854,14 @@ export namespace Prisma {
     not?: NestedIntFilter<$PrismaModel> | number
   }
 
-  export type AuctionScalarRelationFilter = {
-    is?: AuctionWhereInput
-    isNot?: AuctionWhereInput
-  }
-
   export type UsersScalarRelationFilter = {
     is?: UsersWhereInput
     isNot?: UsersWhereInput
+  }
+
+  export type AuctionScalarRelationFilter = {
+    is?: AuctionWhereInput
+    isNot?: AuctionWhereInput
   }
 
   export type LikesCountOrderByAggregateInput = {
@@ -16358,8 +14896,8 @@ export namespace Prisma {
 
   export type IntWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -16374,8 +14912,8 @@ export namespace Prisma {
 
   export type StringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -16383,14 +14921,14 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
+    search?: string
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -16406,6 +14944,12 @@ export namespace Prisma {
   export type ConversationsScalarRelationFilter = {
     is?: ConversationsWhereInput
     isNot?: ConversationsWhereInput
+  }
+
+  export type MessagesOrderByRelevanceInput = {
+    fields: MessagesOrderByRelevanceFieldEnum | MessagesOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
   }
 
   export type MessagesCountOrderByAggregateInput = {
@@ -16444,8 +14988,8 @@ export namespace Prisma {
 
   export type StringWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -16453,7 +14997,7 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
+    search?: string
     not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
@@ -16462,8 +15006,8 @@ export namespace Prisma {
 
   export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -16484,8 +15028,8 @@ export namespace Prisma {
 
   export type DateTimeNullableFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -16546,8 +15090,8 @@ export namespace Prisma {
 
   export type DateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -16560,13 +15104,19 @@ export namespace Prisma {
 
   export type IntNullableFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
     gte?: number | IntFieldRefInput<$PrismaModel>
     not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  }
+
+  export type NotificationsOrderByRelevanceInput = {
+    fields: NotificationsOrderByRelevanceFieldEnum | NotificationsOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
   }
 
   export type NotificationsCountOrderByAggregateInput = {
@@ -16615,8 +15165,8 @@ export namespace Prisma {
 
   export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -16631,8 +15181,8 @@ export namespace Prisma {
 
   export type FloatFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -16680,8 +15230,8 @@ export namespace Prisma {
 
   export type FloatWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -16696,8 +15246,8 @@ export namespace Prisma {
 
   export type StringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -16705,14 +15255,8 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
+    search?: string
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
-  }
-
-  export type AuctionListRelationFilter = {
-    every?: AuctionWhereInput
-    some?: AuctionWhereInput
-    none?: AuctionWhereInput
   }
 
   export type ConversationsListRelationFilter = {
@@ -16739,8 +15283,10 @@ export namespace Prisma {
     none?: PurchasesWhereInput
   }
 
-  export type AuctionOrderByRelationAggregateInput = {
-    _count?: SortOrder
+  export type AuctionListRelationFilter = {
+    every?: AuctionWhereInput
+    some?: AuctionWhereInput
+    none?: AuctionWhereInput
   }
 
   export type ConversationsOrderByRelationAggregateInput = {
@@ -16757,6 +15303,16 @@ export namespace Prisma {
 
   export type PurchasesOrderByRelationAggregateInput = {
     _count?: SortOrder
+  }
+
+  export type AuctionOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type UsersOrderByRelevanceInput = {
+    fields: UsersOrderByRelevanceFieldEnum | UsersOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
   }
 
   export type UsersCountOrderByAggregateInput = {
@@ -16816,8 +15372,8 @@ export namespace Prisma {
 
   export type StringNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -16825,11 +15381,17 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
+    search?: string
     not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
     _max?: NestedStringNullableFilter<$PrismaModel>
+  }
+
+  export type FileOrderByRelevanceInput = {
+    fields: FileOrderByRelevanceFieldEnum | FileOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
   }
 
   export type FileCountOrderByAggregateInput = {
@@ -16868,14 +15430,14 @@ export namespace Prisma {
     isNot?: FileWhereInput
   }
 
-  export type StateScalarRelationFilter = {
-    is?: StateWhereInput
-    isNot?: StateWhereInput
-  }
-
   export type TagScalarRelationFilter = {
     is?: TagWhereInput
     isNot?: TagWhereInput
+  }
+
+  export type StateScalarRelationFilter = {
+    is?: StateWhereInput
+    isNot?: StateWhereInput
   }
 
   export type PictureListRelationFilter = {
@@ -16886,6 +15448,12 @@ export namespace Prisma {
 
   export type PictureOrderByRelationAggregateInput = {
     _count?: SortOrder
+  }
+
+  export type AuctionOrderByRelevanceInput = {
+    fields: AuctionOrderByRelevanceFieldEnum | AuctionOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
   }
 
   export type AuctionCountOrderByAggregateInput = {
@@ -16964,6 +15532,12 @@ export namespace Prisma {
     stateId?: SortOrder
   }
 
+  export type PictureOrderByRelevanceInput = {
+    fields: PictureOrderByRelevanceFieldEnum | PictureOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
+  }
+
   export type PictureCountOrderByAggregateInput = {
     id?: SortOrder
     path?: SortOrder
@@ -16992,6 +15566,12 @@ export namespace Prisma {
     auctionId?: SortOrder
   }
 
+  export type TagOrderByRelevanceInput = {
+    fields: TagOrderByRelevanceFieldEnum | TagOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
+  }
+
   export type TagCountOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
@@ -17013,6 +15593,12 @@ export namespace Prisma {
 
   export type TagSumOrderByAggregateInput = {
     id?: SortOrder
+  }
+
+  export type StateOrderByRelevanceInput = {
+    fields: StateOrderByRelevanceFieldEnum | StateOrderByRelevanceFieldEnum[]
+    sort: SortOrder
+    search: string
   }
 
   export type StateCountOrderByAggregateInput = {
@@ -17038,24 +15624,16 @@ export namespace Prisma {
     id?: SortOrder
   }
 
-  export type AuctionCreateNestedOneWithoutLikesInput = {
-    create?: XOR<AuctionCreateWithoutLikesInput, AuctionUncheckedCreateWithoutLikesInput>
-    connectOrCreate?: AuctionCreateOrConnectWithoutLikesInput
-    connect?: AuctionWhereUniqueInput
-  }
-
   export type UsersCreateNestedOneWithoutLikesInput = {
     create?: XOR<UsersCreateWithoutLikesInput, UsersUncheckedCreateWithoutLikesInput>
     connectOrCreate?: UsersCreateOrConnectWithoutLikesInput
     connect?: UsersWhereUniqueInput
   }
 
-  export type AuctionUpdateOneRequiredWithoutLikesNestedInput = {
+  export type AuctionCreateNestedOneWithoutLikesInput = {
     create?: XOR<AuctionCreateWithoutLikesInput, AuctionUncheckedCreateWithoutLikesInput>
     connectOrCreate?: AuctionCreateOrConnectWithoutLikesInput
-    upsert?: AuctionUpsertWithoutLikesInput
     connect?: AuctionWhereUniqueInput
-    update?: XOR<XOR<AuctionUpdateToOneWithWhereWithoutLikesInput, AuctionUpdateWithoutLikesInput>, AuctionUncheckedUpdateWithoutLikesInput>
   }
 
   export type UsersUpdateOneRequiredWithoutLikesNestedInput = {
@@ -17064,6 +15642,14 @@ export namespace Prisma {
     upsert?: UsersUpsertWithoutLikesInput
     connect?: UsersWhereUniqueInput
     update?: XOR<XOR<UsersUpdateToOneWithWhereWithoutLikesInput, UsersUpdateWithoutLikesInput>, UsersUncheckedUpdateWithoutLikesInput>
+  }
+
+  export type AuctionUpdateOneRequiredWithoutLikesNestedInput = {
+    create?: XOR<AuctionCreateWithoutLikesInput, AuctionUncheckedCreateWithoutLikesInput>
+    connectOrCreate?: AuctionCreateOrConnectWithoutLikesInput
+    upsert?: AuctionUpsertWithoutLikesInput
+    connect?: AuctionWhereUniqueInput
+    update?: XOR<XOR<AuctionUpdateToOneWithWhereWithoutLikesInput, AuctionUpdateWithoutLikesInput>, AuctionUncheckedUpdateWithoutLikesInput>
   }
 
   export type IntFieldUpdateOperationsInput = {
@@ -17174,16 +15760,16 @@ export namespace Prisma {
     deleteMany?: MessagesScalarWhereInput | MessagesScalarWhereInput[]
   }
 
-  export type AuctionCreateNestedOneWithoutNotificationsInput = {
-    create?: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
-    connectOrCreate?: AuctionCreateOrConnectWithoutNotificationsInput
-    connect?: AuctionWhereUniqueInput
-  }
-
   export type UsersCreateNestedOneWithoutNotificationsInput = {
     create?: XOR<UsersCreateWithoutNotificationsInput, UsersUncheckedCreateWithoutNotificationsInput>
     connectOrCreate?: UsersCreateOrConnectWithoutNotificationsInput
     connect?: UsersWhereUniqueInput
+  }
+
+  export type AuctionCreateNestedOneWithoutNotificationsInput = {
+    create?: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
+    connectOrCreate?: AuctionCreateOrConnectWithoutNotificationsInput
+    connect?: AuctionWhereUniqueInput
   }
 
   export type NullableIntFieldUpdateOperationsInput = {
@@ -17194,14 +15780,6 @@ export namespace Prisma {
     divide?: number
   }
 
-  export type AuctionUpdateOneRequiredWithoutNotificationsNestedInput = {
-    create?: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
-    connectOrCreate?: AuctionCreateOrConnectWithoutNotificationsInput
-    upsert?: AuctionUpsertWithoutNotificationsInput
-    connect?: AuctionWhereUniqueInput
-    update?: XOR<XOR<AuctionUpdateToOneWithWhereWithoutNotificationsInput, AuctionUpdateWithoutNotificationsInput>, AuctionUncheckedUpdateWithoutNotificationsInput>
-  }
-
   export type UsersUpdateOneRequiredWithoutNotificationsNestedInput = {
     create?: XOR<UsersCreateWithoutNotificationsInput, UsersUncheckedCreateWithoutNotificationsInput>
     connectOrCreate?: UsersCreateOrConnectWithoutNotificationsInput
@@ -17210,16 +15788,24 @@ export namespace Prisma {
     update?: XOR<XOR<UsersUpdateToOneWithWhereWithoutNotificationsInput, UsersUpdateWithoutNotificationsInput>, UsersUncheckedUpdateWithoutNotificationsInput>
   }
 
-  export type AuctionCreateNestedOneWithoutPurchasesInput = {
-    create?: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
-    connectOrCreate?: AuctionCreateOrConnectWithoutPurchasesInput
+  export type AuctionUpdateOneRequiredWithoutNotificationsNestedInput = {
+    create?: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
+    connectOrCreate?: AuctionCreateOrConnectWithoutNotificationsInput
+    upsert?: AuctionUpsertWithoutNotificationsInput
     connect?: AuctionWhereUniqueInput
+    update?: XOR<XOR<AuctionUpdateToOneWithWhereWithoutNotificationsInput, AuctionUpdateWithoutNotificationsInput>, AuctionUncheckedUpdateWithoutNotificationsInput>
   }
 
   export type UsersCreateNestedOneWithoutPurchasesInput = {
     create?: XOR<UsersCreateWithoutPurchasesInput, UsersUncheckedCreateWithoutPurchasesInput>
     connectOrCreate?: UsersCreateOrConnectWithoutPurchasesInput
     connect?: UsersWhereUniqueInput
+  }
+
+  export type AuctionCreateNestedOneWithoutPurchasesInput = {
+    create?: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
+    connectOrCreate?: AuctionCreateOrConnectWithoutPurchasesInput
+    connect?: AuctionWhereUniqueInput
   }
 
   export type FloatFieldUpdateOperationsInput = {
@@ -17230,14 +15816,6 @@ export namespace Prisma {
     divide?: number
   }
 
-  export type AuctionUpdateOneRequiredWithoutPurchasesNestedInput = {
-    create?: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
-    connectOrCreate?: AuctionCreateOrConnectWithoutPurchasesInput
-    upsert?: AuctionUpsertWithoutPurchasesInput
-    connect?: AuctionWhereUniqueInput
-    update?: XOR<XOR<AuctionUpdateToOneWithWhereWithoutPurchasesInput, AuctionUpdateWithoutPurchasesInput>, AuctionUncheckedUpdateWithoutPurchasesInput>
-  }
-
   export type UsersUpdateOneRequiredWithoutPurchasesNestedInput = {
     create?: XOR<UsersCreateWithoutPurchasesInput, UsersUncheckedCreateWithoutPurchasesInput>
     connectOrCreate?: UsersCreateOrConnectWithoutPurchasesInput
@@ -17246,18 +15824,12 @@ export namespace Prisma {
     update?: XOR<XOR<UsersUpdateToOneWithWhereWithoutPurchasesInput, UsersUpdateWithoutPurchasesInput>, UsersUncheckedUpdateWithoutPurchasesInput>
   }
 
-  export type AuctionCreateNestedManyWithoutBuyerInput = {
-    create?: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput> | AuctionCreateWithoutBuyerInput[] | AuctionUncheckedCreateWithoutBuyerInput[]
-    connectOrCreate?: AuctionCreateOrConnectWithoutBuyerInput | AuctionCreateOrConnectWithoutBuyerInput[]
-    createMany?: AuctionCreateManyBuyerInputEnvelope
-    connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-  }
-
-  export type AuctionCreateNestedManyWithoutSellerInput = {
-    create?: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput> | AuctionCreateWithoutSellerInput[] | AuctionUncheckedCreateWithoutSellerInput[]
-    connectOrCreate?: AuctionCreateOrConnectWithoutSellerInput | AuctionCreateOrConnectWithoutSellerInput[]
-    createMany?: AuctionCreateManySellerInputEnvelope
-    connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+  export type AuctionUpdateOneRequiredWithoutPurchasesNestedInput = {
+    create?: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
+    connectOrCreate?: AuctionCreateOrConnectWithoutPurchasesInput
+    upsert?: AuctionUpsertWithoutPurchasesInput
+    connect?: AuctionWhereUniqueInput
+    update?: XOR<XOR<AuctionUpdateToOneWithWhereWithoutPurchasesInput, AuctionUpdateWithoutPurchasesInput>, AuctionUncheckedUpdateWithoutPurchasesInput>
   }
 
   export type ConversationsCreateNestedManyWithoutUser1Input = {
@@ -17295,14 +15867,14 @@ export namespace Prisma {
     connect?: PurchasesWhereUniqueInput | PurchasesWhereUniqueInput[]
   }
 
-  export type AuctionUncheckedCreateNestedManyWithoutBuyerInput = {
+  export type AuctionCreateNestedManyWithoutBuyerInput = {
     create?: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput> | AuctionCreateWithoutBuyerInput[] | AuctionUncheckedCreateWithoutBuyerInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutBuyerInput | AuctionCreateOrConnectWithoutBuyerInput[]
     createMany?: AuctionCreateManyBuyerInputEnvelope
     connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
   }
 
-  export type AuctionUncheckedCreateNestedManyWithoutSellerInput = {
+  export type AuctionCreateNestedManyWithoutSellerInput = {
     create?: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput> | AuctionCreateWithoutSellerInput[] | AuctionUncheckedCreateWithoutSellerInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutSellerInput | AuctionCreateOrConnectWithoutSellerInput[]
     createMany?: AuctionCreateManySellerInputEnvelope
@@ -17344,36 +15916,22 @@ export namespace Prisma {
     connect?: PurchasesWhereUniqueInput | PurchasesWhereUniqueInput[]
   }
 
-  export type NullableStringFieldUpdateOperationsInput = {
-    set?: string | null
-  }
-
-  export type AuctionUpdateManyWithoutBuyerNestedInput = {
+  export type AuctionUncheckedCreateNestedManyWithoutBuyerInput = {
     create?: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput> | AuctionCreateWithoutBuyerInput[] | AuctionUncheckedCreateWithoutBuyerInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutBuyerInput | AuctionCreateOrConnectWithoutBuyerInput[]
-    upsert?: AuctionUpsertWithWhereUniqueWithoutBuyerInput | AuctionUpsertWithWhereUniqueWithoutBuyerInput[]
     createMany?: AuctionCreateManyBuyerInputEnvelope
-    set?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-    disconnect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-    delete?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
     connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-    update?: AuctionUpdateWithWhereUniqueWithoutBuyerInput | AuctionUpdateWithWhereUniqueWithoutBuyerInput[]
-    updateMany?: AuctionUpdateManyWithWhereWithoutBuyerInput | AuctionUpdateManyWithWhereWithoutBuyerInput[]
-    deleteMany?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
   }
 
-  export type AuctionUpdateManyWithoutSellerNestedInput = {
+  export type AuctionUncheckedCreateNestedManyWithoutSellerInput = {
     create?: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput> | AuctionCreateWithoutSellerInput[] | AuctionUncheckedCreateWithoutSellerInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutSellerInput | AuctionCreateOrConnectWithoutSellerInput[]
-    upsert?: AuctionUpsertWithWhereUniqueWithoutSellerInput | AuctionUpsertWithWhereUniqueWithoutSellerInput[]
     createMany?: AuctionCreateManySellerInputEnvelope
-    set?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-    disconnect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-    delete?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
     connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
-    update?: AuctionUpdateWithWhereUniqueWithoutSellerInput | AuctionUpdateWithWhereUniqueWithoutSellerInput[]
-    updateMany?: AuctionUpdateManyWithWhereWithoutSellerInput | AuctionUpdateManyWithWhereWithoutSellerInput[]
-    deleteMany?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
+  }
+
+  export type NullableStringFieldUpdateOperationsInput = {
+    set?: string | null
   }
 
   export type ConversationsUpdateManyWithoutUser1NestedInput = {
@@ -17446,7 +16004,7 @@ export namespace Prisma {
     deleteMany?: PurchasesScalarWhereInput | PurchasesScalarWhereInput[]
   }
 
-  export type AuctionUncheckedUpdateManyWithoutBuyerNestedInput = {
+  export type AuctionUpdateManyWithoutBuyerNestedInput = {
     create?: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput> | AuctionCreateWithoutBuyerInput[] | AuctionUncheckedCreateWithoutBuyerInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutBuyerInput | AuctionCreateOrConnectWithoutBuyerInput[]
     upsert?: AuctionUpsertWithWhereUniqueWithoutBuyerInput | AuctionUpsertWithWhereUniqueWithoutBuyerInput[]
@@ -17460,7 +16018,7 @@ export namespace Prisma {
     deleteMany?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
   }
 
-  export type AuctionUncheckedUpdateManyWithoutSellerNestedInput = {
+  export type AuctionUpdateManyWithoutSellerNestedInput = {
     create?: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput> | AuctionCreateWithoutSellerInput[] | AuctionUncheckedCreateWithoutSellerInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutSellerInput | AuctionCreateOrConnectWithoutSellerInput[]
     upsert?: AuctionUpsertWithWhereUniqueWithoutSellerInput | AuctionUpsertWithWhereUniqueWithoutSellerInput[]
@@ -17544,6 +16102,34 @@ export namespace Prisma {
     deleteMany?: PurchasesScalarWhereInput | PurchasesScalarWhereInput[]
   }
 
+  export type AuctionUncheckedUpdateManyWithoutBuyerNestedInput = {
+    create?: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput> | AuctionCreateWithoutBuyerInput[] | AuctionUncheckedCreateWithoutBuyerInput[]
+    connectOrCreate?: AuctionCreateOrConnectWithoutBuyerInput | AuctionCreateOrConnectWithoutBuyerInput[]
+    upsert?: AuctionUpsertWithWhereUniqueWithoutBuyerInput | AuctionUpsertWithWhereUniqueWithoutBuyerInput[]
+    createMany?: AuctionCreateManyBuyerInputEnvelope
+    set?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    disconnect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    delete?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    update?: AuctionUpdateWithWhereUniqueWithoutBuyerInput | AuctionUpdateWithWhereUniqueWithoutBuyerInput[]
+    updateMany?: AuctionUpdateManyWithWhereWithoutBuyerInput | AuctionUpdateManyWithWhereWithoutBuyerInput[]
+    deleteMany?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
+  }
+
+  export type AuctionUncheckedUpdateManyWithoutSellerNestedInput = {
+    create?: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput> | AuctionCreateWithoutSellerInput[] | AuctionUncheckedCreateWithoutSellerInput[]
+    connectOrCreate?: AuctionCreateOrConnectWithoutSellerInput | AuctionCreateOrConnectWithoutSellerInput[]
+    upsert?: AuctionUpsertWithWhereUniqueWithoutSellerInput | AuctionUpsertWithWhereUniqueWithoutSellerInput[]
+    createMany?: AuctionCreateManySellerInputEnvelope
+    set?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    disconnect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    delete?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    connect?: AuctionWhereUniqueInput | AuctionWhereUniqueInput[]
+    update?: AuctionUpdateWithWhereUniqueWithoutSellerInput | AuctionUpdateWithWhereUniqueWithoutSellerInput[]
+    updateMany?: AuctionUpdateManyWithWhereWithoutSellerInput | AuctionUpdateManyWithWhereWithoutSellerInput[]
+    deleteMany?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
+  }
+
   export type AuctionCreateNestedManyWithoutFileInput = {
     create?: XOR<AuctionCreateWithoutFileInput, AuctionUncheckedCreateWithoutFileInput> | AuctionCreateWithoutFileInput[] | AuctionUncheckedCreateWithoutFileInput[]
     connectOrCreate?: AuctionCreateOrConnectWithoutFileInput | AuctionCreateOrConnectWithoutFileInput[]
@@ -17586,6 +16172,12 @@ export namespace Prisma {
     deleteMany?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
   }
 
+  export type UsersCreateNestedOneWithoutSellerInput = {
+    create?: XOR<UsersCreateWithoutSellerInput, UsersUncheckedCreateWithoutSellerInput>
+    connectOrCreate?: UsersCreateOrConnectWithoutSellerInput
+    connect?: UsersWhereUniqueInput
+  }
+
   export type UsersCreateNestedOneWithoutBuyerInput = {
     create?: XOR<UsersCreateWithoutBuyerInput, UsersUncheckedCreateWithoutBuyerInput>
     connectOrCreate?: UsersCreateOrConnectWithoutBuyerInput
@@ -17598,10 +16190,10 @@ export namespace Prisma {
     connect?: FileWhereUniqueInput
   }
 
-  export type UsersCreateNestedOneWithoutSellerInput = {
-    create?: XOR<UsersCreateWithoutSellerInput, UsersUncheckedCreateWithoutSellerInput>
-    connectOrCreate?: UsersCreateOrConnectWithoutSellerInput
-    connect?: UsersWhereUniqueInput
+  export type TagCreateNestedOneWithoutAuctionsInput = {
+    create?: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
+    connectOrCreate?: TagCreateOrConnectWithoutAuctionsInput
+    connect?: TagWhereUniqueInput
   }
 
   export type StateCreateNestedOneWithoutAuctionsInput = {
@@ -17610,10 +16202,11 @@ export namespace Prisma {
     connect?: StateWhereUniqueInput
   }
 
-  export type TagCreateNestedOneWithoutAuctionsInput = {
-    create?: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
-    connectOrCreate?: TagCreateOrConnectWithoutAuctionsInput
-    connect?: TagWhereUniqueInput
+  export type PictureCreateNestedManyWithoutAuctionInput = {
+    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
+    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
+    createMany?: PictureCreateManyAuctionInputEnvelope
+    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
   }
 
   export type LikesCreateNestedManyWithoutAuctionInput = {
@@ -17630,18 +16223,18 @@ export namespace Prisma {
     connect?: NotificationsWhereUniqueInput | NotificationsWhereUniqueInput[]
   }
 
-  export type PictureCreateNestedManyWithoutAuctionInput = {
-    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
-    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
-    createMany?: PictureCreateManyAuctionInputEnvelope
-    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-  }
-
   export type PurchasesCreateNestedManyWithoutAuctionInput = {
     create?: XOR<PurchasesCreateWithoutAuctionInput, PurchasesUncheckedCreateWithoutAuctionInput> | PurchasesCreateWithoutAuctionInput[] | PurchasesUncheckedCreateWithoutAuctionInput[]
     connectOrCreate?: PurchasesCreateOrConnectWithoutAuctionInput | PurchasesCreateOrConnectWithoutAuctionInput[]
     createMany?: PurchasesCreateManyAuctionInputEnvelope
     connect?: PurchasesWhereUniqueInput | PurchasesWhereUniqueInput[]
+  }
+
+  export type PictureUncheckedCreateNestedManyWithoutAuctionInput = {
+    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
+    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
+    createMany?: PictureCreateManyAuctionInputEnvelope
+    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
   }
 
   export type LikesUncheckedCreateNestedManyWithoutAuctionInput = {
@@ -17658,18 +16251,19 @@ export namespace Prisma {
     connect?: NotificationsWhereUniqueInput | NotificationsWhereUniqueInput[]
   }
 
-  export type PictureUncheckedCreateNestedManyWithoutAuctionInput = {
-    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
-    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
-    createMany?: PictureCreateManyAuctionInputEnvelope
-    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-  }
-
   export type PurchasesUncheckedCreateNestedManyWithoutAuctionInput = {
     create?: XOR<PurchasesCreateWithoutAuctionInput, PurchasesUncheckedCreateWithoutAuctionInput> | PurchasesCreateWithoutAuctionInput[] | PurchasesUncheckedCreateWithoutAuctionInput[]
     connectOrCreate?: PurchasesCreateOrConnectWithoutAuctionInput | PurchasesCreateOrConnectWithoutAuctionInput[]
     createMany?: PurchasesCreateManyAuctionInputEnvelope
     connect?: PurchasesWhereUniqueInput | PurchasesWhereUniqueInput[]
+  }
+
+  export type UsersUpdateOneRequiredWithoutSellerNestedInput = {
+    create?: XOR<UsersCreateWithoutSellerInput, UsersUncheckedCreateWithoutSellerInput>
+    connectOrCreate?: UsersCreateOrConnectWithoutSellerInput
+    upsert?: UsersUpsertWithoutSellerInput
+    connect?: UsersWhereUniqueInput
+    update?: XOR<XOR<UsersUpdateToOneWithWhereWithoutSellerInput, UsersUpdateWithoutSellerInput>, UsersUncheckedUpdateWithoutSellerInput>
   }
 
   export type UsersUpdateOneWithoutBuyerNestedInput = {
@@ -17690,12 +16284,12 @@ export namespace Prisma {
     update?: XOR<XOR<FileUpdateToOneWithWhereWithoutAuctionsInput, FileUpdateWithoutAuctionsInput>, FileUncheckedUpdateWithoutAuctionsInput>
   }
 
-  export type UsersUpdateOneRequiredWithoutSellerNestedInput = {
-    create?: XOR<UsersCreateWithoutSellerInput, UsersUncheckedCreateWithoutSellerInput>
-    connectOrCreate?: UsersCreateOrConnectWithoutSellerInput
-    upsert?: UsersUpsertWithoutSellerInput
-    connect?: UsersWhereUniqueInput
-    update?: XOR<XOR<UsersUpdateToOneWithWhereWithoutSellerInput, UsersUpdateWithoutSellerInput>, UsersUncheckedUpdateWithoutSellerInput>
+  export type TagUpdateOneRequiredWithoutAuctionsNestedInput = {
+    create?: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
+    connectOrCreate?: TagCreateOrConnectWithoutAuctionsInput
+    upsert?: TagUpsertWithoutAuctionsInput
+    connect?: TagWhereUniqueInput
+    update?: XOR<XOR<TagUpdateToOneWithWhereWithoutAuctionsInput, TagUpdateWithoutAuctionsInput>, TagUncheckedUpdateWithoutAuctionsInput>
   }
 
   export type StateUpdateOneRequiredWithoutAuctionsNestedInput = {
@@ -17706,12 +16300,18 @@ export namespace Prisma {
     update?: XOR<XOR<StateUpdateToOneWithWhereWithoutAuctionsInput, StateUpdateWithoutAuctionsInput>, StateUncheckedUpdateWithoutAuctionsInput>
   }
 
-  export type TagUpdateOneRequiredWithoutAuctionsNestedInput = {
-    create?: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
-    connectOrCreate?: TagCreateOrConnectWithoutAuctionsInput
-    upsert?: TagUpsertWithoutAuctionsInput
-    connect?: TagWhereUniqueInput
-    update?: XOR<XOR<TagUpdateToOneWithWhereWithoutAuctionsInput, TagUpdateWithoutAuctionsInput>, TagUncheckedUpdateWithoutAuctionsInput>
+  export type PictureUpdateManyWithoutAuctionNestedInput = {
+    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
+    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
+    upsert?: PictureUpsertWithWhereUniqueWithoutAuctionInput | PictureUpsertWithWhereUniqueWithoutAuctionInput[]
+    createMany?: PictureCreateManyAuctionInputEnvelope
+    set?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    disconnect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    delete?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    update?: PictureUpdateWithWhereUniqueWithoutAuctionInput | PictureUpdateWithWhereUniqueWithoutAuctionInput[]
+    updateMany?: PictureUpdateManyWithWhereWithoutAuctionInput | PictureUpdateManyWithWhereWithoutAuctionInput[]
+    deleteMany?: PictureScalarWhereInput | PictureScalarWhereInput[]
   }
 
   export type LikesUpdateManyWithoutAuctionNestedInput = {
@@ -17742,20 +16342,6 @@ export namespace Prisma {
     deleteMany?: NotificationsScalarWhereInput | NotificationsScalarWhereInput[]
   }
 
-  export type PictureUpdateManyWithoutAuctionNestedInput = {
-    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
-    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
-    upsert?: PictureUpsertWithWhereUniqueWithoutAuctionInput | PictureUpsertWithWhereUniqueWithoutAuctionInput[]
-    createMany?: PictureCreateManyAuctionInputEnvelope
-    set?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    disconnect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    delete?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    update?: PictureUpdateWithWhereUniqueWithoutAuctionInput | PictureUpdateWithWhereUniqueWithoutAuctionInput[]
-    updateMany?: PictureUpdateManyWithWhereWithoutAuctionInput | PictureUpdateManyWithWhereWithoutAuctionInput[]
-    deleteMany?: PictureScalarWhereInput | PictureScalarWhereInput[]
-  }
-
   export type PurchasesUpdateManyWithoutAuctionNestedInput = {
     create?: XOR<PurchasesCreateWithoutAuctionInput, PurchasesUncheckedCreateWithoutAuctionInput> | PurchasesCreateWithoutAuctionInput[] | PurchasesUncheckedCreateWithoutAuctionInput[]
     connectOrCreate?: PurchasesCreateOrConnectWithoutAuctionInput | PurchasesCreateOrConnectWithoutAuctionInput[]
@@ -17768,6 +16354,20 @@ export namespace Prisma {
     update?: PurchasesUpdateWithWhereUniqueWithoutAuctionInput | PurchasesUpdateWithWhereUniqueWithoutAuctionInput[]
     updateMany?: PurchasesUpdateManyWithWhereWithoutAuctionInput | PurchasesUpdateManyWithWhereWithoutAuctionInput[]
     deleteMany?: PurchasesScalarWhereInput | PurchasesScalarWhereInput[]
+  }
+
+  export type PictureUncheckedUpdateManyWithoutAuctionNestedInput = {
+    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
+    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
+    upsert?: PictureUpsertWithWhereUniqueWithoutAuctionInput | PictureUpsertWithWhereUniqueWithoutAuctionInput[]
+    createMany?: PictureCreateManyAuctionInputEnvelope
+    set?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    disconnect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    delete?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
+    update?: PictureUpdateWithWhereUniqueWithoutAuctionInput | PictureUpdateWithWhereUniqueWithoutAuctionInput[]
+    updateMany?: PictureUpdateManyWithWhereWithoutAuctionInput | PictureUpdateManyWithWhereWithoutAuctionInput[]
+    deleteMany?: PictureScalarWhereInput | PictureScalarWhereInput[]
   }
 
   export type LikesUncheckedUpdateManyWithoutAuctionNestedInput = {
@@ -17796,20 +16396,6 @@ export namespace Prisma {
     update?: NotificationsUpdateWithWhereUniqueWithoutAuctionInput | NotificationsUpdateWithWhereUniqueWithoutAuctionInput[]
     updateMany?: NotificationsUpdateManyWithWhereWithoutAuctionInput | NotificationsUpdateManyWithWhereWithoutAuctionInput[]
     deleteMany?: NotificationsScalarWhereInput | NotificationsScalarWhereInput[]
-  }
-
-  export type PictureUncheckedUpdateManyWithoutAuctionNestedInput = {
-    create?: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput> | PictureCreateWithoutAuctionInput[] | PictureUncheckedCreateWithoutAuctionInput[]
-    connectOrCreate?: PictureCreateOrConnectWithoutAuctionInput | PictureCreateOrConnectWithoutAuctionInput[]
-    upsert?: PictureUpsertWithWhereUniqueWithoutAuctionInput | PictureUpsertWithWhereUniqueWithoutAuctionInput[]
-    createMany?: PictureCreateManyAuctionInputEnvelope
-    set?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    disconnect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    delete?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    connect?: PictureWhereUniqueInput | PictureWhereUniqueInput[]
-    update?: PictureUpdateWithWhereUniqueWithoutAuctionInput | PictureUpdateWithWhereUniqueWithoutAuctionInput[]
-    updateMany?: PictureUpdateManyWithWhereWithoutAuctionInput | PictureUpdateManyWithWhereWithoutAuctionInput[]
-    deleteMany?: PictureScalarWhereInput | PictureScalarWhereInput[]
   }
 
   export type PurchasesUncheckedUpdateManyWithoutAuctionNestedInput = {
@@ -17926,8 +16512,8 @@ export namespace Prisma {
 
   export type NestedIntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -17937,8 +16523,8 @@ export namespace Prisma {
 
   export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -17953,8 +16539,8 @@ export namespace Prisma {
 
   export type NestedFloatFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -17964,8 +16550,8 @@ export namespace Prisma {
 
   export type NestedStringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -17973,13 +16559,14 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
+    search?: string
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
   export type NestedDateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -17994,8 +16581,8 @@ export namespace Prisma {
 
   export type NestedStringWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[] | ListStringFieldRefInput<$PrismaModel>
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    in?: string[]
+    notIn?: string[]
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -18003,6 +16590,7 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
+    search?: string
     not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
@@ -18011,8 +16599,8 @@ export namespace Prisma {
 
   export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[]
+    notIn?: Date[] | string[]
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -18033,8 +16621,8 @@ export namespace Prisma {
 
   export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -18044,8 +16632,8 @@ export namespace Prisma {
 
   export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | null
+    notIn?: Date[] | string[] | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -18058,8 +16646,8 @@ export namespace Prisma {
 
   export type NestedIntNullableFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -18069,8 +16657,8 @@ export namespace Prisma {
 
   export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -18085,8 +16673,8 @@ export namespace Prisma {
 
   export type NestedFloatNullableFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
+    in?: number[] | null
+    notIn?: number[] | null
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -18096,8 +16684,8 @@ export namespace Prisma {
 
   export type NestedFloatWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -18112,8 +16700,8 @@ export namespace Prisma {
 
   export type NestedStringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -18121,13 +16709,14 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
+    search?: string
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
   export type NestedStringNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    in?: string[] | null
+    notIn?: string[] | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -18135,10 +16724,57 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
+    search?: string
     not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
     _max?: NestedStringNullableFilter<$PrismaModel>
+  }
+
+  export type UsersCreateWithoutLikesInput = {
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsCreateNestedManyWithoutUser1Input
+    user2?: ConversationsCreateNestedManyWithoutUser2Input
+    notifications?: NotificationsCreateNestedManyWithoutUserInput
+    purchases?: PurchasesCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
+  }
+
+  export type UsersUncheckedCreateWithoutLikesInput = {
+    id?: number
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
+    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
+    notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
+    purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
+  }
+
+  export type UsersCreateOrConnectWithoutLikesInput = {
+    where: UsersWhereUniqueInput
+    create: XOR<UsersCreateWithoutLikesInput, UsersUncheckedCreateWithoutLikesInput>
   }
 
   export type AuctionCreateWithoutLikesInput = {
@@ -18151,13 +16787,13 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
     tag: TagCreateNestedOneWithoutAuctionsInput
-    notifications?: NotificationsCreateNestedManyWithoutAuctionInput
+    state: StateCreateNestedOneWithoutAuctionsInput
     pictures?: PictureCreateNestedManyWithoutAuctionInput
+    notifications?: NotificationsCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
   }
 
@@ -18177,112 +16813,14 @@ export namespace Prisma {
     sellerId: number
     buyerId?: number | null
     stateId: number
-    notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
     pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
+    notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
   }
 
   export type AuctionCreateOrConnectWithoutLikesInput = {
     where: AuctionWhereUniqueInput
     create: XOR<AuctionCreateWithoutLikesInput, AuctionUncheckedCreateWithoutLikesInput>
-  }
-
-  export type UsersCreateWithoutLikesInput = {
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    seller?: AuctionCreateNestedManyWithoutSellerInput
-    user1?: ConversationsCreateNestedManyWithoutUser1Input
-    user2?: ConversationsCreateNestedManyWithoutUser2Input
-    notifications?: NotificationsCreateNestedManyWithoutUserInput
-    purchases?: PurchasesCreateNestedManyWithoutUserInput
-  }
-
-  export type UsersUncheckedCreateWithoutLikesInput = {
-    id?: number
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
-    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
-    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
-    notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
-    purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
-  }
-
-  export type UsersCreateOrConnectWithoutLikesInput = {
-    where: UsersWhereUniqueInput
-    create: XOR<UsersCreateWithoutLikesInput, UsersUncheckedCreateWithoutLikesInput>
-  }
-
-  export type AuctionUpsertWithoutLikesInput = {
-    update: XOR<AuctionUpdateWithoutLikesInput, AuctionUncheckedUpdateWithoutLikesInput>
-    create: XOR<AuctionCreateWithoutLikesInput, AuctionUncheckedCreateWithoutLikesInput>
-    where?: AuctionWhereInput
-  }
-
-  export type AuctionUpdateToOneWithWhereWithoutLikesInput = {
-    where?: AuctionWhereInput
-    data: XOR<AuctionUpdateWithoutLikesInput, AuctionUncheckedUpdateWithoutLikesInput>
-  }
-
-  export type AuctionUpdateWithoutLikesInput = {
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: UsersUpdateOneWithoutBuyerNestedInput
-    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
-    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
-    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
-  }
-
-  export type AuctionUncheckedUpdateWithoutLikesInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    sellerId?: IntFieldUpdateOperationsInput | number
-    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
-    stateId?: IntFieldUpdateOperationsInput | number
-    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
   export type UsersUpsertWithoutLikesInput = {
@@ -18308,12 +16846,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUpdateManyWithoutUser2NestedInput
     notifications?: NotificationsUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUncheckedUpdateWithoutLikesInput = {
@@ -18329,12 +16867,64 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
+  }
+
+  export type AuctionUpsertWithoutLikesInput = {
+    update: XOR<AuctionUpdateWithoutLikesInput, AuctionUncheckedUpdateWithoutLikesInput>
+    create: XOR<AuctionCreateWithoutLikesInput, AuctionUncheckedCreateWithoutLikesInput>
+    where?: AuctionWhereInput
+  }
+
+  export type AuctionUpdateToOneWithWhereWithoutLikesInput = {
+    where?: AuctionWhereInput
+    data: XOR<AuctionUpdateWithoutLikesInput, AuctionUncheckedUpdateWithoutLikesInput>
+  }
+
+  export type AuctionUpdateWithoutLikesInput = {
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
+    buyer?: UsersUpdateOneWithoutBuyerNestedInput
+    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
+    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type AuctionUncheckedUpdateWithoutLikesInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    sellerId?: IntFieldUpdateOperationsInput | number
+    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
+    stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
   export type ConversationsCreateWithoutMessageInput = {
@@ -18395,12 +16985,12 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    seller?: AuctionCreateNestedManyWithoutSellerInput
     user2?: ConversationsCreateNestedManyWithoutUser2Input
     likes?: LikesCreateNestedManyWithoutUserInput
     notifications?: NotificationsCreateNestedManyWithoutUserInput
     purchases?: PurchasesCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
   }
 
   export type UsersUncheckedCreateWithoutUser1Input = {
@@ -18416,12 +17006,12 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
     user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
     likes?: LikesUncheckedCreateNestedManyWithoutUserInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
   }
 
   export type UsersCreateOrConnectWithoutUser1Input = {
@@ -18441,12 +17031,12 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    seller?: AuctionCreateNestedManyWithoutSellerInput
     user1?: ConversationsCreateNestedManyWithoutUser1Input
     likes?: LikesCreateNestedManyWithoutUserInput
     notifications?: NotificationsCreateNestedManyWithoutUserInput
     purchases?: PurchasesCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
   }
 
   export type UsersUncheckedCreateWithoutUser2Input = {
@@ -18462,12 +17052,12 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
     user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
     likes?: LikesUncheckedCreateNestedManyWithoutUserInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
   }
 
   export type UsersCreateOrConnectWithoutUser2Input = {
@@ -18521,12 +17111,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
     user2?: ConversationsUpdateManyWithoutUser2NestedInput
     likes?: LikesUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUncheckedUpdateWithoutUser1Input = {
@@ -18542,12 +17132,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
     user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
     likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUpsertWithoutUser2Input = {
@@ -18573,12 +17163,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUpdateManyWithoutUser1NestedInput
     likes?: LikesUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUncheckedUpdateWithoutUser2Input = {
@@ -18594,12 +17184,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
     likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
   }
 
   export type MessagesUpsertWithWhereUniqueWithoutConversationInput = {
@@ -18629,6 +17219,52 @@ export namespace Prisma {
     is_read?: BoolFilter<"Messages"> | boolean
   }
 
+  export type UsersCreateWithoutNotificationsInput = {
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsCreateNestedManyWithoutUser1Input
+    user2?: ConversationsCreateNestedManyWithoutUser2Input
+    likes?: LikesCreateNestedManyWithoutUserInput
+    purchases?: PurchasesCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
+  }
+
+  export type UsersUncheckedCreateWithoutNotificationsInput = {
+    id?: number
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
+    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
+    likes?: LikesUncheckedCreateNestedManyWithoutUserInput
+    purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
+  }
+
+  export type UsersCreateOrConnectWithoutNotificationsInput = {
+    where: UsersWhereUniqueInput
+    create: XOR<UsersCreateWithoutNotificationsInput, UsersUncheckedCreateWithoutNotificationsInput>
+  }
+
   export type AuctionCreateWithoutNotificationsInput = {
     title: string
     description: string
@@ -18639,13 +17275,13 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
     tag: TagCreateNestedOneWithoutAuctionsInput
-    likes?: LikesCreateNestedManyWithoutAuctionInput
+    state: StateCreateNestedOneWithoutAuctionsInput
     pictures?: PictureCreateNestedManyWithoutAuctionInput
+    likes?: LikesCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
   }
 
@@ -18665,112 +17301,14 @@ export namespace Prisma {
     sellerId: number
     buyerId?: number | null
     stateId: number
-    likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
+    likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
   }
 
   export type AuctionCreateOrConnectWithoutNotificationsInput = {
     where: AuctionWhereUniqueInput
     create: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
-  }
-
-  export type UsersCreateWithoutNotificationsInput = {
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    seller?: AuctionCreateNestedManyWithoutSellerInput
-    user1?: ConversationsCreateNestedManyWithoutUser1Input
-    user2?: ConversationsCreateNestedManyWithoutUser2Input
-    likes?: LikesCreateNestedManyWithoutUserInput
-    purchases?: PurchasesCreateNestedManyWithoutUserInput
-  }
-
-  export type UsersUncheckedCreateWithoutNotificationsInput = {
-    id?: number
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
-    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
-    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
-    likes?: LikesUncheckedCreateNestedManyWithoutUserInput
-    purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
-  }
-
-  export type UsersCreateOrConnectWithoutNotificationsInput = {
-    where: UsersWhereUniqueInput
-    create: XOR<UsersCreateWithoutNotificationsInput, UsersUncheckedCreateWithoutNotificationsInput>
-  }
-
-  export type AuctionUpsertWithoutNotificationsInput = {
-    update: XOR<AuctionUpdateWithoutNotificationsInput, AuctionUncheckedUpdateWithoutNotificationsInput>
-    create: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
-    where?: AuctionWhereInput
-  }
-
-  export type AuctionUpdateToOneWithWhereWithoutNotificationsInput = {
-    where?: AuctionWhereInput
-    data: XOR<AuctionUpdateWithoutNotificationsInput, AuctionUncheckedUpdateWithoutNotificationsInput>
-  }
-
-  export type AuctionUpdateWithoutNotificationsInput = {
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: UsersUpdateOneWithoutBuyerNestedInput
-    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
-    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
-    likes?: LikesUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
-  }
-
-  export type AuctionUncheckedUpdateWithoutNotificationsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    sellerId?: IntFieldUpdateOperationsInput | number
-    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
-    stateId?: IntFieldUpdateOperationsInput | number
-    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
   export type UsersUpsertWithoutNotificationsInput = {
@@ -18796,12 +17334,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUpdateManyWithoutUser2NestedInput
     likes?: LikesUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUncheckedUpdateWithoutNotificationsInput = {
@@ -18817,12 +17355,110 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
     likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
+  }
+
+  export type AuctionUpsertWithoutNotificationsInput = {
+    update: XOR<AuctionUpdateWithoutNotificationsInput, AuctionUncheckedUpdateWithoutNotificationsInput>
+    create: XOR<AuctionCreateWithoutNotificationsInput, AuctionUncheckedCreateWithoutNotificationsInput>
+    where?: AuctionWhereInput
+  }
+
+  export type AuctionUpdateToOneWithWhereWithoutNotificationsInput = {
+    where?: AuctionWhereInput
+    data: XOR<AuctionUpdateWithoutNotificationsInput, AuctionUncheckedUpdateWithoutNotificationsInput>
+  }
+
+  export type AuctionUpdateWithoutNotificationsInput = {
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
+    buyer?: UsersUpdateOneWithoutBuyerNestedInput
+    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
+    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type AuctionUncheckedUpdateWithoutNotificationsInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    sellerId?: IntFieldUpdateOperationsInput | number
+    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
+    stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type UsersCreateWithoutPurchasesInput = {
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsCreateNestedManyWithoutUser1Input
+    user2?: ConversationsCreateNestedManyWithoutUser2Input
+    likes?: LikesCreateNestedManyWithoutUserInput
+    notifications?: NotificationsCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
+  }
+
+  export type UsersUncheckedCreateWithoutPurchasesInput = {
+    id?: number
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
+    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
+    likes?: LikesUncheckedCreateNestedManyWithoutUserInput
+    notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
+  }
+
+  export type UsersCreateOrConnectWithoutPurchasesInput = {
+    where: UsersWhereUniqueInput
+    create: XOR<UsersCreateWithoutPurchasesInput, UsersUncheckedCreateWithoutPurchasesInput>
   }
 
   export type AuctionCreateWithoutPurchasesInput = {
@@ -18835,14 +17471,14 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
     tag: TagCreateNestedOneWithoutAuctionsInput
+    state: StateCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
     likes?: LikesCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
   }
 
   export type AuctionUncheckedCreateWithoutPurchasesInput = {
@@ -18861,112 +17497,14 @@ export namespace Prisma {
     sellerId: number
     buyerId?: number | null
     stateId: number
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
   }
 
   export type AuctionCreateOrConnectWithoutPurchasesInput = {
     where: AuctionWhereUniqueInput
     create: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
-  }
-
-  export type UsersCreateWithoutPurchasesInput = {
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    seller?: AuctionCreateNestedManyWithoutSellerInput
-    user1?: ConversationsCreateNestedManyWithoutUser1Input
-    user2?: ConversationsCreateNestedManyWithoutUser2Input
-    likes?: LikesCreateNestedManyWithoutUserInput
-    notifications?: NotificationsCreateNestedManyWithoutUserInput
-  }
-
-  export type UsersUncheckedCreateWithoutPurchasesInput = {
-    id?: number
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
-    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
-    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
-    likes?: LikesUncheckedCreateNestedManyWithoutUserInput
-    notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
-  }
-
-  export type UsersCreateOrConnectWithoutPurchasesInput = {
-    where: UsersWhereUniqueInput
-    create: XOR<UsersCreateWithoutPurchasesInput, UsersUncheckedCreateWithoutPurchasesInput>
-  }
-
-  export type AuctionUpsertWithoutPurchasesInput = {
-    update: XOR<AuctionUpdateWithoutPurchasesInput, AuctionUncheckedUpdateWithoutPurchasesInput>
-    create: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
-    where?: AuctionWhereInput
-  }
-
-  export type AuctionUpdateToOneWithWhereWithoutPurchasesInput = {
-    where?: AuctionWhereInput
-    data: XOR<AuctionUpdateWithoutPurchasesInput, AuctionUncheckedUpdateWithoutPurchasesInput>
-  }
-
-  export type AuctionUpdateWithoutPurchasesInput = {
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: UsersUpdateOneWithoutBuyerNestedInput
-    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
-    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
-    likes?: LikesUpdateManyWithoutAuctionNestedInput
-    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
-  }
-
-  export type AuctionUncheckedUpdateWithoutPurchasesInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    sellerId?: IntFieldUpdateOperationsInput | number
-    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
-    stateId?: IntFieldUpdateOperationsInput | number
-    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
-    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
   export type UsersUpsertWithoutPurchasesInput = {
@@ -18992,12 +17530,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUpdateManyWithoutUser2NestedInput
     likes?: LikesUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
   }
 
   export type UsersUncheckedUpdateWithoutPurchasesInput = {
@@ -19013,114 +17551,64 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
     user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
     likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
   }
 
-  export type AuctionCreateWithoutBuyerInput = {
-    title: string
-    description: string
-    initialPrice: number
-    actualBidPrice: number
-    startBidDate: Date | string
-    endBidDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    deletedAt?: Date | string | null
-    file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
-    tag: TagCreateNestedOneWithoutAuctionsInput
-    likes?: LikesCreateNestedManyWithoutAuctionInput
-    notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
-    purchases?: PurchasesCreateNestedManyWithoutAuctionInput
+  export type AuctionUpsertWithoutPurchasesInput = {
+    update: XOR<AuctionUpdateWithoutPurchasesInput, AuctionUncheckedUpdateWithoutPurchasesInput>
+    create: XOR<AuctionCreateWithoutPurchasesInput, AuctionUncheckedCreateWithoutPurchasesInput>
+    where?: AuctionWhereInput
   }
 
-  export type AuctionUncheckedCreateWithoutBuyerInput = {
-    id?: number
-    title: string
-    description: string
-    fileId: number
-    initialPrice: number
-    actualBidPrice: number
-    startBidDate: Date | string
-    endBidDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    deletedAt?: Date | string | null
-    tagId: number
-    sellerId: number
-    stateId: number
-    likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
-    notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
-    purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
+  export type AuctionUpdateToOneWithWhereWithoutPurchasesInput = {
+    where?: AuctionWhereInput
+    data: XOR<AuctionUpdateWithoutPurchasesInput, AuctionUncheckedUpdateWithoutPurchasesInput>
   }
 
-  export type AuctionCreateOrConnectWithoutBuyerInput = {
-    where: AuctionWhereUniqueInput
-    create: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput>
+  export type AuctionUpdateWithoutPurchasesInput = {
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
+    buyer?: UsersUpdateOneWithoutBuyerNestedInput
+    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
+    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
   }
 
-  export type AuctionCreateManyBuyerInputEnvelope = {
-    data: AuctionCreateManyBuyerInput | AuctionCreateManyBuyerInput[]
-    skipDuplicates?: boolean
-  }
-
-  export type AuctionCreateWithoutSellerInput = {
-    title: string
-    description: string
-    initialPrice: number
-    actualBidPrice: number
-    startBidDate: Date | string
-    endBidDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    deletedAt?: Date | string | null
-    buyer?: UsersCreateNestedOneWithoutBuyerInput
-    file: FileCreateNestedOneWithoutAuctionsInput
-    state: StateCreateNestedOneWithoutAuctionsInput
-    tag: TagCreateNestedOneWithoutAuctionsInput
-    likes?: LikesCreateNestedManyWithoutAuctionInput
-    notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
-    purchases?: PurchasesCreateNestedManyWithoutAuctionInput
-  }
-
-  export type AuctionUncheckedCreateWithoutSellerInput = {
-    id?: number
-    title: string
-    description: string
-    fileId: number
-    initialPrice: number
-    actualBidPrice: number
-    startBidDate: Date | string
-    endBidDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    deletedAt?: Date | string | null
-    tagId: number
-    buyerId?: number | null
-    stateId: number
-    likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
-    notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
-    purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
-  }
-
-  export type AuctionCreateOrConnectWithoutSellerInput = {
-    where: AuctionWhereUniqueInput
-    create: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput>
-  }
-
-  export type AuctionCreateManySellerInputEnvelope = {
-    data: AuctionCreateManySellerInput | AuctionCreateManySellerInput[]
-    skipDuplicates?: boolean
+  export type AuctionUncheckedUpdateWithoutPurchasesInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    sellerId?: IntFieldUpdateOperationsInput | number
+    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
+    stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
   export type ConversationsCreateWithoutUser1Input = {
@@ -19242,57 +17730,106 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type AuctionUpsertWithWhereUniqueWithoutBuyerInput = {
+  export type AuctionCreateWithoutBuyerInput = {
+    title: string
+    description: string
+    initialPrice: number
+    actualBidPrice: number
+    startBidDate: Date | string
+    endBidDate?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
+    file: FileCreateNestedOneWithoutAuctionsInput
+    tag: TagCreateNestedOneWithoutAuctionsInput
+    state: StateCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
+    likes?: LikesCreateNestedManyWithoutAuctionInput
+    notifications?: NotificationsCreateNestedManyWithoutAuctionInput
+    purchases?: PurchasesCreateNestedManyWithoutAuctionInput
+  }
+
+  export type AuctionUncheckedCreateWithoutBuyerInput = {
+    id?: number
+    title: string
+    description: string
+    fileId: number
+    initialPrice: number
+    actualBidPrice: number
+    startBidDate: Date | string
+    endBidDate?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    deletedAt?: Date | string | null
+    tagId: number
+    sellerId: number
+    stateId: number
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
+    likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
+    notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
+    purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
+  }
+
+  export type AuctionCreateOrConnectWithoutBuyerInput = {
     where: AuctionWhereUniqueInput
-    update: XOR<AuctionUpdateWithoutBuyerInput, AuctionUncheckedUpdateWithoutBuyerInput>
     create: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput>
   }
 
-  export type AuctionUpdateWithWhereUniqueWithoutBuyerInput = {
+  export type AuctionCreateManyBuyerInputEnvelope = {
+    data: AuctionCreateManyBuyerInput | AuctionCreateManyBuyerInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type AuctionCreateWithoutSellerInput = {
+    title: string
+    description: string
+    initialPrice: number
+    actualBidPrice: number
+    startBidDate: Date | string
+    endBidDate?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    deletedAt?: Date | string | null
+    buyer?: UsersCreateNestedOneWithoutBuyerInput
+    file: FileCreateNestedOneWithoutAuctionsInput
+    tag: TagCreateNestedOneWithoutAuctionsInput
+    state: StateCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
+    likes?: LikesCreateNestedManyWithoutAuctionInput
+    notifications?: NotificationsCreateNestedManyWithoutAuctionInput
+    purchases?: PurchasesCreateNestedManyWithoutAuctionInput
+  }
+
+  export type AuctionUncheckedCreateWithoutSellerInput = {
+    id?: number
+    title: string
+    description: string
+    fileId: number
+    initialPrice: number
+    actualBidPrice: number
+    startBidDate: Date | string
+    endBidDate?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    deletedAt?: Date | string | null
+    tagId: number
+    buyerId?: number | null
+    stateId: number
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
+    likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
+    notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
+    purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
+  }
+
+  export type AuctionCreateOrConnectWithoutSellerInput = {
     where: AuctionWhereUniqueInput
-    data: XOR<AuctionUpdateWithoutBuyerInput, AuctionUncheckedUpdateWithoutBuyerInput>
-  }
-
-  export type AuctionUpdateManyWithWhereWithoutBuyerInput = {
-    where: AuctionScalarWhereInput
-    data: XOR<AuctionUpdateManyMutationInput, AuctionUncheckedUpdateManyWithoutBuyerInput>
-  }
-
-  export type AuctionScalarWhereInput = {
-    AND?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
-    OR?: AuctionScalarWhereInput[]
-    NOT?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
-    id?: IntFilter<"Auction"> | number
-    title?: StringFilter<"Auction"> | string
-    description?: StringFilter<"Auction"> | string
-    fileId?: IntFilter<"Auction"> | number
-    initialPrice?: FloatFilter<"Auction"> | number
-    actualBidPrice?: FloatFilter<"Auction"> | number
-    startBidDate?: DateTimeFilter<"Auction"> | Date | string
-    endBidDate?: DateTimeNullableFilter<"Auction"> | Date | string | null
-    createdAt?: DateTimeFilter<"Auction"> | Date | string
-    updatedAt?: DateTimeFilter<"Auction"> | Date | string
-    deletedAt?: DateTimeNullableFilter<"Auction"> | Date | string | null
-    tagId?: IntFilter<"Auction"> | number
-    sellerId?: IntFilter<"Auction"> | number
-    buyerId?: IntNullableFilter<"Auction"> | number | null
-    stateId?: IntFilter<"Auction"> | number
-  }
-
-  export type AuctionUpsertWithWhereUniqueWithoutSellerInput = {
-    where: AuctionWhereUniqueInput
-    update: XOR<AuctionUpdateWithoutSellerInput, AuctionUncheckedUpdateWithoutSellerInput>
     create: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput>
   }
 
-  export type AuctionUpdateWithWhereUniqueWithoutSellerInput = {
-    where: AuctionWhereUniqueInput
-    data: XOR<AuctionUpdateWithoutSellerInput, AuctionUncheckedUpdateWithoutSellerInput>
-  }
-
-  export type AuctionUpdateManyWithWhereWithoutSellerInput = {
-    where: AuctionScalarWhereInput
-    data: XOR<AuctionUpdateManyMutationInput, AuctionUncheckedUpdateManyWithoutSellerInput>
+  export type AuctionCreateManySellerInputEnvelope = {
+    data: AuctionCreateManySellerInput | AuctionCreateManySellerInput[]
+    skipDuplicates?: boolean
   }
 
   export type ConversationsUpsertWithWhereUniqueWithoutUser1Input = {
@@ -19419,6 +17956,59 @@ export namespace Prisma {
     user_id?: IntFilter<"Purchases"> | number
   }
 
+  export type AuctionUpsertWithWhereUniqueWithoutBuyerInput = {
+    where: AuctionWhereUniqueInput
+    update: XOR<AuctionUpdateWithoutBuyerInput, AuctionUncheckedUpdateWithoutBuyerInput>
+    create: XOR<AuctionCreateWithoutBuyerInput, AuctionUncheckedCreateWithoutBuyerInput>
+  }
+
+  export type AuctionUpdateWithWhereUniqueWithoutBuyerInput = {
+    where: AuctionWhereUniqueInput
+    data: XOR<AuctionUpdateWithoutBuyerInput, AuctionUncheckedUpdateWithoutBuyerInput>
+  }
+
+  export type AuctionUpdateManyWithWhereWithoutBuyerInput = {
+    where: AuctionScalarWhereInput
+    data: XOR<AuctionUpdateManyMutationInput, AuctionUncheckedUpdateManyWithoutBuyerInput>
+  }
+
+  export type AuctionScalarWhereInput = {
+    AND?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
+    OR?: AuctionScalarWhereInput[]
+    NOT?: AuctionScalarWhereInput | AuctionScalarWhereInput[]
+    id?: IntFilter<"Auction"> | number
+    title?: StringFilter<"Auction"> | string
+    description?: StringFilter<"Auction"> | string
+    fileId?: IntFilter<"Auction"> | number
+    initialPrice?: FloatFilter<"Auction"> | number
+    actualBidPrice?: FloatFilter<"Auction"> | number
+    startBidDate?: DateTimeFilter<"Auction"> | Date | string
+    endBidDate?: DateTimeNullableFilter<"Auction"> | Date | string | null
+    createdAt?: DateTimeFilter<"Auction"> | Date | string
+    updatedAt?: DateTimeFilter<"Auction"> | Date | string
+    deletedAt?: DateTimeNullableFilter<"Auction"> | Date | string | null
+    tagId?: IntFilter<"Auction"> | number
+    sellerId?: IntFilter<"Auction"> | number
+    buyerId?: IntNullableFilter<"Auction"> | number | null
+    stateId?: IntFilter<"Auction"> | number
+  }
+
+  export type AuctionUpsertWithWhereUniqueWithoutSellerInput = {
+    where: AuctionWhereUniqueInput
+    update: XOR<AuctionUpdateWithoutSellerInput, AuctionUncheckedUpdateWithoutSellerInput>
+    create: XOR<AuctionCreateWithoutSellerInput, AuctionUncheckedCreateWithoutSellerInput>
+  }
+
+  export type AuctionUpdateWithWhereUniqueWithoutSellerInput = {
+    where: AuctionWhereUniqueInput
+    data: XOR<AuctionUpdateWithoutSellerInput, AuctionUncheckedUpdateWithoutSellerInput>
+  }
+
+  export type AuctionUpdateManyWithWhereWithoutSellerInput = {
+    where: AuctionScalarWhereInput
+    data: XOR<AuctionUpdateManyMutationInput, AuctionUncheckedUpdateManyWithoutSellerInput>
+  }
+
   export type AuctionCreateWithoutFileInput = {
     title: string
     description: string
@@ -19429,13 +18019,13 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
-    buyer?: UsersCreateNestedOneWithoutBuyerInput
     seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
+    buyer?: UsersCreateNestedOneWithoutBuyerInput
     tag: TagCreateNestedOneWithoutAuctionsInput
+    state: StateCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
     likes?: LikesCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
   }
 
@@ -19454,9 +18044,9 @@ export namespace Prisma {
     sellerId: number
     buyerId?: number | null
     stateId: number
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
   }
 
@@ -19486,6 +18076,52 @@ export namespace Prisma {
     data: XOR<AuctionUpdateManyMutationInput, AuctionUncheckedUpdateManyWithoutFileInput>
   }
 
+  export type UsersCreateWithoutSellerInput = {
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsCreateNestedManyWithoutUser1Input
+    user2?: ConversationsCreateNestedManyWithoutUser2Input
+    likes?: LikesCreateNestedManyWithoutUserInput
+    notifications?: NotificationsCreateNestedManyWithoutUserInput
+    purchases?: PurchasesCreateNestedManyWithoutUserInput
+    buyer?: AuctionCreateNestedManyWithoutBuyerInput
+  }
+
+  export type UsersUncheckedCreateWithoutSellerInput = {
+    id?: number
+    first_name: string
+    last_name: string
+    birth_date: Date | string
+    email: string
+    password: string
+    picture?: string | null
+    balance: number
+    role: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted_at?: Date | string | null
+    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
+    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
+    likes?: LikesUncheckedCreateNestedManyWithoutUserInput
+    notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
+    purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
+  }
+
+  export type UsersCreateOrConnectWithoutSellerInput = {
+    where: UsersWhereUniqueInput
+    create: XOR<UsersCreateWithoutSellerInput, UsersUncheckedCreateWithoutSellerInput>
+  }
+
   export type UsersCreateWithoutBuyerInput = {
     first_name: string
     last_name: string
@@ -19498,12 +18134,12 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    seller?: AuctionCreateNestedManyWithoutSellerInput
     user1?: ConversationsCreateNestedManyWithoutUser1Input
     user2?: ConversationsCreateNestedManyWithoutUser2Input
     likes?: LikesCreateNestedManyWithoutUserInput
     notifications?: NotificationsCreateNestedManyWithoutUserInput
     purchases?: PurchasesCreateNestedManyWithoutUserInput
+    seller?: AuctionCreateNestedManyWithoutSellerInput
   }
 
   export type UsersUncheckedCreateWithoutBuyerInput = {
@@ -19519,12 +18155,12 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at: Date | string
     deleted_at?: Date | string | null
-    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
     user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
     user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
     likes?: LikesUncheckedCreateNestedManyWithoutUserInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    seller?: AuctionUncheckedCreateNestedManyWithoutSellerInput
   }
 
   export type UsersCreateOrConnectWithoutBuyerInput = {
@@ -19548,50 +18184,18 @@ export namespace Prisma {
     create: XOR<FileCreateWithoutAuctionsInput, FileUncheckedCreateWithoutAuctionsInput>
   }
 
-  export type UsersCreateWithoutSellerInput = {
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionCreateNestedManyWithoutBuyerInput
-    user1?: ConversationsCreateNestedManyWithoutUser1Input
-    user2?: ConversationsCreateNestedManyWithoutUser2Input
-    likes?: LikesCreateNestedManyWithoutUserInput
-    notifications?: NotificationsCreateNestedManyWithoutUserInput
-    purchases?: PurchasesCreateNestedManyWithoutUserInput
+  export type TagCreateWithoutAuctionsInput = {
+    name: string
   }
 
-  export type UsersUncheckedCreateWithoutSellerInput = {
+  export type TagUncheckedCreateWithoutAuctionsInput = {
     id?: number
-    first_name: string
-    last_name: string
-    birth_date: Date | string
-    email: string
-    password: string
-    picture?: string | null
-    balance: number
-    role: string
-    created_at?: Date | string
-    updated_at: Date | string
-    deleted_at?: Date | string | null
-    buyer?: AuctionUncheckedCreateNestedManyWithoutBuyerInput
-    user1?: ConversationsUncheckedCreateNestedManyWithoutUser1Input
-    user2?: ConversationsUncheckedCreateNestedManyWithoutUser2Input
-    likes?: LikesUncheckedCreateNestedManyWithoutUserInput
-    notifications?: NotificationsUncheckedCreateNestedManyWithoutUserInput
-    purchases?: PurchasesUncheckedCreateNestedManyWithoutUserInput
+    name: string
   }
 
-  export type UsersCreateOrConnectWithoutSellerInput = {
-    where: UsersWhereUniqueInput
-    create: XOR<UsersCreateWithoutSellerInput, UsersUncheckedCreateWithoutSellerInput>
+  export type TagCreateOrConnectWithoutAuctionsInput = {
+    where: TagWhereUniqueInput
+    create: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
   }
 
   export type StateCreateWithoutAuctionsInput = {
@@ -19608,18 +18212,23 @@ export namespace Prisma {
     create: XOR<StateCreateWithoutAuctionsInput, StateUncheckedCreateWithoutAuctionsInput>
   }
 
-  export type TagCreateWithoutAuctionsInput = {
-    name: string
+  export type PictureCreateWithoutAuctionInput = {
+    path: string
   }
 
-  export type TagUncheckedCreateWithoutAuctionsInput = {
+  export type PictureUncheckedCreateWithoutAuctionInput = {
     id?: number
-    name: string
+    path: string
   }
 
-  export type TagCreateOrConnectWithoutAuctionsInput = {
-    where: TagWhereUniqueInput
-    create: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
+  export type PictureCreateOrConnectWithoutAuctionInput = {
+    where: PictureWhereUniqueInput
+    create: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput>
+  }
+
+  export type PictureCreateManyAuctionInputEnvelope = {
+    data: PictureCreateManyAuctionInput | PictureCreateManyAuctionInput[]
+    skipDuplicates?: boolean
   }
 
   export type LikesCreateWithoutAuctionInput = {
@@ -19668,25 +18277,6 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type PictureCreateWithoutAuctionInput = {
-    path: string
-  }
-
-  export type PictureUncheckedCreateWithoutAuctionInput = {
-    id?: number
-    path: string
-  }
-
-  export type PictureCreateOrConnectWithoutAuctionInput = {
-    where: PictureWhereUniqueInput
-    create: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput>
-  }
-
-  export type PictureCreateManyAuctionInputEnvelope = {
-    data: PictureCreateManyAuctionInput | PictureCreateManyAuctionInput[]
-    skipDuplicates?: boolean
-  }
-
   export type PurchasesCreateWithoutAuctionInput = {
     purchase_date?: Date | string
     final_price: number
@@ -19708,80 +18298,6 @@ export namespace Prisma {
   export type PurchasesCreateManyAuctionInputEnvelope = {
     data: PurchasesCreateManyAuctionInput | PurchasesCreateManyAuctionInput[]
     skipDuplicates?: boolean
-  }
-
-  export type UsersUpsertWithoutBuyerInput = {
-    update: XOR<UsersUpdateWithoutBuyerInput, UsersUncheckedUpdateWithoutBuyerInput>
-    create: XOR<UsersCreateWithoutBuyerInput, UsersUncheckedCreateWithoutBuyerInput>
-    where?: UsersWhereInput
-  }
-
-  export type UsersUpdateToOneWithWhereWithoutBuyerInput = {
-    where?: UsersWhereInput
-    data: XOR<UsersUpdateWithoutBuyerInput, UsersUncheckedUpdateWithoutBuyerInput>
-  }
-
-  export type UsersUpdateWithoutBuyerInput = {
-    first_name?: StringFieldUpdateOperationsInput | string
-    last_name?: StringFieldUpdateOperationsInput | string
-    birth_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    email?: StringFieldUpdateOperationsInput | string
-    password?: StringFieldUpdateOperationsInput | string
-    picture?: NullableStringFieldUpdateOperationsInput | string | null
-    balance?: FloatFieldUpdateOperationsInput | number
-    role?: StringFieldUpdateOperationsInput | string
-    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    seller?: AuctionUpdateManyWithoutSellerNestedInput
-    user1?: ConversationsUpdateManyWithoutUser1NestedInput
-    user2?: ConversationsUpdateManyWithoutUser2NestedInput
-    likes?: LikesUpdateManyWithoutUserNestedInput
-    notifications?: NotificationsUpdateManyWithoutUserNestedInput
-    purchases?: PurchasesUpdateManyWithoutUserNestedInput
-  }
-
-  export type UsersUncheckedUpdateWithoutBuyerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    first_name?: StringFieldUpdateOperationsInput | string
-    last_name?: StringFieldUpdateOperationsInput | string
-    birth_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    email?: StringFieldUpdateOperationsInput | string
-    password?: StringFieldUpdateOperationsInput | string
-    picture?: NullableStringFieldUpdateOperationsInput | string | null
-    balance?: FloatFieldUpdateOperationsInput | number
-    role?: StringFieldUpdateOperationsInput | string
-    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
-    user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
-    user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
-    likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
-    notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
-    purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
-  }
-
-  export type FileUpsertWithoutAuctionsInput = {
-    update: XOR<FileUpdateWithoutAuctionsInput, FileUncheckedUpdateWithoutAuctionsInput>
-    create: XOR<FileCreateWithoutAuctionsInput, FileUncheckedCreateWithoutAuctionsInput>
-    where?: FileWhereInput
-  }
-
-  export type FileUpdateToOneWithWhereWithoutAuctionsInput = {
-    where?: FileWhereInput
-    data: XOR<FileUpdateWithoutAuctionsInput, FileUncheckedUpdateWithoutAuctionsInput>
-  }
-
-  export type FileUpdateWithoutAuctionsInput = {
-    content?: StringFieldUpdateOperationsInput | string
-    contentType?: StringFieldUpdateOperationsInput | string
-  }
-
-  export type FileUncheckedUpdateWithoutAuctionsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    content?: StringFieldUpdateOperationsInput | string
-    contentType?: StringFieldUpdateOperationsInput | string
   }
 
   export type UsersUpsertWithoutSellerInput = {
@@ -19807,12 +18323,12 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
     user1?: ConversationsUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUpdateManyWithoutUser2NestedInput
     likes?: LikesUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUpdateManyWithoutBuyerNestedInput
   }
 
   export type UsersUncheckedUpdateWithoutSellerInput = {
@@ -19828,12 +18344,106 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
     user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
     user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
     likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    buyer?: AuctionUncheckedUpdateManyWithoutBuyerNestedInput
+  }
+
+  export type UsersUpsertWithoutBuyerInput = {
+    update: XOR<UsersUpdateWithoutBuyerInput, UsersUncheckedUpdateWithoutBuyerInput>
+    create: XOR<UsersCreateWithoutBuyerInput, UsersUncheckedCreateWithoutBuyerInput>
+    where?: UsersWhereInput
+  }
+
+  export type UsersUpdateToOneWithWhereWithoutBuyerInput = {
+    where?: UsersWhereInput
+    data: XOR<UsersUpdateWithoutBuyerInput, UsersUncheckedUpdateWithoutBuyerInput>
+  }
+
+  export type UsersUpdateWithoutBuyerInput = {
+    first_name?: StringFieldUpdateOperationsInput | string
+    last_name?: StringFieldUpdateOperationsInput | string
+    birth_date?: DateTimeFieldUpdateOperationsInput | Date | string
+    email?: StringFieldUpdateOperationsInput | string
+    password?: StringFieldUpdateOperationsInput | string
+    picture?: NullableStringFieldUpdateOperationsInput | string | null
+    balance?: FloatFieldUpdateOperationsInput | number
+    role?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    user1?: ConversationsUpdateManyWithoutUser1NestedInput
+    user2?: ConversationsUpdateManyWithoutUser2NestedInput
+    likes?: LikesUpdateManyWithoutUserNestedInput
+    notifications?: NotificationsUpdateManyWithoutUserNestedInput
+    purchases?: PurchasesUpdateManyWithoutUserNestedInput
+    seller?: AuctionUpdateManyWithoutSellerNestedInput
+  }
+
+  export type UsersUncheckedUpdateWithoutBuyerInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    first_name?: StringFieldUpdateOperationsInput | string
+    last_name?: StringFieldUpdateOperationsInput | string
+    birth_date?: DateTimeFieldUpdateOperationsInput | Date | string
+    email?: StringFieldUpdateOperationsInput | string
+    password?: StringFieldUpdateOperationsInput | string
+    picture?: NullableStringFieldUpdateOperationsInput | string | null
+    balance?: FloatFieldUpdateOperationsInput | number
+    role?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted_at?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    user1?: ConversationsUncheckedUpdateManyWithoutUser1NestedInput
+    user2?: ConversationsUncheckedUpdateManyWithoutUser2NestedInput
+    likes?: LikesUncheckedUpdateManyWithoutUserNestedInput
+    notifications?: NotificationsUncheckedUpdateManyWithoutUserNestedInput
+    purchases?: PurchasesUncheckedUpdateManyWithoutUserNestedInput
+    seller?: AuctionUncheckedUpdateManyWithoutSellerNestedInput
+  }
+
+  export type FileUpsertWithoutAuctionsInput = {
+    update: XOR<FileUpdateWithoutAuctionsInput, FileUncheckedUpdateWithoutAuctionsInput>
+    create: XOR<FileCreateWithoutAuctionsInput, FileUncheckedCreateWithoutAuctionsInput>
+    where?: FileWhereInput
+  }
+
+  export type FileUpdateToOneWithWhereWithoutAuctionsInput = {
+    where?: FileWhereInput
+    data: XOR<FileUpdateWithoutAuctionsInput, FileUncheckedUpdateWithoutAuctionsInput>
+  }
+
+  export type FileUpdateWithoutAuctionsInput = {
+    content?: StringFieldUpdateOperationsInput | string
+    contentType?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type FileUncheckedUpdateWithoutAuctionsInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    content?: StringFieldUpdateOperationsInput | string
+    contentType?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type TagUpsertWithoutAuctionsInput = {
+    update: XOR<TagUpdateWithoutAuctionsInput, TagUncheckedUpdateWithoutAuctionsInput>
+    create: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
+    where?: TagWhereInput
+  }
+
+  export type TagUpdateToOneWithWhereWithoutAuctionsInput = {
+    where?: TagWhereInput
+    data: XOR<TagUpdateWithoutAuctionsInput, TagUncheckedUpdateWithoutAuctionsInput>
+  }
+
+  export type TagUpdateWithoutAuctionsInput = {
+    name?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type TagUncheckedUpdateWithoutAuctionsInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
   }
 
   export type StateUpsertWithoutAuctionsInput = {
@@ -19856,24 +18466,29 @@ export namespace Prisma {
     stateType?: StringFieldUpdateOperationsInput | string
   }
 
-  export type TagUpsertWithoutAuctionsInput = {
-    update: XOR<TagUpdateWithoutAuctionsInput, TagUncheckedUpdateWithoutAuctionsInput>
-    create: XOR<TagCreateWithoutAuctionsInput, TagUncheckedCreateWithoutAuctionsInput>
-    where?: TagWhereInput
+  export type PictureUpsertWithWhereUniqueWithoutAuctionInput = {
+    where: PictureWhereUniqueInput
+    update: XOR<PictureUpdateWithoutAuctionInput, PictureUncheckedUpdateWithoutAuctionInput>
+    create: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput>
   }
 
-  export type TagUpdateToOneWithWhereWithoutAuctionsInput = {
-    where?: TagWhereInput
-    data: XOR<TagUpdateWithoutAuctionsInput, TagUncheckedUpdateWithoutAuctionsInput>
+  export type PictureUpdateWithWhereUniqueWithoutAuctionInput = {
+    where: PictureWhereUniqueInput
+    data: XOR<PictureUpdateWithoutAuctionInput, PictureUncheckedUpdateWithoutAuctionInput>
   }
 
-  export type TagUpdateWithoutAuctionsInput = {
-    name?: StringFieldUpdateOperationsInput | string
+  export type PictureUpdateManyWithWhereWithoutAuctionInput = {
+    where: PictureScalarWhereInput
+    data: XOR<PictureUpdateManyMutationInput, PictureUncheckedUpdateManyWithoutAuctionInput>
   }
 
-  export type TagUncheckedUpdateWithoutAuctionsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
+  export type PictureScalarWhereInput = {
+    AND?: PictureScalarWhereInput | PictureScalarWhereInput[]
+    OR?: PictureScalarWhereInput[]
+    NOT?: PictureScalarWhereInput | PictureScalarWhereInput[]
+    id?: IntFilter<"Picture"> | number
+    path?: StringFilter<"Picture"> | string
+    auctionId?: IntFilter<"Picture"> | number
   }
 
   export type LikesUpsertWithWhereUniqueWithoutAuctionInput = {
@@ -19908,31 +18523,6 @@ export namespace Prisma {
     data: XOR<NotificationsUpdateManyMutationInput, NotificationsUncheckedUpdateManyWithoutAuctionInput>
   }
 
-  export type PictureUpsertWithWhereUniqueWithoutAuctionInput = {
-    where: PictureWhereUniqueInput
-    update: XOR<PictureUpdateWithoutAuctionInput, PictureUncheckedUpdateWithoutAuctionInput>
-    create: XOR<PictureCreateWithoutAuctionInput, PictureUncheckedCreateWithoutAuctionInput>
-  }
-
-  export type PictureUpdateWithWhereUniqueWithoutAuctionInput = {
-    where: PictureWhereUniqueInput
-    data: XOR<PictureUpdateWithoutAuctionInput, PictureUncheckedUpdateWithoutAuctionInput>
-  }
-
-  export type PictureUpdateManyWithWhereWithoutAuctionInput = {
-    where: PictureScalarWhereInput
-    data: XOR<PictureUpdateManyMutationInput, PictureUncheckedUpdateManyWithoutAuctionInput>
-  }
-
-  export type PictureScalarWhereInput = {
-    AND?: PictureScalarWhereInput | PictureScalarWhereInput[]
-    OR?: PictureScalarWhereInput[]
-    NOT?: PictureScalarWhereInput | PictureScalarWhereInput[]
-    id?: IntFilter<"Picture"> | number
-    path?: StringFilter<"Picture"> | string
-    auctionId?: IntFilter<"Picture"> | number
-  }
-
   export type PurchasesUpsertWithWhereUniqueWithoutAuctionInput = {
     where: PurchasesWhereUniqueInput
     update: XOR<PurchasesUpdateWithoutAuctionInput, PurchasesUncheckedUpdateWithoutAuctionInput>
@@ -19959,11 +18549,11 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
-    state: StateCreateNestedOneWithoutAuctionsInput
     tag: TagCreateNestedOneWithoutAuctionsInput
+    state: StateCreateNestedOneWithoutAuctionsInput
     likes?: LikesCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
@@ -20016,11 +18606,11 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
     buyer?: UsersUpdateOneWithoutBuyerNestedInput
     file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
     tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
     likes?: LikesUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
@@ -20057,13 +18647,13 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
     state: StateCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
     likes?: LikesCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
   }
 
@@ -20082,9 +18672,9 @@ export namespace Prisma {
     sellerId: number
     buyerId?: number | null
     stateId: number
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
   }
 
@@ -20124,13 +18714,13 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     deletedAt?: Date | string | null
+    seller: UsersCreateNestedOneWithoutSellerInput
     buyer?: UsersCreateNestedOneWithoutBuyerInput
     file: FileCreateNestedOneWithoutAuctionsInput
-    seller: UsersCreateNestedOneWithoutSellerInput
     tag: TagCreateNestedOneWithoutAuctionsInput
+    pictures?: PictureCreateNestedManyWithoutAuctionInput
     likes?: LikesCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsCreateNestedManyWithoutAuctionInput
-    pictures?: PictureCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesCreateNestedManyWithoutAuctionInput
   }
 
@@ -20149,9 +18739,9 @@ export namespace Prisma {
     tagId: number
     sellerId: number
     buyerId?: number | null
+    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     likes?: LikesUncheckedCreateNestedManyWithoutAuctionInput
     notifications?: NotificationsUncheckedCreateNestedManyWithoutAuctionInput
-    pictures?: PictureUncheckedCreateNestedManyWithoutAuctionInput
     purchases?: PurchasesUncheckedCreateNestedManyWithoutAuctionInput
   }
 
@@ -20208,40 +18798,6 @@ export namespace Prisma {
     is_read?: BoolFieldUpdateOperationsInput | boolean
   }
 
-  export type AuctionCreateManyBuyerInput = {
-    id?: number
-    title: string
-    description: string
-    fileId: number
-    initialPrice: number
-    actualBidPrice: number
-    startBidDate: Date | string
-    endBidDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    deletedAt?: Date | string | null
-    tagId: number
-    sellerId: number
-    stateId: number
-  }
-
-  export type AuctionCreateManySellerInput = {
-    id?: number
-    title: string
-    description: string
-    fileId: number
-    initialPrice: number
-    actualBidPrice: number
-    startBidDate: Date | string
-    endBidDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    deletedAt?: Date | string | null
-    tagId: number
-    buyerId?: number | null
-    stateId: number
-  }
-
   export type ConversationsCreateManyUser1Input = {
     id?: number
     last_message_at?: Date | string | null
@@ -20277,120 +18833,38 @@ export namespace Prisma {
     auction_id: number
   }
 
-  export type AuctionUpdateWithoutBuyerInput = {
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
-    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
-    likes?: LikesUpdateManyWithoutAuctionNestedInput
-    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
+  export type AuctionCreateManyBuyerInput = {
+    id?: number
+    title: string
+    description: string
+    fileId: number
+    initialPrice: number
+    actualBidPrice: number
+    startBidDate: Date | string
+    endBidDate?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    deletedAt?: Date | string | null
+    tagId: number
+    sellerId: number
+    stateId: number
   }
 
-  export type AuctionUncheckedUpdateWithoutBuyerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    sellerId?: IntFieldUpdateOperationsInput | number
-    stateId?: IntFieldUpdateOperationsInput | number
-    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
-    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
-  }
-
-  export type AuctionUncheckedUpdateManyWithoutBuyerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    sellerId?: IntFieldUpdateOperationsInput | number
-    stateId?: IntFieldUpdateOperationsInput | number
-  }
-
-  export type AuctionUpdateWithoutSellerInput = {
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: UsersUpdateOneWithoutBuyerNestedInput
-    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
-    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
-    likes?: LikesUpdateManyWithoutAuctionNestedInput
-    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
-  }
-
-  export type AuctionUncheckedUpdateWithoutSellerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
-    stateId?: IntFieldUpdateOperationsInput | number
-    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
-    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
-    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
-  }
-
-  export type AuctionUncheckedUpdateManyWithoutSellerInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    title?: StringFieldUpdateOperationsInput | string
-    description?: StringFieldUpdateOperationsInput | string
-    fileId?: IntFieldUpdateOperationsInput | number
-    initialPrice?: FloatFieldUpdateOperationsInput | number
-    actualBidPrice?: FloatFieldUpdateOperationsInput | number
-    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
-    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    tagId?: IntFieldUpdateOperationsInput | number
-    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
-    stateId?: IntFieldUpdateOperationsInput | number
+  export type AuctionCreateManySellerInput = {
+    id?: number
+    title: string
+    description: string
+    fileId: number
+    initialPrice: number
+    actualBidPrice: number
+    startBidDate: Date | string
+    endBidDate?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    deletedAt?: Date | string | null
+    tagId: number
+    buyerId?: number | null
+    stateId: number
   }
 
   export type ConversationsUpdateWithoutUser1Input = {
@@ -20497,6 +18971,122 @@ export namespace Prisma {
     auction_id?: IntFieldUpdateOperationsInput | number
   }
 
+  export type AuctionUpdateWithoutBuyerInput = {
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
+    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
+    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type AuctionUncheckedUpdateWithoutBuyerInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    sellerId?: IntFieldUpdateOperationsInput | number
+    stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type AuctionUncheckedUpdateManyWithoutBuyerInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    sellerId?: IntFieldUpdateOperationsInput | number
+    stateId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type AuctionUpdateWithoutSellerInput = {
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    buyer?: UsersUpdateOneWithoutBuyerNestedInput
+    file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
+    tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type AuctionUncheckedUpdateWithoutSellerInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
+    stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
+    likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
+    notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
+    purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
+  }
+
+  export type AuctionUncheckedUpdateManyWithoutSellerInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    fileId?: IntFieldUpdateOperationsInput | number
+    initialPrice?: FloatFieldUpdateOperationsInput | number
+    actualBidPrice?: FloatFieldUpdateOperationsInput | number
+    startBidDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    endBidDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    tagId?: IntFieldUpdateOperationsInput | number
+    buyerId?: NullableIntFieldUpdateOperationsInput | number | null
+    stateId?: IntFieldUpdateOperationsInput | number
+  }
+
   export type AuctionCreateManyFileInput = {
     id?: number
     title: string
@@ -20524,13 +19114,13 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    buyer?: UsersUpdateOneWithoutBuyerNestedInput
     seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
-    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    buyer?: UsersUpdateOneWithoutBuyerNestedInput
     tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     likes?: LikesUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
   }
 
@@ -20549,9 +19139,9 @@ export namespace Prisma {
     sellerId?: IntFieldUpdateOperationsInput | number
     buyerId?: NullableIntFieldUpdateOperationsInput | number | null
     stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
@@ -20572,6 +19162,11 @@ export namespace Prisma {
     stateId?: IntFieldUpdateOperationsInput | number
   }
 
+  export type PictureCreateManyAuctionInput = {
+    id?: number
+    path: string
+  }
+
   export type LikesCreateManyAuctionInput = {
     id?: number
     user_id: number
@@ -20586,16 +19181,25 @@ export namespace Prisma {
     message_id?: number | null
   }
 
-  export type PictureCreateManyAuctionInput = {
-    id?: number
-    path: string
-  }
-
   export type PurchasesCreateManyAuctionInput = {
     id?: number
     purchase_date?: Date | string
     final_price: number
     user_id: number
+  }
+
+  export type PictureUpdateWithoutAuctionInput = {
+    path?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type PictureUncheckedUpdateWithoutAuctionInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    path?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type PictureUncheckedUpdateManyWithoutAuctionInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    path?: StringFieldUpdateOperationsInput | string
   }
 
   export type LikesUpdateWithoutAuctionInput = {
@@ -20636,20 +19240,6 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     user_id?: IntFieldUpdateOperationsInput | number
     message_id?: NullableIntFieldUpdateOperationsInput | number | null
-  }
-
-  export type PictureUpdateWithoutAuctionInput = {
-    path?: StringFieldUpdateOperationsInput | string
-  }
-
-  export type PictureUncheckedUpdateWithoutAuctionInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    path?: StringFieldUpdateOperationsInput | string
-  }
-
-  export type PictureUncheckedUpdateManyWithoutAuctionInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    path?: StringFieldUpdateOperationsInput | string
   }
 
   export type PurchasesUpdateWithoutAuctionInput = {
@@ -20699,13 +19289,13 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
     buyer?: UsersUpdateOneWithoutBuyerNestedInput
     file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
     state?: StateUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     likes?: LikesUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
   }
 
@@ -20724,9 +19314,9 @@ export namespace Prisma {
     sellerId?: IntFieldUpdateOperationsInput | number
     buyerId?: NullableIntFieldUpdateOperationsInput | number | null
     stateId?: IntFieldUpdateOperationsInput | number
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
@@ -20774,13 +19364,13 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     deletedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
     buyer?: UsersUpdateOneWithoutBuyerNestedInput
     file?: FileUpdateOneRequiredWithoutAuctionsNestedInput
-    seller?: UsersUpdateOneRequiredWithoutSellerNestedInput
     tag?: TagUpdateOneRequiredWithoutAuctionsNestedInput
+    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     likes?: LikesUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUpdateManyWithoutAuctionNestedInput
   }
 
@@ -20799,9 +19389,9 @@ export namespace Prisma {
     tagId?: IntFieldUpdateOperationsInput | number
     sellerId?: IntFieldUpdateOperationsInput | number
     buyerId?: NullableIntFieldUpdateOperationsInput | number | null
+    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     likes?: LikesUncheckedUpdateManyWithoutAuctionNestedInput
     notifications?: NotificationsUncheckedUpdateManyWithoutAuctionNestedInput
-    pictures?: PictureUncheckedUpdateManyWithoutAuctionNestedInput
     purchases?: PurchasesUncheckedUpdateManyWithoutAuctionNestedInput
   }
 
