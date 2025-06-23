@@ -220,48 +220,14 @@ exports.Prisma.SortOrder = {
   desc: 'desc'
 };
 
-exports.Prisma.MessagesOrderByRelevanceFieldEnum = {
-  message: 'message'
+exports.Prisma.QueryMode = {
+  default: 'default',
+  insensitive: 'insensitive'
 };
 
 exports.Prisma.NullsOrder = {
   first: 'first',
   last: 'last'
-};
-
-exports.Prisma.NotificationsOrderByRelevanceFieldEnum = {
-  content: 'content'
-};
-
-exports.Prisma.UsersOrderByRelevanceFieldEnum = {
-  first_name: 'first_name',
-  last_name: 'last_name',
-  email: 'email',
-  password: 'password',
-  picture: 'picture',
-  role: 'role'
-};
-
-exports.Prisma.FileOrderByRelevanceFieldEnum = {
-  content: 'content',
-  contentType: 'contentType'
-};
-
-exports.Prisma.AuctionOrderByRelevanceFieldEnum = {
-  title: 'title',
-  description: 'description'
-};
-
-exports.Prisma.PictureOrderByRelevanceFieldEnum = {
-  path: 'path'
-};
-
-exports.Prisma.TagOrderByRelevanceFieldEnum = {
-  name: 'name'
-};
-
-exports.Prisma.StateOrderByRelevanceFieldEnum = {
-  stateType: 'stateType'
 };
 
 
