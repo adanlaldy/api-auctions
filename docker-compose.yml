@@ -21,7 +21,7 @@ services:
 
   db:
     image: mariadb:11
-    container_name: mon-backend-db
+    container_name: postgres
     environment:
       - MYSQL_ROOT_PASSWORD=Oui
       - MYSQL_DATABASE=Valorium

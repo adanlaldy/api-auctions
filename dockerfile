@@ -1,20 +1,23 @@
-# Étape 1 : utiliser une image Node officielle comme base
+# Utilise une image Node avec Debian compatible OpenSSL 3.x
 FROM node:20
 
-# Étape 2 : définir le répertoire de travail dans le conteneur
+# Dossier de travail
 WORKDIR /app
 
-# Étape 3 : copier les fichiers de dépendances dans le conteneur
+# Copie les fichiers de dépendances en premier (pour cache)
 COPY package*.json ./
 
-# Étape 4 : installer les dépendances
+# Installation des dépendances
 RUN npm install
 
-# Étape 5 : copier tous les fichiers de ton projet dans le conteneur
+# Copie tout le reste (y compris prisma/schema.prisma et .env)
 COPY . .
 
-# Étape 6 : exposer le port que ton app utilise
+# Génère le client Prisma pour la bonne plateforme (Linux)
+RUN npx prisma generate
+
+# Expose le port de l’API
 EXPOSE 3000
 
-# Étape 7 : lancer le serveur
+# Démarre l’application
 CMD ["node", "server.js"]
