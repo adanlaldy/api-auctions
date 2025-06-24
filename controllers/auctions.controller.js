@@ -24,7 +24,7 @@ export const getAllAuctions = async (req, res) => {
  * @route POST /auctions
  * @body { title, description, initialPrice, startBidDate, endBidDate?, sellerId }
  */
-export const createAuctions = (req, res) => {
+export const createAuctions = async (req, res) => {
     const { title, description, initialPrice, startBidDate, endBidDate, sellerId } = req.body
     // to define end_bid_date, created_at, updated_at, deleted_at, tag_id, buyer_id, state_id
     if (!title || !description || !initialPrice || !startBidDate || !sellerId) {
@@ -34,12 +34,19 @@ export const createAuctions = (req, res) => {
         })
     }
 
-    create({ title, description, initialPrice, startBidDate, endBidDate, sellerId })
+    try {
+        await create({ title, description, initialPrice, startBidDate, endBidDate, sellerId })
 
-    res.status(201).json({
-        success: true,
-        user: 'Auction created successfully',
-    })
+        res.status(201).json({
+            success: true,
+            message: 'Auction created successfully',
+        })
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: 'Failed to create auction',
+        })
+    }
 }
 
 /**
