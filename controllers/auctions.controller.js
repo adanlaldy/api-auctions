@@ -24,23 +24,54 @@ export const getAllAuctions = async (req, res) => {
  * @route POST /auctions
  * @body { title, description, initialPrice, startBidDate, endBidDate?, sellerId }
  */
-export const createAuctions = (req, res) => {
-    const { title, description, initialPrice, startBidDate, endBidDate, sellerId } = req.body
-    // to define end_bid_date, created_at, updated_at, deleted_at, tag_id, buyer_id, state_id
-    if (!title || !description || !initialPrice || !startBidDate || !sellerId) {
+import { create } from '../services/auctionService.js'; // adapte le chemin si nécessaire
+
+export const createAuctions = async (req, res) => {
+    const {
+        title,
+        description,
+        initialPrice,
+        startBidDate,
+        endBidDate,
+        sellerId,
+        tagName,
+        fileId,
+        pictures, // tableau d'objets { id }
+    } = req.body;
+
+    if (!title || !description || !initialPrice || !startBidDate || !sellerId || !tagName || !fileId) {
         return res.status(400).json({
             success: false,
-            message: 'Please provide all required fields',
-        })
+            message: 'Please provide all required fields (title, description, initialPrice, startBidDate, sellerId, tagName, fileId)',
+        });
     }
 
-    create({ title, description, initialPrice, startBidDate, endBidDate, sellerId })
+    try {
+        const newAuction = await create({
+            title,
+            description,
+            initialPrice,
+            startBidDate,
+            endBidDate,
+            sellerId,
+            tagName,
+            fileId,
+            pictures,
+        });
 
-    res.status(201).json({
-        success: true,
-        user: 'Auction created successfully',
-    })
-}
+        return res.status(201).json({
+            success: true,
+            auction: newAuction,
+        });
+    } catch (error) {
+        console.error('Auction creation failed:', error.message);
+        return res.status(500).json({
+            success: false,
+            message: 'Failed to create auction',
+        });
+    }
+};
+
 
 /**
  * Récupère une enchère par son ID.
