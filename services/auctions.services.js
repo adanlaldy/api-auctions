@@ -36,16 +36,15 @@ export const create = async (auction) => {
                     ? new Date(auction.endBidDate)
                     : new Date(new Date(auction.startBidDate).getTime() + 7 * 24 * 60 * 60 * 1000),
 
-                file: {
-                    create: {
-                        content: "default file content", // à remplacer
-                        contentType: "text/plain",
-                    },
-                },
-
+                file_id: auction.fileId, // Assurez-vous que le champ `file` est bien défini dans votre modèle Prisma
                 tag: {
-                    create: {
-                        name: "default tag", // à remplacer
+                    connectOrCreate: {
+                        where: {
+                            name: auction.tagName, // ou `tag.name` si ça vient de l'objet
+                        },
+                        create: {
+                            name: auction.tagName, // même valeur
+                        },
                     },
                 },
 
@@ -54,13 +53,13 @@ export const create = async (auction) => {
                         stateType: "pending", // ou l'id si tu préfères: id: 1
                     },
                 },
-                actualBidPrice: 0,
+                actualBidPrice: auction.initialPrice, // Prix de départ
                 createdAt: new Date(),
                 updatedAt: new Date(),
                 deletedAt: null,
                 buyerId: null,
                 pictures: {
-                    create: [],
+                    connect: (auction.pictures ?? []).map(picture => ({ id: picture.id })),
                 },
                 sellerId: auction.sellerId,
             },
