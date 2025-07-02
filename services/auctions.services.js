@@ -26,44 +26,39 @@ export const getAll = async () => {
  */
 export const create = async (auction) => {
     try {
+        const tag = await prisma.tag.upsert({
+            where: { name: auction.tagName },
+            update: {},
+            create: { name: auction.tagName },
+        })
+
         const newAuction = await prisma.auction.create({
             data: {
                 title: auction.title,
                 description: auction.description,
-                initialPrice: auction.initialPrice,
+                file: {
+                    connect: { id: auction.fileId }
+                },
+                initialPrice: Number(auction.initialPrice),
+                actualBidPrice: Number(auction.initialPrice),
                 startBidDate: new Date(auction.startBidDate),
-                endBidDate: auction.endBidDate
-                    ? new Date(auction.endBidDate)
-                    : new Date(new Date(auction.startBidDate).getTime() + 7 * 24 * 60 * 60 * 1000),
-
-                file_id: auction.fileId, // Assurez-vous que le champ `file` est bien défini dans votre modèle Prisma
-                tag: {
-                    connectOrCreate: {
-                        where: {
-                            name: auction.tagName, // ou `tag.name` si ça vient de l'objet
-                        },
-                        create: {
-                            name: auction.tagName, // même valeur
-                        },
-                    },
-                },
-
+                endBidDate: auction.endBidDate ? new Date(auction.endBidDate) : null,
+                // sellerId: auction.sellerId,
+                seller: { connect: { id: auction.sellerId } },
+                // buyerId: auction.buyerId ?? null,
+                buyer: auction.buyerId ? { connect: { id: auction.buyerId } } : undefined,
+                // stateId: auction.stateId ?? null,
+                // tagId: tag.id,
                 state: {
-                    connect: {
-                        stateType: "pending", // ou l'id si tu préfères: id: 1
-                    },
+                    connect: { id: 3 }, // 3 est l'ID de l'état "Pending"
                 },
-                actualBidPrice: auction.initialPrice, // Prix de départ
-                createdAt: new Date(),
-                updatedAt: new Date(),
-                deletedAt: null,
-                buyerId: null,
-                pictures: {
-                    connect: (auction.pictures ?? []).map(picture => ({ id: picture.id })),
+                tag: {
+                    connect: { id: tag.id }
                 },
-                sellerId: auction.sellerId,
-            },
-        });
+            }
+        }
+        )
+
 
         return newAuction
     } catch (error) {
@@ -118,17 +113,16 @@ export const deleteById = async (id) => {
  * @param {number} id - ID de l'enchère
  * @param {Object} auction - Données à mettre à jour
  */
+
 export const updateById = async (id, auction) => {
     try {
-        await prisma.auction.update({
-            where: {
-                id: parseInt(id),
-            },
+        const updated = await prisma.auction.update({
+            where: { id: parseInt(id) },
             data: auction,
-        });
-        console.log(auction);
+        })
+        return updated  // important de retourner la mise à jour
     } catch (error) {
-        console.error('Error updating auction:', error);
-        throw new Error('Failed to update auction');
+        console.error('Error updating auction:', error)
+        throw new Error('Failed to update auction')
     }
 }

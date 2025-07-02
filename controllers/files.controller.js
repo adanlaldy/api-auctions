@@ -23,12 +23,12 @@ export const getAllFiles = async (req, res) => {
 /**
  * Crée un nouveau fichier.
  * @route POST /files
- * @body { content, content_type }
+ * @body { content, contentType }
  */
 export const createFile = async (req, res) => {
-    const { content, content_type } = req.body
+    const { content, contentType } = req.body
 
-    if (!content || !content_type) {
+    if (!content || !contentType) {
         return res.status(400).json({
             success: false,
             message: 'All fields are required',
@@ -36,11 +36,11 @@ export const createFile = async (req, res) => {
     }
 
     try {
-        const fileId = await addFile({ content, content_type })
+        const newFile = await addFile({ content, contentType })
 
         res.status(201).json({
             success: true,
-            fileId,
+            file: newFile, // ici renvoie l'objet complet avec id
         })
     } catch (error) {
         console.error('Error creating file:', error)
@@ -50,6 +50,7 @@ export const createFile = async (req, res) => {
         })
     }
 }
+
 
 /**
  * Récupère un fichier par son ID.
@@ -101,13 +102,13 @@ export const deleteFileById = async (req, res) => {
 
 /**
  * Récupère les fichiers par type de contenu.
- * @route GET /files/type/:content_type
- * @param {string} content_type - Type de contenu (ex: image/png, application/pdf)
+ * @route GET /files/type/:contentType
+ * @param {string} contentType - Type de contenu (ex: image/png, application/pdf)
  */
 export const getFilesbyContentType = (req, res) => {
-    const { content_type } = req.params
+    const { contentType } = req.params
 
-    const files = getFiles().filter(file => file.content_type === content_type)
+    const files = getFiles().filter(file => file.contentType === contentType)
 
     if (files.length === 0) {
         return res.status(404).json({

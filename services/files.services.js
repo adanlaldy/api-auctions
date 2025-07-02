@@ -29,12 +29,13 @@ export const addFile = async (file) => {
         const newFile = await prisma.file.create({
             data: file
         })
-        return newFile.id
+        return newFile  // renvoie tout l'objet file, pas juste l'id
     } catch (error) {
         console.error('Error adding file:', error)
         throw new Error('Failed to add file')
     }
 }
+
 
 /**
  * Récupère un fichier par son ID.

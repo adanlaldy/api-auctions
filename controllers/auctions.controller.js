@@ -24,8 +24,6 @@ export const getAllAuctions = async (req, res) => {
  * @route POST /auctions
  * @body { title, description, initialPrice, startBidDate, endBidDate?, sellerId }
  */
-import { create } from '../services/auctionService.js'; // adapte le chemin si nécessaire
-
 export const createAuctions = async (req, res) => {
     const {
         title,
@@ -36,7 +34,7 @@ export const createAuctions = async (req, res) => {
         sellerId,
         tagName,
         fileId,
-        pictures, // tableau d'objets { id }
+        pictures,
     } = req.body;
 
     if (!title || !description || !initialPrice || !startBidDate || !sellerId || !tagName || !fileId) {
@@ -46,16 +44,33 @@ export const createAuctions = async (req, res) => {
         });
     }
 
+    // Validation des dates selon le format "YYYY-MM-DDTHH:mm"
+    const parseDateIfValid = (dateStr) => {
+        if (!dateStr) return null;
+        const date = new Date(dateStr);
+        return isNaN(date.getTime()) ? null : date;
+    }
+
+    const parsedStartBidDate = parseDateIfValid(startBidDate);
+    if (!parsedStartBidDate) {
+        return res.status(400).json({
+            success: false,
+            message: 'Invalid startBidDate format',
+        });
+    }
+
+    const parsedEndBidDate = parseDateIfValid(endBidDate);
+
     try {
         const newAuction = await create({
             title,
             description,
-            initialPrice,
-            startBidDate,
-            endBidDate,
-            sellerId,
+            initialPrice: Number(initialPrice),
+            startBidDate: parsedStartBidDate,
+            endBidDate: parsedEndBidDate, // null si invalide ou absent
+            sellerId: Number(sellerId),
             tagName,
-            fileId,
+            fileId: Number(fileId),
             pictures,
         });
 
@@ -71,7 +86,6 @@ export const createAuctions = async (req, res) => {
         });
     }
 };
-
 
 /**
  * Récupère une enchère par son ID.
@@ -154,7 +168,16 @@ export const updateAuctionById = async (req, res) => {
             message: 'Invalid auction id',
         })
     }
-    const { title, description, initialPrice, actualBidPrice, startBidDate, endBidDate, buyerId, stateId } = req.body
+    const {
+        title,
+        description,
+        initialPrice,
+        actualBidPrice,
+        startBidDate,
+        endBidDate,
+        buyerId,
+        stateId
+    } = req.body
 
     try {
         const auction = await getById(id)
@@ -164,7 +187,18 @@ export const updateAuctionById = async (req, res) => {
                 message: 'Auction not found',
             })
         }
-        const updatedAuction = await updateById(id, { title, description, initialPrice, actualBidPrice, startBidDate, endBidDate, buyerId, stateId })
+        // Convertir types si besoin
+        const updatedAuction = await updateById(id, {
+            title,
+            description,
+            initialPrice: initialPrice !== undefined ? Number(initialPrice) : undefined,
+            actualBidPrice: actualBidPrice !== undefined ? Number(actualBidPrice) : undefined,
+            startBidDate: startBidDate ? new Date(startBidDate) : undefined,
+            endBidDate: endBidDate ? new Date(endBidDate) : undefined,
+            buyerId: buyerId !== undefined ? Number(buyerId) : undefined,
+            stateId: stateId !== undefined ? Number(stateId) : undefined,
+        })
+
         res.status(200).json({
             success: true,
             auction: updatedAuction,
@@ -275,21 +309,35 @@ export const getAuctionByPriceRange = async (req, res) => {
  * @route GET /auctions/seller/:sellerId
  * @param {number} sellerId - ID du vendeur
  */
-export const AuctionBySellerId = (req, res) => {
-    const { sellerId } = req.params
-
-    const auctions = getAll().filter(auction => auction.seller_id === sellerId)
-
-    if (auctions.length === 0) {
-        return res.status(404).json({
+export const AuctionBySellerId = async (req, res) => {
+    const sellerId = Number(req.params.sellerId)
+    if (isNaN(sellerId)) {
+        return res.status(400).json({
             success: false,
-            message: 'No auctions found for this seller',
+            message: 'Invalid seller id',
         })
     }
 
-    res.json({
-        success: true,
-        auctions,
-    })
+    try {
+        const allAuctions = await getAll()
+        const auctions = allAuctions.filter(auction => auction.sellerId === sellerId)
+
+        if (auctions.length === 0) {
+            return res.status(404).json({
+                success: false,
+                message: 'No auctions found for this seller',
+            })
+        }
+
+        res.json({
+            success: true,
+            auctions,
+        })
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: 'Failed to fetch auctions by seller',
+        })
+    }
 }
 
